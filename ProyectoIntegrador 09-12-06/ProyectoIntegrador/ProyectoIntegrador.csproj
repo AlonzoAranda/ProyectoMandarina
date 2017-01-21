@@ -1,0 +1,1028 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD71434A-4BA8-48E6-9E89-508380ACA8E4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProyectoIntegrador</RootNamespace>
+    <AssemblyName>ProyectoIntegrador</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=16.1.1.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.16.1.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v16.1.Core, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.Resources.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GMaps, Version=4.1.0.5, Culture=neutral, PublicKeyToken=564d55b144e7aa5a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\GMaps.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core, Version=2.1.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.1.2\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.SystemWeb, Version=2.1.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.SystemWeb.2.1.2\lib\net45\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\CrystalDecisions.CrystalReports.Engine.dll" />
+    <Content Include="bin\CrystalDecisions.ReportAppServer.ClientDoc.dll" />
+    <Content Include="bin\CrystalDecisions.ReportAppServer.CommLayer.dll" />
+    <Content Include="bin\CrystalDecisions.ReportAppServer.CommonControls.dll" />
+    <Content Include="bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll" />
+    <Content Include="bin\CrystalDecisions.ReportAppServer.Controllers.dll" />
+    <Content Include="bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll" />
+    <Content Include="bin\CrystalDecisions.ReportAppServer.DataDefModel.dll" />
+    <Content Include="bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll" />
+    <Content Include="bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll" />
+    <Content Include="bin\CrystalDecisions.ReportAppServer.Prompting.dll" />
+    <Content Include="bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll" />
+    <Content Include="bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll" />
+    <Content Include="bin\CrystalDecisions.ReportSource.dll" />
+    <Content Include="bin\CrystalDecisions.Shared.dll" />
+    <Content Include="bin\DevExpress.Data.v16.1.dll" />
+    <Content Include="bin\DevExpress.Data.v16.1.xml" />
+    <Content Include="bin\DevExpress.Office.v16.1.Core.dll" />
+    <Content Include="bin\DevExpress.Office.v16.1.Core.xml" />
+    <Content Include="bin\DevExpress.Pdf.v16.1.Core.dll" />
+    <Content Include="bin\DevExpress.Pdf.v16.1.Core.xml" />
+    <Content Include="bin\DevExpress.Pdf.v16.1.Drawing.dll" />
+    <Content Include="bin\DevExpress.Pdf.v16.1.Drawing.xml" />
+    <Content Include="bin\DevExpress.Printing.v16.1.Core.dll" />
+    <Content Include="bin\DevExpress.Printing.v16.1.Core.xml" />
+    <Content Include="bin\DevExpress.RichEdit.v16.1.Core.dll" />
+    <Content Include="bin\DevExpress.RichEdit.v16.1.Core.xml" />
+    <Content Include="bin\DevExpress.Web.ASPxThemes.v16.1.dll" />
+    <Content Include="bin\DevExpress.Web.Resources.v16.1.dll" />
+    <Content Include="bin\DevExpress.Web.v16.1.dll" />
+    <Content Include="bin\DevExpress.Web.v16.1.xml" />
+    <Content Include="bin\de\DevExpress.Data.v16.1.resources.dll" />
+    <Content Include="bin\de\DevExpress.Office.v16.1.Core.resources.dll" />
+    <Content Include="bin\de\DevExpress.Pdf.v16.1.Core.resources.dll" />
+    <Content Include="bin\de\DevExpress.Printing.v16.1.Core.resources.dll" />
+    <Content Include="bin\de\DevExpress.RichEdit.v16.1.Core.resources.dll" />
+    <Content Include="bin\de\DevExpress.Web.v16.1.resources.dll" />
+    <Content Include="bin\EntityFramework.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\EntityFramework.xml" />
+    <Content Include="bin\es\DevExpress.Data.v16.1.resources.dll" />
+    <Content Include="bin\es\DevExpress.Office.v16.1.Core.resources.dll" />
+    <Content Include="bin\es\DevExpress.Pdf.v16.1.Core.resources.dll" />
+    <Content Include="bin\es\DevExpress.Printing.v16.1.Core.resources.dll" />
+    <Content Include="bin\es\DevExpress.RichEdit.v16.1.Core.resources.dll" />
+    <Content Include="bin\es\DevExpress.Web.v16.1.resources.dll" />
+    <Content Include="bin\GMaps.dll" />
+    <Content Include="bin\ja\DevExpress.Data.v16.1.resources.dll" />
+    <Content Include="bin\ja\DevExpress.Office.v16.1.Core.resources.dll" />
+    <Content Include="bin\ja\DevExpress.Pdf.v16.1.Core.resources.dll" />
+    <Content Include="bin\ja\DevExpress.Printing.v16.1.Core.resources.dll" />
+    <Content Include="bin\ja\DevExpress.RichEdit.v16.1.Core.resources.dll" />
+    <Content Include="bin\ja\DevExpress.Web.v16.1.resources.dll" />
+    <Content Include="bin\MapaASP.dll" />
+    <Content Include="bin\Microsoft.AI.Agent.Intercept.dll" />
+    <Content Include="bin\Microsoft.AI.DependencyCollector.dll" />
+    <Content Include="bin\Microsoft.AI.DependencyCollector.xml" />
+    <Content Include="bin\Microsoft.AI.PerfCounterCollector.dll" />
+    <Content Include="bin\Microsoft.AI.ServerTelemetryChannel.dll" />
+    <Content Include="bin\Microsoft.AI.ServerTelemetryChannel.xml" />
+    <Content Include="bin\Microsoft.AI.Web.dll" />
+    <Content Include="bin\Microsoft.AI.Web.xml" />
+    <Content Include="bin\Microsoft.AI.WindowsServer.dll" />
+    <Content Include="bin\Microsoft.AI.WindowsServer.xml" />
+    <Content Include="bin\Microsoft.ApplicationInsights.dll" />
+    <Content Include="bin\Microsoft.ApplicationInsights.xml" />
+    <Content Include="bin\Microsoft.AspNet.SignalR.Core.dll" />
+    <Content Include="bin\Microsoft.AspNet.SignalR.Core.xml" />
+    <Content Include="bin\Microsoft.AspNet.SignalR.SystemWeb.dll" />
+    <Content Include="bin\Microsoft.AspNet.SignalR.SystemWeb.xml" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
+    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="bin\Microsoft.Owin.dll" />
+    <Content Include="bin\Microsoft.Owin.Host.SystemWeb.dll" />
+    <Content Include="bin\Microsoft.Owin.Host.SystemWeb.xml" />
+    <Content Include="bin\Microsoft.Owin.Security.dll" />
+    <Content Include="bin\Microsoft.Owin.Security.xml" />
+    <Content Include="bin\Microsoft.Owin.xml" />
+    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
+    <Content Include="bin\Newtonsoft.Json.dll" />
+    <Content Include="bin\Newtonsoft.Json.xml" />
+    <Content Include="bin\Owin.dll" />
+    <Content Include="bin\ProyectoIntegrador.dll" />
+    <Content Include="bin\ProyectoIntegrador.pdb" />
+    <Content Include="bin\roslyn\csc.exe" />
+    <Content Include="bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.dll" />
+    <Content Include="bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
+    <Content Include="bin\roslyn\System.Collections.Immutable.dll" />
+    <Content Include="bin\roslyn\System.Reflection.Metadata.dll" />
+    <Content Include="bin\roslyn\vbc.exe" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe" />
+    <Content Include="bin\ru\DevExpress.Data.v16.1.resources.dll" />
+    <Content Include="bin\ru\DevExpress.Office.v16.1.Core.resources.dll" />
+    <Content Include="bin\ru\DevExpress.Pdf.v16.1.Core.resources.dll" />
+    <Content Include="bin\ru\DevExpress.Printing.v16.1.Core.resources.dll" />
+    <Content Include="bin\ru\DevExpress.RichEdit.v16.1.Core.resources.dll" />
+    <Content Include="bin\ru\DevExpress.Web.v16.1.resources.dll" />
+    <Content Include="bin\stdole.dll" />
+    <Content Include="css\animate.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\coreSlider.css" />
+    <Content Include="css\cubeportfolio.min.css" />
+    <Content Include="css\custom.css" />
+    <Content Include="css\flexslidejunt.css" />
+    <Content Include="css\flexslider.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\fonts\fontawesome-webfont.svg" />
+    <Content Include="css\font\entypo-fontello.svg" />
+    <Content Include="css\font\Museo500-Regular-webfont.svg" />
+    <Content Include="css\font\Museo_Slab_300-webfont.svg" />
+    <Content Include="css\font\sourcesanspro-bold-webfont.svg" />
+    <Content Include="css\lightbox.css" />
+    <Content Include="css\owl.carousel.css" />
+    <Content Include="css\owl.theme.css" />
+    <Content Include="css\rev-style.css" />
+    <Content Include="css\settings.css" />
+    <Content Include="css\skdslider.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\style2.css" />
+    <Content Include="css\theme-default.css" />
+    <Content Include="css\theme-responsive.css" />
+    <Content Include="css\theme-white.css" />
+    <Content Include="css\v-animation.css" />
+    <Content Include="css\v-bg-stylish.css" />
+    <Content Include="css\v-nav-menu.css" />
+    <Content Include="css\v-shortcodes.css" />
+    <Content Include="css\validationEngine.jquery.css" />
+    <Content Include="css\yamm.css" />
+    <Content Include="GUI\AgregarSitio.aspx" />
+    <Content Include="GUI\AgregarSitio2.aspx" />
+    <Content Include="GUI\App.aspx" />
+    <Content Include="GUI\CatalogoEstablecimientos.aspx" />
+    <Content Include="GUI\CatalogoMembresias.aspx" />
+    <Content Include="GUI\CatalogoTipoEstablecimiento.aspx" />
+    <Content Include="GUI\CatalogoTipoPago.aspx" />
+    <Content Include="GUI\CatalogoUsuario.aspx" />
+    <Content Include="GUI\Facturas.aspx" />
+    <Content Include="GUI\Galeria.aspx" />
+    <Content Include="GUI\Indi.aspx" />
+    <Content Include="GUI\InformacionUser.aspx" />
+    <Content Include="GUI\Parques.aspx" />
+    <Content Include="GUI\Prueba.aspx" />
+    <Content Include="GUI\VerFactura.aspx" />
+    <Content Include="ImagenesWeb\Usuarios\logoDM.png" />
+    <Content Include="ImagenesWeb\Usuarios\museo.jpg" />
+    <Content Include="img\1.jpg" />
+    <Content Include="img\2-iphone-left.png" />
+    <Content Include="img\2-iphone-right.png" />
+    <Content Include="img\3.jpg" />
+    <Content Include="img\4s.jpg" />
+    <Content Include="img\amazon.png" />
+    <Content Include="img\Appstore.png" />
+    <Content Include="img\arrow_left.png" />
+    <Content Include="img\arrow_right.png" />
+    <Content Include="img\ba1.jpg" />
+    <Content Include="img\ba2.jpg" />
+    <Content Include="img\ba3.jpg" />
+    <Content Include="img\ba4.jpg" />
+    <Content Include="img\banner1.jpg" />
+    <Content Include="img\base\box_shadow_effect.png" />
+    <Content Include="img\base\ff_header_bkg_dark.png" />
+    <Content Include="img\base\ff_rp_bkg2.png" />
+    <Content Include="img\base\icon-box-error.png" />
+    <Content Include="img\base\icon-box-info.png" />
+    <Content Include="img\base\icon-box-notice.png" />
+    <Content Include="img\base\icon-box-success.png" />
+    <Content Include="img\base\news-date.png" />
+    <Content Include="img\base\overlay-d.png" />
+    <Content Include="img\base\page-heading-bg.png" />
+    <Content Include="img\base\page_bkg.png" />
+    <Content Include="img\base\pw_maze_white.png" />
+    <Content Include="img\base\shadow-bottom.png" />
+    <Content Include="img\base\shadow-top.png" />
+    <Content Include="img\base\showcase-nav.png" />
+    <Content Include="img\base\showcase-nav_2x.png" />
+    <Content Include="img\base\slider-nav.png" />
+    <Content Include="img\base\starring.png" />
+    <Content Include="img\base\tiny_grid.png" />
+    <Content Include="img\base\transparen.png" />
+    <Content Include="img\base\trbg.png" />
+    <Content Include="img\base\v-arrow.png" />
+    <Content Include="img\base\video-overlay-1.png" />
+    <Content Include="img\box_shadow_effect.png" />
+    <Content Include="img\Calandrina.jpg" />
+    <Content Include="img\Cate.png" />
+    <Content Include="img\catedral.jpg" />
+    <Content Include="img\close.png" />
+    <Content Include="img\crease.svg" />
+    <Content Include="img\custom_map_pin.png" />
+    <Content Include="img\favicon.png" />
+    <Content Include="img\ff_header_bkg_dark.png" />
+    <Content Include="img\ff_rp_bkg2.png" />
+    <Content Include="img\g1.jpg" />
+    <Content Include="img\g2.jpg" />
+    <Content Include="img\g3.jpg" />
+    <Content Include="img\g4.jpg" />
+    <Content Include="img\g5.jpg" />
+    <Content Include="img\g6.jpg" />
+    <Content Include="img\google-maps.jpg" />
+    <Content Include="img\google.png" />
+    <Content Include="img\GooglePlay.png" />
+    <Content Include="img\icon-box-error.png" />
+    <Content Include="img\icon-box-info.png" />
+    <Content Include="img\icon-box-notice.png" />
+    <Content Include="img\icon-box-success.png" />
+    <Content Include="img\icon.png" />
+    <Content Include="img\Iconos\correo.png" />
+    <Content Include="img\Iconos\face3.png" />
+    <Content Include="img\Iconos\google3.png" />
+    <Content Include="img\Iconos\key-32.png" />
+    <Content Include="img\Iconos\telefono.png" />
+    <Content Include="img\Iconos\twitt3.png" />
+    <Content Include="img\ilumina.jpg" />
+    <Content Include="img\image2.png" />
+    <Content Include="img\intro_image.png" />
+    <Content Include="img\iphone2.png" />
+    <Content Include="img\irongrip.png" />
+    <Content Include="img\landing\1.jpg" />
+    <Content Include="img\landing\2-iphone-left.png" />
+    <Content Include="img\landing\2-iphone-right.png" />
+    <Content Include="img\landing\2.jpg" />
+    <Content Include="img\landing\3.jpg" />
+    <Content Include="img\landing\4.jpg" />
+    <Content Include="img\landing\amazon.png" />
+    <Content Include="img\landing\appstore.png" />
+    <Content Include="img\landing\google.png" />
+    <Content Include="img\landing\intro_image.png" />
+    <Content Include="img\landing\single-iphone.png" />
+    <Content Include="img\logo-white.png" />
+    <Content Include="img\logo.png" />
+    <Content Include="img\logoDM.png" />
+    <Content Include="img\logoDM2.png" />
+    <Content Include="img\Mapa.png" />
+    <Content Include="img\meridon.png" />
+    <Content Include="img\news-date.png" />
+    <Content Include="img\next.png" />
+    <Content Include="img\overlay-d.png" />
+    <Content Include="img\page-heading-bg.png" />
+    <Content Include="img\page_bkg.png" />
+    <Content Include="img\prev.png" />
+    <Content Include="img\project-1.jpg" />
+    <Content Include="img\project-2.jpg" />
+    <Content Include="img\project-3.jpg" />
+    <Content Include="img\project-4.png" />
+    <Content Include="img\project-5.jpg" />
+    <Content Include="img\project-6.jpg" />
+    <Content Include="img\project-7.jpg" />
+    <Content Include="img\project-8.png" />
+    <Content Include="img\project-9.png" />
+    <Content Include="img\pw_maze_white.png" />
+    <Content Include="img\s.jpg" />
+    <Content Include="img\s1.jpg" />
+    <Content Include="img\s1a.jpg" />
+    <Content Include="img\s2.jpg" />
+    <Content Include="img\s2a.jpg" />
+    <Content Include="img\shadow-bottom.png" />
+    <Content Include="img\shadow-top.png" />
+    <Content Include="img\showcase-nav.png" />
+    <Content Include="img\showcase-nav_2x.png" />
+    <Content Include="img\si1.jpg" />
+    <Content Include="img\si2.jpg" />
+    <Content Include="img\si3.jpg" />
+    <Content Include="img\single-iphone.png" />
+    <Content Include="img\slider-nav.png" />
+    <Content Include="img\slider4.jpg" />
+    <Content Include="img\slider5.jpg" />
+    <Content Include="img\slider\image2.png" />
+    <Content Include="img\slider\slider4.jpg" />
+    <Content Include="img\slider\slider5.jpg" />
+    <Content Include="img\starring.png" />
+    <Content Include="img\tablaMorada.png" />
+    <Content Include="img\tiny_grid.png" />
+    <Content Include="img\tipa.jpg" />
+    <Content Include="img\tipo.png" />
+    <Content Include="img\transparen.png" />
+    <Content Include="img\trbg.png" />
+    <Content Include="img\v-arrow.png" />
+    <Content Include="img\video-overlay-1.png" />
+    <Content Include="img\w1.jpg" />
+    <Content Include="img\w2.jpg" />
+    <Content Include="img\yu.jpg" />
+    <Content Include="js\coreSlider.js" />
+    <Content Include="js\GMapsLatLonPicker.js" />
+    <Content Include="js\html5shiv.js" />
+    <Content Include="js\imagesloaded.js" />
+    <Content Include="js\imagezoom.js" />
+    <Content Include="js\jquery-1.11.0.min.js" />
+    <Content Include="js\jquery-2.1.4.min.js" />
+    <Content Include="js\jquery.carouFredSel.min.js" />
+    <Content Include="js\jquery.easing.js" />
+    <Content Include="js\jquery.fitvids.js" />
+    <Content Include="js\jquery.flexslider.js" />
+    <Content Include="js\jquery.form.min.js" />
+    <Content Include="js\jquery.isotope.min.js" />
+    <Content Include="js\jquery.validate.js" />
+    <Content Include="js\jquery.validationEngine-en.js" />
+    <Content Include="js\jquery.validationEngine.js" />
+    <Content Include="js\lightbox-plus-jquery.min.js" />
+    <Content Include="js\modernizr.custom.53451.js" />
+    <Content Include="js\plugins\bootstrap\bootstrap-colorpicker.js" />
+    <Content Include="js\plugins\bootstrap\bootstrap-datepicker.js" />
+    <Content Include="js\plugins\bootstrap\bootstrap-file-input.js" />
+    <Content Include="js\plugins\bootstrap\bootstrap-select.js" />
+    <Content Include="js\plugins\bootstrap\bootstrap-timepicker.min.js" />
+    <Content Include="js\plugins\bootstrap\bootstrap.min.js" />
+    <Content Include="js\plugins\bootstrap\npm.js" />
+    <Content Include="js\plugins\jquery\jquery-migrate.min.js" />
+    <Content Include="js\plugins\jquery\jquery-ui.min.js" />
+    <Content Include="js\plugins\jquery\jquery.min.js" />
+    <Content Include="js\plugins\validationengine\jquery.validationEngine.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-ca.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-cz.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-da.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-de.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-el.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-en.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-es.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-et.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-fa.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-fi.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-fr.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-he.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-hr.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-hu.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-id.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-it.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-ja.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-lt.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-nl.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-no.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-pl.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-pt.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-pt_BR.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-ro.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-ru.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-sr_Cyrl.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-sr_Latn.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-sv.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-tr.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-vi.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-zh_CN.js" />
+    <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-zh_TW.js" />
+    <Content Include="js\skdslider.min.js" />
+    <Content Include="js\theme-core.js" />
+    <Content Include="js\theme-plugins.js" />
+    <Content Include="js\Top.js" />
+    <Content Include="js\view.min.js" />
+    <Content Include="Reportes\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Reportes\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="GUI\sobre.aspx" />
+    <Content Include="img\2.jpg" />
+    <Content Include="img\2.png" />
+    <Content Include="img\4.jpg" />
+    <Content Include="img\4.png" />
+    <Content Include="img\5.png" />
+    <Content Include="img\6.png" />
+    <Content Include="img\7.png" />
+    <Content Include="img\bg-1.jpg" />
+    <Content Include="img\bg-1.png" />
+    <Content Include="img\bg-2abajo.png" />
+    <Content Include="img\bg-3.jpg" />
+    <Content Include="img\Disfruta.png" />
+    <Content Include="img\Disfruta2.png" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\cube-portfolio.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\html5shiv.min.js" />
+    <Content Include="js\jquery-migrate.min.js" />
+    <Content Include="js\jquery.counterup.min.js" />
+    <Content Include="js\jquery.cubeportfolio.min.js" />
+    <Content Include="js\jquery.easing.1.3.min.js" />
+    <Content Include="js\jquery.flexslider-min.js" />
+    <Content Include="js\jquery.magnific-popup.min.js" />
+    <Content Include="js\jquery.mb.YTPlayer.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\jquery.stellar.min.js" />
+    <Content Include="js\jquery.sticky.js" />
+    <Content Include="js\jquery.themepunch.revolution.min.js" />
+    <Content Include="js\jquery.themepunch.tools.min.js" />
+    <Content Include="js\owl.carousel.min.js" />
+    <Content Include="js\pace.min.js" />
+    <Content Include="js\plugins\fileinput\fileinput.min.js" />
+    <Content Include="js\plugins\jquery.min.js" />
+    <Content Include="js\respond.min.js" />
+    <Content Include="js\revolution-custom.js" />
+    <Content Include="js\waypoints.min.js" />
+    <Content Include="js\wow.min.js" />
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="GUI\MasterPage.Master" />
+    <Content Include="GUI\Index.aspx" />
+    <Content Include="GUI\MasterPageFrontEnd.Master" />
+    <Content Include="css\FontAwesome.otf" />
+    <Content Include="plugins\rs-plugin\assets\arrows.psd" />
+    <Content Include="plugins\rs-plugin\assets\bullets.psd" />
+    <Content Include="plugins\rs-plugin\assets\small_arrows.psd" />
+    <Content Include="plugins\rs-plugin\font\revicons.eot" />
+    <Content Include="plugins\rs-plugin\font\revicons.ttf" />
+    <Content Include="plugins\rs-plugin\font\revicons.woff" />
+    <Content Include="css\fonts\fontawesome-webfont.eot" />
+    <Content Include="css\fonts\fontawesome-webfont.ttf" />
+    <Content Include="css\fonts\fontawesome-webfont.woff" />
+    <Content Include="css\fonts\FontAwesome.otf" />
+    <Content Include="css\font\entypo-fontello.eot" />
+    <Content Include="css\font\entypo-fontello.woff" />
+    <Content Include="css\font\Museo500-Regular-webfont.eot" />
+    <Content Include="css\font\Museo500-Regular-webfont.ttf" />
+    <Content Include="css\font\Museo500-Regular-webfont.woff" />
+    <Content Include="css\font\Museo_Slab_300-webfont.eot" />
+    <Content Include="css\font\Museo_Slab_300-webfont.ttf" />
+    <Content Include="css\font\Museo_Slab_300-webfont.woff" />
+    <Content Include="css\font\sourcesanspro-bold-webfont.eot" />
+    <Content Include="css\font\sourcesanspro-bold-webfont.ttf" />
+    <Content Include="css\font\sourcesanspro-bold-webfont.woff" />
+    <EntityDeploy Include="Reportes\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Reportes\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Reportes\DsFactura.xsc">
+      <DependentUpon>DsFactura.xsd</DependentUpon>
+    </Content>
+    <Content Include="bin\ApplicationInsights.config" />
+    <Content Include="bin\ProyectoIntegrador.dll.config" />
+    <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
+    <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
+    <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
+    <Content Include="js\plugins\jquery\jquery-2.1.1.min.map" />
+    <None Include="Reportes\DsFactura.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsFactura.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reportes\DsFactura.xss">
+      <DependentUpon>DsFactura.xsd</DependentUpon>
+    </Content>
+    <Content Include="Reportes\DsVistaSitios.xsc">
+      <DependentUpon>DsVistaSitios.xsd</DependentUpon>
+    </Content>
+    <None Include="Reportes\DsVistaSitios.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsVistaSitios.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Reportes\DsVistaSitios.xss">
+      <DependentUpon>DsVistaSitios.xsd</DependentUpon>
+    </Content>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="scripts\jquery-1.10.2.min.map" />
+    <None Include="Web References\localhost\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\localhost\WSDisfruta.wsdl" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="plugins\owl-carousel\AjaxLoader.gif" />
+    <Content Include="plugins\owl-carousel\grabbing.png" />
+    <Content Include="plugins\owl-carousel\owl.carousel.css" />
+    <Content Include="plugins\owl-carousel\owl.carousel.js" />
+    <Content Include="plugins\owl-carousel\owl.theme.css" />
+    <Content Include="plugins\rs-plugin\assets\arrowleft.png" />
+    <Content Include="plugins\rs-plugin\assets\arrowright.png" />
+    <Content Include="plugins\rs-plugin\assets\arrow_large_left.png" />
+    <Content Include="plugins\rs-plugin\assets\arrow_large_right.png" />
+    <Content Include="plugins\rs-plugin\assets\arrow_left.png" />
+    <Content Include="plugins\rs-plugin\assets\arrow_left2.png" />
+    <Content Include="plugins\rs-plugin\assets\arrow_right.png" />
+    <Content Include="plugins\rs-plugin\assets\arrow_right2.png" />
+    <Content Include="plugins\rs-plugin\assets\black50.png" />
+    <Content Include="plugins\rs-plugin\assets\boxed_bgtile.png" />
+    <Content Include="plugins\rs-plugin\assets\bullet.png" />
+    <Content Include="plugins\rs-plugin\assets\bullets.png" />
+    <Content Include="plugins\rs-plugin\assets\bullets2.png" />
+    <Content Include="plugins\rs-plugin\assets\bullet_boxed.png" />
+    <Content Include="plugins\rs-plugin\assets\coloredbg.png" />
+    <Content Include="plugins\rs-plugin\assets\grain.png" />
+    <Content Include="plugins\rs-plugin\assets\gridtile.png" />
+    <Content Include="plugins\rs-plugin\assets\gridtile_3x3.png" />
+    <Content Include="plugins\rs-plugin\assets\gridtile_3x3_white.png" />
+    <Content Include="plugins\rs-plugin\assets\gridtile_white.png" />
+    <Content Include="plugins\rs-plugin\assets\large_left.png" />
+    <Content Include="plugins\rs-plugin\assets\large_right.png" />
+    <Content Include="plugins\rs-plugin\assets\loader.gif" />
+    <Content Include="plugins\rs-plugin\assets\loader2.gif" />
+    <Content Include="plugins\rs-plugin\assets\navigdots.png" />
+    <Content Include="plugins\rs-plugin\assets\navigdots_bgtile.png" />
+    <Content Include="plugins\rs-plugin\assets\shadow1.png" />
+    <Content Include="plugins\rs-plugin\assets\shadow2.png" />
+    <Content Include="plugins\rs-plugin\assets\shadow3.png" />
+    <Content Include="plugins\rs-plugin\assets\small_left.png" />
+    <Content Include="plugins\rs-plugin\assets\small_left_boxed.png" />
+    <Content Include="plugins\rs-plugin\assets\small_right.png" />
+    <Content Include="plugins\rs-plugin\assets\small_right_boxed.png" />
+    <Content Include="plugins\rs-plugin\assets\timer.png" />
+    <Content Include="plugins\rs-plugin\assets\timerdot.png" />
+    <Content Include="plugins\rs-plugin\assets\transparent.jpg" />
+    <Content Include="plugins\rs-plugin\assets\white50.png" />
+    <Content Include="plugins\rs-plugin\css\custom-captions.css" />
+    <Content Include="plugins\rs-plugin\css\settings-ie8.css" />
+    <Content Include="plugins\rs-plugin\css\settings.css" />
+    <Content Include="plugins\rs-plugin\font\revicons.svg" />
+    <Content Include="plugins\rs-plugin\images\decor_inside.png" />
+    <Content Include="plugins\rs-plugin\images\decor_inside_white.png" />
+    <Content Include="plugins\rs-plugin\images\decor_testimonial.png" />
+    <Content Include="plugins\rs-plugin\images\gradient\g30.png" />
+    <Content Include="plugins\rs-plugin\images\gradient\g40.png" />
+    <Content Include="plugins\rs-plugin\js\jquery.themepunch.plugins.min.js" />
+    <Content Include="plugins\rs-plugin\js\jquery.themepunch.revolution.js" />
+    <Content Include="plugins\rs-plugin\js\jquery.themepunch.revolution.min.js" />
+    <Content Include="plugins\rs-plugin\js\jquery.themepunch.tools.min.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <None Include="scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="scripts\jquery-1.10.2.js" />
+    <Content Include="scripts\jquery-1.10.2.min.js" />
+    <Content Include="scripts\jquery.signalR-2.1.2.js" />
+    <Content Include="scripts\jquery.signalR-2.1.2.min.js" />
+    <None Include="Web References\localhost\WSDisfruta.disco" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GUI\CatalogoEstablecimientos.aspx.cs">
+      <DependentUpon>CatalogoEstablecimientos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\CatalogoEstablecimientos.aspx.designer.cs">
+      <DependentUpon>CatalogoEstablecimientos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\CatalogoMembresias.aspx.cs">
+      <DependentUpon>CatalogoMembresias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\CatalogoMembresias.aspx.designer.cs">
+      <DependentUpon>CatalogoMembresias.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\CatalogoTipoEstablecimiento.aspx.cs">
+      <DependentUpon>CatalogoTipoEstablecimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\CatalogoTipoEstablecimiento.aspx.designer.cs">
+      <DependentUpon>CatalogoTipoEstablecimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\CatalogoTipoPago.aspx.cs">
+      <DependentUpon>CatalogoTipoPago.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\CatalogoTipoPago.aspx.designer.cs">
+      <DependentUpon>CatalogoTipoPago.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\CatalogoUsuario.aspx.cs">
+      <DependentUpon>CatalogoUsuario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\CatalogoUsuario.aspx.designer.cs">
+      <DependentUpon>CatalogoUsuario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Facturas.aspx.cs">
+      <DependentUpon>Facturas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Facturas.aspx.designer.cs">
+      <DependentUpon>Facturas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Prueba.aspx.cs">
+      <DependentUpon>Prueba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Prueba.aspx.designer.cs">
+      <DependentUpon>Prueba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Administra.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\CrDetalleSitios.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrDetalleSitios.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\CrFactura.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrFactura.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\DevolverTablaADMINISTRA_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DevolverTablaESTABLECIMIENTOS_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DevolverTablaFOTOS_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DevolverTablaMEMBRESIA_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DevolverTablaRECIBO_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DevolverTablaSITIOS_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DevolverTablaTARJETACREDITO_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DevolverTablaTipoEstablecimiento_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DevolverTablaTIPOPAGO_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DevolverTablaUSUARIO_Result.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DsFactura.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsFactura.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DsVistaSitios.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsVistaSitios.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Establecimientos.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Fotos.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\AgregarSitio.aspx.cs">
+      <DependentUpon>AgregarSitio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\AgregarSitio.aspx.designer.cs">
+      <DependentUpon>AgregarSitio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\AgregarSitio2.aspx.cs">
+      <DependentUpon>AgregarSitio2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\AgregarSitio2.aspx.designer.cs">
+      <DependentUpon>AgregarSitio2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\App.aspx.cs">
+      <DependentUpon>App.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\App.aspx.designer.cs">
+      <DependentUpon>App.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Galeria.aspx.cs">
+      <DependentUpon>Galeria.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Galeria.aspx.designer.cs">
+      <DependentUpon>Galeria.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Indi.aspx.cs">
+      <DependentUpon>Indi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Indi.aspx.designer.cs">
+      <DependentUpon>Indi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\InformacionUser.aspx.cs">
+      <DependentUpon>InformacionUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\InformacionUser.aspx.designer.cs">
+      <DependentUpon>InformacionUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MasterPageFrontEnd.Master.cs">
+      <DependentUpon>MasterPageFrontEnd.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\MasterPageFrontEnd.Master.designer.cs">
+      <DependentUpon>MasterPageFrontEnd.Master</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Parques.aspx.cs">
+      <DependentUpon>Parques.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Parques.aspx.designer.cs">
+      <DependentUpon>Parques.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\VerFactura.aspx.cs">
+      <DependentUpon>VerFactura.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\VerFactura.aspx.designer.cs">
+      <DependentUpon>VerFactura.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\membresia.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ObjUsuario.cs" />
+    <Compile Include="GUI\sobre.aspx.cs">
+      <DependentUpon>sobre.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\sobre.aspx.designer.cs">
+      <DependentUpon>sobre.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="GUI\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Recibo.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Sitios.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\tarjetaCredito.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\TipoEstablecimiento.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\TipoPago.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ubicaciones.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\Usuario.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\VISTARECIBO.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\localhost\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="css\plugins\" />
+    <Folder Include="ImagenesWeb\Sitos\" />
+    <Folder Include="obj\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reportes\CrDetalleSitios.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrDetalleSitios.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CrFactura.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrFactura.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost:53950/Services/WSDisfruta.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\localhost\</RelPath>
+      <UpdateFromURL>http://localhost:53950/Services/WSDisfruta.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ProyectoIntegrador_localhost_WSDisfruta</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59998</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59998/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

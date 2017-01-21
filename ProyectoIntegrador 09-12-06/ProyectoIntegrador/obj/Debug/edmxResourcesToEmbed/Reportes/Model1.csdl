@@ -1,0 +1,604 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProyectoBAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Administra">
+    <Key>
+      <PropertyRef Name="IdAdministra" />
+    </Key>
+    <Property Name="IdAdministra" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" />
+    <Property Name="IdSitio" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Sitios" Relationship="Self.RefSitios9" FromRole="Administra" ToRole="Sitios" />
+    <NavigationProperty Name="Usuario" Relationship="Self.RefUsuario8" FromRole="Administra" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Establecimientos">
+    <Key>
+      <PropertyRef Name="IdEstablecimiento" />
+    </Key>
+    <Property Name="IdEstablecimiento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdTipoEstablecimiento" Type="Int32" />
+    <NavigationProperty Name="Sitios" Relationship="Self.RefEstablecimientos13" FromRole="Establecimientos" ToRole="Sitios" />
+    <NavigationProperty Name="TipoEstablecimiento" Relationship="Self.RefTipoEstablecimiento15" FromRole="Establecimientos" ToRole="TipoEstablecimiento" />
+  </EntityType>
+  <EntityType Name="Fotos">
+    <Key>
+      <PropertyRef Name="IdFoto" />
+    </Key>
+    <Property Name="IdFoto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Foto" Type="String" MaxLength="3000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdSitio" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Sitios" Relationship="Self.RefSitios47" FromRole="Fotos" ToRole="Sitios" />
+  </EntityType>
+  <EntityType Name="membresia">
+    <Key>
+      <PropertyRef Name="IdMembresia" />
+    </Key>
+    <Property Name="IdMembresia" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreMembresia" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DuracionMeses" Type="Int32" Nullable="false" />
+    <Property Name="Costo" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="NumSitios" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Recibo" Relationship="Self.Refmembresia51" FromRole="membresia" ToRole="Recibo" />
+  </EntityType>
+  <EntityType Name="Recibo">
+    <Key>
+      <PropertyRef Name="IdRecibo" />
+    </Key>
+    <Property Name="IdRecibo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Fecha" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="IdUsuario" Type="Int32" />
+    <Property Name="IdTipoPago" Type="Int32" Nullable="false" />
+    <Property Name="IdMembresia" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="membresia" Relationship="Self.Refmembresia51" FromRole="Recibo" ToRole="membresia" />
+    <NavigationProperty Name="TipoPago" Relationship="Self.RefTipoPago50" FromRole="Recibo" ToRole="TipoPago" />
+    <NavigationProperty Name="Usuario" Relationship="Self.RefUsuario4" FromRole="Recibo" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Sitios">
+    <Key>
+      <PropertyRef Name="IdSitio" />
+    </Key>
+    <Property Name="IdSitio" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Descripcion" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Estatus" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdEstablecimiento" Type="Int32" />
+    <NavigationProperty Name="Administra" Relationship="Self.RefSitios9" FromRole="Sitios" ToRole="Administra" />
+    <NavigationProperty Name="Establecimientos" Relationship="Self.RefEstablecimientos13" FromRole="Sitios" ToRole="Establecimientos" />
+    <NavigationProperty Name="Fotos" Relationship="Self.RefSitios47" FromRole="Sitios" ToRole="Fotos" />
+    <NavigationProperty Name="ubicaciones" Relationship="Self.RefSitios48" FromRole="Sitios" ToRole="ubicaciones" />
+  </EntityType>
+  <EntityType Name="tarjetaCredito">
+    <Key>
+      <PropertyRef Name="IdTarjeta" />
+    </Key>
+    <Property Name="IdTarjeta" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NumTarjeta" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cvv" Type="String" MaxLength="3" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="anio" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="mes" Type="String" MaxLength="25" FixedLength="true" Unicode="false" />
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Usuario" Relationship="Self.RefUsuario49" FromRole="tarjetaCredito" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="TipoEstablecimiento">
+    <Key>
+      <PropertyRef Name="IdTipoEstablecimiento" />
+    </Key>
+    <Property Name="IdTipoEstablecimiento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreTipo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Establecimientos" Relationship="Self.RefTipoEstablecimiento15" FromRole="TipoEstablecimiento" ToRole="Establecimientos" />
+  </EntityType>
+  <EntityType Name="TipoPago">
+    <Key>
+      <PropertyRef Name="IdTipoPago" />
+    </Key>
+    <Property Name="IdTipoPago" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Recibo" Relationship="Self.RefTipoPago50" FromRole="TipoPago" ToRole="Recibo" />
+  </EntityType>
+  <EntityType Name="ubicaciones">
+    <Key>
+      <PropertyRef Name="IdUbicacion" />
+    </Key>
+    <Property Name="IdUbicacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Direccion" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Latitud" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Longitud" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdSitio" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Sitios" Relationship="Self.RefSitios48" FromRole="ubicaciones" ToRole="Sitios" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="IdUsuario" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Apellidos" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Contrasena" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Usuario1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FOTOUS" Type="String" MaxLength="3000" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Administra" Relationship="Self.RefUsuario8" FromRole="Usuario" ToRole="Administra" />
+    <NavigationProperty Name="Recibo" Relationship="Self.RefUsuario4" FromRole="Usuario" ToRole="Recibo" />
+    <NavigationProperty Name="tarjetaCredito" Relationship="Self.RefUsuario49" FromRole="Usuario" ToRole="tarjetaCredito" />
+  </EntityType>
+  <EntityType Name="VISTARECIBO">
+    <Key>
+      <PropertyRef Name="Clave" />
+      <PropertyRef Name="fecha" />
+      <PropertyRef Name="Membresia" />
+      <PropertyRef Name="Idmembresia" />
+      <PropertyRef Name="Duracion" />
+      <PropertyRef Name="Costo" />
+      <PropertyRef Name="numeroSitios" />
+      <PropertyRef Name="TipoPago" />
+    </Key>
+    <Property Name="Clave" Type="Int32" Nullable="false" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Membresia" Type="String" MaxLength="25" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Idmembresia" Type="Int32" Nullable="false" />
+    <Property Name="Duracion" Type="Int32" Nullable="false" />
+    <Property Name="Costo" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="numeroSitios" Type="Int32" Nullable="false" />
+    <Property Name="TipoPago" Type="Int32" Nullable="false" />
+    <Property Name="idUsuario" Type="Int32" />
+  </EntityType>
+  <Association Name="RefSitios9">
+    <End Role="Sitios" Type="Self.Sitios" Multiplicity="1" />
+    <End Role="Administra" Type="Self.Administra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sitios">
+        <PropertyRef Name="IdSitio" />
+      </Principal>
+      <Dependent Role="Administra">
+        <PropertyRef Name="IdSitio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefUsuario8">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Administra" Type="Self.Administra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="Administra">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefEstablecimientos13">
+    <End Role="Establecimientos" Type="Self.Establecimientos" Multiplicity="0..1" />
+    <End Role="Sitios" Type="Self.Sitios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Establecimientos">
+        <PropertyRef Name="IdEstablecimiento" />
+      </Principal>
+      <Dependent Role="Sitios">
+        <PropertyRef Name="IdEstablecimiento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefTipoEstablecimiento15">
+    <End Role="TipoEstablecimiento" Type="Self.TipoEstablecimiento" Multiplicity="0..1" />
+    <End Role="Establecimientos" Type="Self.Establecimientos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoEstablecimiento">
+        <PropertyRef Name="IdTipoEstablecimiento" />
+      </Principal>
+      <Dependent Role="Establecimientos">
+        <PropertyRef Name="IdTipoEstablecimiento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefSitios47">
+    <End Role="Sitios" Type="Self.Sitios" Multiplicity="1" />
+    <End Role="Fotos" Type="Self.Fotos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sitios">
+        <PropertyRef Name="IdSitio" />
+      </Principal>
+      <Dependent Role="Fotos">
+        <PropertyRef Name="IdSitio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Refmembresia51">
+    <End Role="membresia" Type="Self.membresia" Multiplicity="1" />
+    <End Role="Recibo" Type="Self.Recibo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="membresia">
+        <PropertyRef Name="IdMembresia" />
+      </Principal>
+      <Dependent Role="Recibo">
+        <PropertyRef Name="IdMembresia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefTipoPago50">
+    <End Role="TipoPago" Type="Self.TipoPago" Multiplicity="1" />
+    <End Role="Recibo" Type="Self.Recibo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoPago">
+        <PropertyRef Name="IdTipoPago" />
+      </Principal>
+      <Dependent Role="Recibo">
+        <PropertyRef Name="IdTipoPago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefUsuario4">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+    <End Role="Recibo" Type="Self.Recibo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="Recibo">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefSitios48">
+    <End Role="Sitios" Type="Self.Sitios" Multiplicity="1" />
+    <End Role="ubicaciones" Type="Self.ubicaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sitios">
+        <PropertyRef Name="IdSitio" />
+      </Principal>
+      <Dependent Role="ubicaciones">
+        <PropertyRef Name="IdSitio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefUsuario49">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="tarjetaCredito" Type="Self.tarjetaCredito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="tarjetaCredito">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ProyectoBAEntities2" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Administra" EntityType="Self.Administra" />
+    <EntitySet Name="Establecimientos" EntityType="Self.Establecimientos" />
+    <EntitySet Name="Fotos" EntityType="Self.Fotos" />
+    <EntitySet Name="membresia" EntityType="Self.membresia" />
+    <EntitySet Name="Recibo" EntityType="Self.Recibo" />
+    <EntitySet Name="Sitios" EntityType="Self.Sitios" />
+    <EntitySet Name="tarjetaCredito" EntityType="Self.tarjetaCredito" />
+    <EntitySet Name="TipoEstablecimiento" EntityType="Self.TipoEstablecimiento" />
+    <EntitySet Name="TipoPago" EntityType="Self.TipoPago" />
+    <EntitySet Name="ubicaciones" EntityType="Self.ubicaciones" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+    <EntitySet Name="VISTARECIBO" EntityType="Self.VISTARECIBO" />
+    <AssociationSet Name="RefSitios9" Association="Self.RefSitios9">
+      <End Role="Sitios" EntitySet="Sitios" />
+      <End Role="Administra" EntitySet="Administra" />
+    </AssociationSet>
+    <AssociationSet Name="RefUsuario8" Association="Self.RefUsuario8">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Administra" EntitySet="Administra" />
+    </AssociationSet>
+    <AssociationSet Name="RefEstablecimientos13" Association="Self.RefEstablecimientos13">
+      <End Role="Establecimientos" EntitySet="Establecimientos" />
+      <End Role="Sitios" EntitySet="Sitios" />
+    </AssociationSet>
+    <AssociationSet Name="RefTipoEstablecimiento15" Association="Self.RefTipoEstablecimiento15">
+      <End Role="TipoEstablecimiento" EntitySet="TipoEstablecimiento" />
+      <End Role="Establecimientos" EntitySet="Establecimientos" />
+    </AssociationSet>
+    <AssociationSet Name="RefSitios47" Association="Self.RefSitios47">
+      <End Role="Sitios" EntitySet="Sitios" />
+      <End Role="Fotos" EntitySet="Fotos" />
+    </AssociationSet>
+    <AssociationSet Name="Refmembresia51" Association="Self.Refmembresia51">
+      <End Role="membresia" EntitySet="membresia" />
+      <End Role="Recibo" EntitySet="Recibo" />
+    </AssociationSet>
+    <AssociationSet Name="RefTipoPago50" Association="Self.RefTipoPago50">
+      <End Role="TipoPago" EntitySet="TipoPago" />
+      <End Role="Recibo" EntitySet="Recibo" />
+    </AssociationSet>
+    <AssociationSet Name="RefUsuario4" Association="Self.RefUsuario4">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Recibo" EntitySet="Recibo" />
+    </AssociationSet>
+    <AssociationSet Name="RefSitios48" Association="Self.RefSitios48">
+      <End Role="Sitios" EntitySet="Sitios" />
+      <End Role="ubicaciones" EntitySet="ubicaciones" />
+    </AssociationSet>
+    <AssociationSet Name="RefUsuario49" Association="Self.RefUsuario49">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="tarjetaCredito" EntitySet="tarjetaCredito" />
+    </AssociationSet>
+    <FunctionImport Name="AgregarADMINISTRA">
+      <Parameter Name="IDUSUARIO" Mode="In" Type="Int32" />
+      <Parameter Name="IDSITIO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="AgregarESTABLECIMIENTOS">
+      <Parameter Name="NOMBRE" Mode="In" Type="String" />
+      <Parameter Name="IDTIPOESTABLECIMIENTO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="AgregarFOTOS">
+      <Parameter Name="FOTO" Mode="In" Type="String" />
+      <Parameter Name="IDSITIO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="AgregarMEMBRESIA">
+      <Parameter Name="NOMBREMEMBRESIA" Mode="In" Type="String" />
+      <Parameter Name="DURACIONMESES" Mode="In" Type="Int32" />
+      <Parameter Name="COSTO" Mode="In" Type="Decimal" />
+      <Parameter Name="NUMSITIOS" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="AgregarRECIBO">
+      <Parameter Name="FECHA" Mode="In" Type="DateTime" />
+      <Parameter Name="IDUSUARIO" Mode="In" Type="Int32" />
+      <Parameter Name="IDMEMBRESIA" Mode="In" Type="Int32" />
+      <Parameter Name="IDTIPOPAGO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="AgregarSITIOS">
+      <Parameter Name="DESCRIPCION" Mode="In" Type="String" />
+      <Parameter Name="NOMBRE" Mode="In" Type="String" />
+      <Parameter Name="IDESTABLECIMIENTO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="AgregarTARJETACREDITO">
+      <Parameter Name="NUMTARJETA" Mode="In" Type="String" />
+      <Parameter Name="CVV" Mode="In" Type="String" />
+      <Parameter Name="MES" Mode="In" Type="String" />
+      <Parameter Name="ANIO" Mode="In" Type="String" />
+      <Parameter Name="IDUSUARIO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="AgregarTipoEstablecimiento">
+      <Parameter Name="NombreTipo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="AgregarTIPOPAGO">
+      <Parameter Name="NOMBRE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="AgregarUBICACIONES">
+      <Parameter Name="DIRECCION" Mode="In" Type="String" />
+      <Parameter Name="LATITUD" Mode="In" Type="String" />
+      <Parameter Name="LONGITUD" Mode="In" Type="String" />
+      <Parameter Name="IDSITIO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="AgregarUSUARIO">
+      <Parameter Name="NOMBRE" Mode="In" Type="String" />
+      <Parameter Name="APELLIDOS" Mode="In" Type="String" />
+      <Parameter Name="CONTRASENA" Mode="In" Type="String" />
+      <Parameter Name="USUARIO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="DevolverTablaADMINISTRA" ReturnType="Collection(ProyectoBAModel.DevolverTablaADMINISTRA_Result)" />
+    <FunctionImport Name="DevolverTablaESTABLECIMIENTOS" ReturnType="Collection(ProyectoBAModel.DevolverTablaESTABLECIMIENTOS_Result)" />
+    <FunctionImport Name="DevolverTablaFOTOS" ReturnType="Collection(ProyectoBAModel.DevolverTablaFOTOS_Result)" />
+    <FunctionImport Name="DevolverTablaMEMBRESIA" ReturnType="Collection(ProyectoBAModel.DevolverTablaMEMBRESIA_Result)" />
+    <FunctionImport Name="DevolverTablaRECIBO" ReturnType="Collection(ProyectoBAModel.DevolverTablaRECIBO_Result)" />
+    <FunctionImport Name="DevolverTablaSITIOS" ReturnType="Collection(ProyectoBAModel.DevolverTablaSITIOS_Result)" />
+    <FunctionImport Name="DevolverTablaTARJETACREDITO" ReturnType="Collection(ProyectoBAModel.DevolverTablaTARJETACREDITO_Result)" />
+    <FunctionImport Name="DevolverTablaTipoEstablecimiento" ReturnType="Collection(ProyectoBAModel.DevolverTablaTipoEstablecimiento_Result)" />
+    <FunctionImport Name="DevolverTablaTIPOPAGO" ReturnType="Collection(ProyectoBAModel.DevolverTablaTIPOPAGO_Result)" />
+    <FunctionImport Name="DevolverTablaUSUARIO" ReturnType="Collection(ProyectoBAModel.DevolverTablaUSUARIO_Result)" />
+    <FunctionImport Name="EliminarADMINISTRA">
+      <Parameter Name="IDADMINISTRA" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="EliminarESTABLECIMIENTOS">
+      <Parameter Name="IDESTABLECIMIENTO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="EliminarFOTOS">
+      <Parameter Name="IDFOTO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="EliminarMEMBRESIA">
+      <Parameter Name="IDMEMBRESIA" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="EliminarRECIBO">
+      <Parameter Name="IDRECIBO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="EliminarSITIOS">
+      <Parameter Name="IDSITIO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="EliminarTARJETACREDITO">
+      <Parameter Name="IDTARJETA" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="EliminarTipoEstablecimiento">
+      <Parameter Name="IdTipoEstablecimiento" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="EliminarTIPOPAGO">
+      <Parameter Name="IDTIPOPAGO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="EliminarUBICACIONES">
+      <Parameter Name="UBICACION" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="EliminarUSUARIO">
+      <Parameter Name="IDUSUARIO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="FiltrarADMINISTRA">
+      <Parameter Name="IDADMINISTRA" Mode="In" Type="Int32" />
+      <Parameter Name="IDUSUARIO" Mode="In" Type="Int32" />
+      <Parameter Name="IDSITIO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="FiltrarESTABLECIMIENTOS">
+      <Parameter Name="IDESTABLECIMIENTO" Mode="In" Type="Int32" />
+      <Parameter Name="NOMBRE" Mode="In" Type="String" />
+      <Parameter Name="IDTIPOESTABLECIMIENTO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="FiltrarFOTOS">
+      <Parameter Name="IDFOTO" Mode="In" Type="Int32" />
+      <Parameter Name="FOTO" Mode="In" Type="String" />
+      <Parameter Name="IDSITIO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="FiltrarMEMBRESIA">
+      <Parameter Name="IDMEMBRESIA" Mode="In" Type="Int32" />
+      <Parameter Name="NOMBREMEMBRESIA" Mode="In" Type="String" />
+      <Parameter Name="DURACIONMESES" Mode="In" Type="Int32" />
+      <Parameter Name="COSTO" Mode="In" Type="Decimal" />
+      <Parameter Name="NUMSITIOS" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="FiltrarRECIBO">
+      <Parameter Name="IDRECIBO" Mode="In" Type="Int32" />
+      <Parameter Name="FECHA" Mode="In" Type="DateTime" />
+      <Parameter Name="IDUSUARIO" Mode="In" Type="Int32" />
+      <Parameter Name="IDMEMBRESIA" Mode="In" Type="Int32" />
+      <Parameter Name="IDTIPOPAGO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="FiltrarSITIOS">
+      <Parameter Name="IDSITIO" Mode="In" Type="Int32" />
+      <Parameter Name="DESCRIPCION" Mode="In" Type="String" />
+      <Parameter Name="NOMBRE" Mode="In" Type="String" />
+      <Parameter Name="IDESTABLECIMIENTO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="FiltrarTARJETACREDITO">
+      <Parameter Name="IDTARJETA" Mode="In" Type="Int32" />
+      <Parameter Name="NUMTARJETA" Mode="In" Type="String" />
+      <Parameter Name="CVV" Mode="In" Type="String" />
+      <Parameter Name="MES" Mode="In" Type="String" />
+      <Parameter Name="ANIO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="FiltrarTipoEstablecimiento">
+      <Parameter Name="IdTipoEstablecimiento" Mode="In" Type="Int32" />
+      <Parameter Name="NombreTipo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="FiltrarTIPOPAGO">
+      <Parameter Name="IDTIPOPAGO" Mode="In" Type="Int32" />
+      <Parameter Name="NOMBRE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="FiltrarUBICACIONES">
+      <Parameter Name="UBICACION" Mode="In" Type="Int32" />
+      <Parameter Name="DIRECCION" Mode="In" Type="String" />
+      <Parameter Name="LATITUD" Mode="In" Type="String" />
+      <Parameter Name="LONGITUD" Mode="In" Type="String" />
+      <Parameter Name="IDSITIO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="FiltrarUSUARIO">
+      <Parameter Name="IDUSUARIO" Mode="In" Type="Int32" />
+      <Parameter Name="NOMBRE" Mode="In" Type="String" />
+      <Parameter Name="APELLIDOS" Mode="In" Type="String" />
+      <Parameter Name="CONTRASENA" Mode="In" Type="String" />
+      <Parameter Name="USUARIO" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="ModifcarADMINISTRA">
+      <Parameter Name="IDADMINISTRA" Mode="In" Type="Int32" />
+      <Parameter Name="IDUSUARIO" Mode="In" Type="Int32" />
+      <Parameter Name="IDSITIO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ModifcarESTABLECIMIENTOS">
+      <Parameter Name="IDESTABLECIMIENTO" Mode="In" Type="Int32" />
+      <Parameter Name="NOMBRE" Mode="In" Type="String" />
+      <Parameter Name="IDTIPOESTABLECIMIENTO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ModifcarFOTOS">
+      <Parameter Name="IDFOTO" Mode="In" Type="Int32" />
+      <Parameter Name="FOTO" Mode="In" Type="String" />
+      <Parameter Name="IDSITIO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ModifcarMEMBRESIA">
+      <Parameter Name="IDMEMBRESIA" Mode="In" Type="Int32" />
+      <Parameter Name="NOMBREMEMBRESIA" Mode="In" Type="String" />
+      <Parameter Name="DURACIONMESES" Mode="In" Type="Int32" />
+      <Parameter Name="COSTO" Mode="In" Type="Decimal" />
+      <Parameter Name="NUMSITIOS" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ModifcarRECIBO">
+      <Parameter Name="IDRECIBO" Mode="In" Type="Int32" />
+      <Parameter Name="FECHA" Mode="In" Type="DateTime" />
+      <Parameter Name="IDUSUARIO" Mode="In" Type="Int32" />
+      <Parameter Name="IDMEMBRESIA" Mode="In" Type="Int32" />
+      <Parameter Name="IDTIPOPAGO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ModifcarSITIOS">
+      <Parameter Name="IDSITIO" Mode="In" Type="Int32" />
+      <Parameter Name="DESCRIPCION" Mode="In" Type="String" />
+      <Parameter Name="NOMBRE" Mode="In" Type="String" />
+      <Parameter Name="IDESTABLECIMIENTO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ModifcarTARJETACREDITO">
+      <Parameter Name="IDTARJETA" Mode="In" Type="Int32" />
+      <Parameter Name="NUMTARJETA" Mode="In" Type="String" />
+      <Parameter Name="CVV" Mode="In" Type="String" />
+      <Parameter Name="MES" Mode="In" Type="String" />
+      <Parameter Name="ANIO" Mode="In" Type="String" />
+      <Parameter Name="IDUSUARIO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ModifcarTipoEstablecimiento">
+      <Parameter Name="IdTipoEstablecimiento" Mode="In" Type="Int32" />
+      <Parameter Name="NombreTipo" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="ModifcarTIPOPAGO">
+      <Parameter Name="IDTIPOPAGO" Mode="In" Type="Int32" />
+      <Parameter Name="NOMBRE" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="ModifcarUBICACIONES">
+      <Parameter Name="IDUBICACION" Mode="In" Type="Int32" />
+      <Parameter Name="DIRECCION" Mode="In" Type="String" />
+      <Parameter Name="LATITUD" Mode="In" Type="String" />
+      <Parameter Name="LONGITUD" Mode="In" Type="String" />
+      <Parameter Name="IDSITIO" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="ModifcarUSUARIO">
+      <Parameter Name="IDUSUARIO" Mode="In" Type="Int32" />
+      <Parameter Name="NOMBRE" Mode="In" Type="String" />
+      <Parameter Name="APELLIDOS" Mode="In" Type="String" />
+      <Parameter Name="CONTRASENA" Mode="In" Type="String" />
+      <Parameter Name="USUARIO" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="DevolverTablaADMINISTRA_Result">
+    <Property Type="Int32" Name="IdAdministra" Nullable="false" />
+    <Property Type="Int32" Name="IdUsuario" Nullable="false" />
+    <Property Type="Int32" Name="IdSitio" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="DevolverTablaESTABLECIMIENTOS_Result">
+    <Property Type="Int32" Name="IdEstablecimiento" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="IdTipoEstablecimiento" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="DevolverTablaFOTOS_Result">
+    <Property Type="Int32" Name="IdFoto" Nullable="false" />
+    <Property Type="String" Name="Foto" Nullable="false" MaxLength="3000" />
+    <Property Type="Int32" Name="IdSitio" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="DevolverTablaMEMBRESIA_Result">
+    <Property Type="Int32" Name="IdMembresia" Nullable="false" />
+    <Property Type="String" Name="NombreMembresia" Nullable="false" MaxLength="25" />
+    <Property Type="Int32" Name="DuracionMeses" Nullable="false" />
+    <Property Type="Decimal" Name="Costo" Nullable="false" Precision="10" Scale="2" />
+    <Property Type="Int32" Name="NumSitios" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="DevolverTablaRECIBO_Result">
+    <Property Type="Int32" Name="IdRecibo" Nullable="false" />
+    <Property Type="DateTime" Name="Fecha" Nullable="false" />
+    <Property Type="Int32" Name="IdUsuario" Nullable="true" />
+    <Property Type="Int32" Name="IdTipoPago" Nullable="false" />
+    <Property Type="Int32" Name="IdMembresia" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="DevolverTablaSITIOS_Result">
+    <Property Type="Int32" Name="IdSitio" Nullable="false" />
+    <Property Type="String" Name="Descripcion" Nullable="true" MaxLength="300" />
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Estatus" Nullable="false" MaxLength="10" />
+    <Property Type="Int32" Name="IdEstablecimiento" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="DevolverTablaTARJETACREDITO_Result">
+    <Property Type="Int32" Name="IdTarjeta" Nullable="false" />
+    <Property Type="String" Name="NumTarjeta" Nullable="false" MaxLength="25" />
+    <Property Type="String" Name="cvv" Nullable="false" MaxLength="3" />
+    <Property Type="String" Name="anio" Nullable="false" MaxLength="30" />
+    <Property Type="String" Name="mes" Nullable="true" MaxLength="25" />
+    <Property Type="Int32" Name="IdUsuario" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="DevolverTablaTipoEstablecimiento_Result">
+    <Property Type="Int32" Name="IdTipoEstablecimiento" Nullable="false" />
+    <Property Type="String" Name="NombreTipo" Nullable="false" MaxLength="50" />
+  </ComplexType>
+  <ComplexType Name="DevolverTablaTIPOPAGO_Result">
+    <Property Type="Int32" Name="IdTipoPago" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="25" />
+  </ComplexType>
+  <ComplexType Name="DevolverTablaUSUARIO_Result">
+    <Property Type="Int32" Name="IdUsuario" Nullable="false" />
+    <Property Type="String" Name="Nombre" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Apellidos" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Contrasena" Nullable="false" MaxLength="25" />
+    <Property Type="String" Name="Usuario" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="FOTOUS" Nullable="true" MaxLength="3000" />
+  </ComplexType>
+</Schema>

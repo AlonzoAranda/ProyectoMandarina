@@ -1,0 +1,891 @@
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\ApplicationInsights.config
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\csc.exe
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\vbc.exe
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\VBCSCompiler.exe
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.dll.config
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.pdb
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.Web.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.ApplicationInsights.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.Web.xml
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.ApplicationInsights.xml
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.csprojResolveAssemblyReference.cache
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.pdb
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Data.v16.1.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Printing.v16.1.Core.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.RichEdit.v16.1.Core.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.ASPxThemes.v16.1.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.Resources.v16.1.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.v16.1.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Core.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Office.v16.1.Core.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Drawing.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Data.v16.1.xml
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Printing.v16.1.Core.xml
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.RichEdit.v16.1.Core.xml
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.v16.1.xml
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Core.xml
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Office.v16.1.Core.xml
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Drawing.xml
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.dll.licenses
+C:\Users\joseph\Documents\Visual Studio 2015\Projects\ProyectoIntegrador\ProyectoIntegrador\bin\AjaxControlToolkit.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\ApplicationInsights.config
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\csc.exe
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\vbc.exe
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\VBCSCompiler.exe
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.dll.config
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.pdb
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\AjaxControlToolkit.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Data.v16.1.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Printing.v16.1.Core.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.RichEdit.v16.1.Core.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.ASPxThemes.v16.1.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.Resources.v16.1.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.v16.1.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.Web.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.ApplicationInsights.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Core.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Office.v16.1.Core.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Drawing.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Data.v16.1.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Printing.v16.1.Core.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.RichEdit.v16.1.Core.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.v16.1.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.Web.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.ApplicationInsights.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Core.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Office.v16.1.Core.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Drawing.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.csprojResolveAssemblyReference.cache
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.dll.licenses
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.pdb
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\ApplicationInsights.config
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\csc.exe
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\vbc.exe
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\VBCSCompiler.exe
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.dll.config
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.pdb
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\AjaxControlToolkit.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Data.v16.1.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Printing.v16.1.Core.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.RichEdit.v16.1.Core.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.ASPxThemes.v16.1.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.Resources.v16.1.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.v16.1.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.Web.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Core.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Office.v16.1.Core.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Drawing.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Data.v16.1.xml
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Printing.v16.1.Core.xml
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.RichEdit.v16.1.Core.xml
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.v16.1.xml
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.Web.xml
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Core.xml
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Office.v16.1.Core.xml
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Drawing.xml
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Data.v16.1.resources.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Data.v16.1.resources.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Data.v16.1.resources.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Data.v16.1.resources.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Web.v16.1.resources.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Web.v16.1.resources.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Web.v16.1.resources.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Web.v16.1.resources.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.csprojResolveAssemblyReference.cache
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.dll.licenses
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.dll
+C:\Users\Israel\Downloads\PROYECT\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.pdb
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ApplicationInsights.config
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\csc.exe
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\vbc.exe
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\VBCSCompiler.exe
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.dll.config
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.pdb
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\AjaxControlToolkit.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Data.v16.1.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Printing.v16.1.Core.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.RichEdit.v16.1.Core.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.ASPxThemes.v16.1.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.Resources.v16.1.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.v16.1.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.Web.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.ApplicationInsights.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Core.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Office.v16.1.Core.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Drawing.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Data.v16.1.xml
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Printing.v16.1.Core.xml
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.RichEdit.v16.1.Core.xml
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.v16.1.xml
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.Web.xml
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.ApplicationInsights.xml
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Core.xml
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Office.v16.1.Core.xml
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Drawing.xml
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.csprojResolveAssemblyReference.cache
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.dll.licenses
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.dll
+C:\Users\joseph\Downloads\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.pdb
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ApplicationInsights.config
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\csc.exe
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\vbc.exe
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\VBCSCompiler.exe
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.dll.config
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.pdb
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\AjaxControlToolkit.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Data.v16.1.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Printing.v16.1.Core.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.RichEdit.v16.1.Core.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.ASPxThemes.v16.1.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.Resources.v16.1.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.v16.1.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.Web.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.ApplicationInsights.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Core.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Office.v16.1.Core.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Drawing.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Data.v16.1.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Printing.v16.1.Core.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.RichEdit.v16.1.Core.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.v16.1.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.Web.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.ApplicationInsights.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Core.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Office.v16.1.Core.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Drawing.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.csprojResolveAssemblyReference.cache
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.dll.licenses
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.pdb
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\EntityFramework.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\EntityFramework.SqlServer.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\EntityFramework.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16\ProyectoIntegrador\ProyectoIntegrador\bin\EntityFramework.SqlServer.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\ApplicationInsights.config
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\csc.exe
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\vbc.exe
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\VBCSCompiler.exe
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.dll.config
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.pdb
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\AjaxControlToolkit.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Data.v16.1.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Printing.v16.1.Core.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.RichEdit.v16.1.Core.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.ASPxThemes.v16.1.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.Resources.v16.1.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.v16.1.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\EntityFramework.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\EntityFramework.SqlServer.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.Web.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.ApplicationInsights.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Core.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Office.v16.1.Core.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Drawing.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Data.v16.1.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Printing.v16.1.Core.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.RichEdit.v16.1.Core.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.v16.1.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\EntityFramework.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\EntityFramework.SqlServer.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.Web.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.ApplicationInsights.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Core.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Office.v16.1.Core.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Drawing.xml
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.csprojResolveAssemblyReference.cache
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.dll.licenses
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.dll
+C:\Users\joseph\Documents\Proyecto\Proyect 21-11-16 - copia\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.pdb
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\ApplicationInsights.config
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\csc.exe
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\vbc.exe
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\VBCSCompiler.exe
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.dll.config
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.pdb
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\AjaxControlToolkit.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Data.v16.1.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Printing.v16.1.Core.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.RichEdit.v16.1.Core.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.ASPxThemes.v16.1.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.Resources.v16.1.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.v16.1.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\EntityFramework.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\EntityFramework.SqlServer.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.Web.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.ApplicationInsights.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Core.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Office.v16.1.Core.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Drawing.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Data.v16.1.xml
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Printing.v16.1.Core.xml
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.RichEdit.v16.1.Core.xml
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.v16.1.xml
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\EntityFramework.xml
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\EntityFramework.SqlServer.xml
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.Web.xml
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.ApplicationInsights.xml
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Core.xml
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Office.v16.1.Core.xml
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Drawing.xml
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.csprojResolveAssemblyReference.cache
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.dll.licenses
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.pdb
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.Owin.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.Owin.Security.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Newtonsoft.Json.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Owin.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.Owin.xml
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.Owin.Security.xml
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\Newtonsoft.Json.xml
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportSource.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.Shared.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\joseph\Documents\Proyecto\03-12-16\03-12-16\ProyectoIntegrador\ProyectoIntegrador\bin\stdole.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ApplicationInsights.config
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\csc.exe
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\vbc.exe
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\VBCSCompiler.exe
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.dll.config
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.pdb
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Core.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Office.v16.1.Core.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Drawing.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\stdole.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Data.v16.1.xml
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Printing.v16.1.Core.xml
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.RichEdit.v16.1.Core.xml
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.v16.1.xml
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\EntityFramework.xml
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\EntityFramework.SqlServer.xml
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.Web.xml
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.ApplicationInsights.xml
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.Owin.xml
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.Owin.Security.xml
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\Newtonsoft.Json.xml
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Core.xml
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Office.v16.1.Core.xml
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Drawing.xml
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.csprojResolveAssemblyReference.cache
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.dll.licenses
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.dll
+C:\Users\joseph\Downloads\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.pdb
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ApplicationInsights.config
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\csc.exe
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\vbc.exe
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\VBCSCompiler.exe
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.dll.config
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ProyectoIntegrador.pdb
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Core.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Office.v16.1.Core.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Drawing.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\stdole.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Data.v16.1.xml
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Printing.v16.1.Core.xml
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.RichEdit.v16.1.Core.xml
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Web.v16.1.xml
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\EntityFramework.xml
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\EntityFramework.SqlServer.xml
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.Web.xml
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.ApplicationInsights.xml
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.Owin.xml
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\Microsoft.Owin.Security.xml
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\Newtonsoft.Json.xml
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Core.xml
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Office.v16.1.Core.xml
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Drawing.xml
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\de\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\es\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ja\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\bin\ru\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.csprojResolveAssemblyReference.cache
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.dll.licenses
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.dll
+C:\Users\joseph\Desktop\REVISAAAAAAAR\ProyectoIntegrador\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.pdb
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.csprojResolveAssemblyReference.cache
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.dll.licenses
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.pdb
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ApplicationInsights.config
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\roslyn\csc.exe
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\roslyn\vbc.exe
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\roslyn\VBCSCompiler.exe
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ProyectoIntegrador.dll.config
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ProyectoIntegrador.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ProyectoIntegrador.pdb
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Core.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\DevExpress.Office.v16.1.Core.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Drawing.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\stdole.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\DevExpress.Data.v16.1.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\DevExpress.Printing.v16.1.Core.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\DevExpress.RichEdit.v16.1.Core.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\DevExpress.Web.v16.1.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\EntityFramework.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\EntityFramework.SqlServer.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\Microsoft.AI.Web.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\Microsoft.ApplicationInsights.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\Microsoft.Owin.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\Microsoft.Owin.Security.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\Newtonsoft.Json.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Core.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\DevExpress.Office.v16.1.Core.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Drawing.xml
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\de\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\es\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ja\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ru\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\de\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\es\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ja\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ru\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\de\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\es\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ja\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ru\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\de\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\es\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ja\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ru\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\de\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\es\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ja\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ru\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\de\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\es\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ja\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ru\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ApplicationInsights.config
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\roslyn\csc.exe
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\roslyn\vbc.exe
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\roslyn\VBCSCompiler.exe
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ProyectoIntegrador.dll.config
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ProyectoIntegrador.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ProyectoIntegrador.pdb
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Core.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\DevExpress.Office.v16.1.Core.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Drawing.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\stdole.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\DevExpress.Data.v16.1.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\DevExpress.Printing.v16.1.Core.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\DevExpress.RichEdit.v16.1.Core.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\DevExpress.Web.v16.1.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\EntityFramework.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\EntityFramework.SqlServer.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\Microsoft.AI.Web.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\Microsoft.ApplicationInsights.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\Microsoft.Owin.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\Microsoft.Owin.Security.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\Newtonsoft.Json.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Core.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\DevExpress.Office.v16.1.Core.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\DevExpress.Pdf.v16.1.Drawing.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\de\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\es\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ja\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ru\DevExpress.Data.v16.1.resources.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\de\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\es\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ja\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ru\DevExpress.Printing.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\de\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\es\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ja\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ru\DevExpress.RichEdit.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\de\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\es\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ja\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ru\DevExpress.Web.v16.1.resources.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\de\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\es\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ja\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ru\DevExpress.Pdf.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\de\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\es\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ja\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\bin\ru\DevExpress.Office.v16.1.Core.resources.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.csprojResolveAssemblyReference.cache
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.dll.licenses
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\ProyectoIntegrador 09-12-06\ProyectoIntegrador\obj\Debug\ProyectoIntegrador.pdb

@@ -1,0 +1,538 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProyectoBAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Administra">
+    <Key>
+      <PropertyRef Name="IdAdministra" />
+    </Key>
+    <Property Name="IdAdministra" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUsuario" Type="int" Nullable="false" />
+    <Property Name="IdSitio" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Establecimientos">
+    <Key>
+      <PropertyRef Name="IdEstablecimiento" />
+    </Key>
+    <Property Name="IdEstablecimiento" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IdTipoEstablecimiento" Type="int" />
+  </EntityType>
+  <EntityType Name="Fotos">
+    <Key>
+      <PropertyRef Name="IdFoto" />
+    </Key>
+    <Property Name="IdFoto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Foto" Type="varchar" MaxLength="3000" Nullable="false" />
+    <Property Name="IdSitio" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="membresia">
+    <Key>
+      <PropertyRef Name="IdMembresia" />
+    </Key>
+    <Property Name="IdMembresia" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NombreMembresia" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="DuracionMeses" Type="int" Nullable="false" />
+    <Property Name="Costo" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="NumSitios" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Recibo">
+    <Key>
+      <PropertyRef Name="IdRecibo" />
+    </Key>
+    <Property Name="IdRecibo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Fecha" Type="date" Nullable="false" />
+    <Property Name="IdUsuario" Type="int" />
+    <Property Name="IdTipoPago" Type="int" Nullable="false" />
+    <Property Name="IdMembresia" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sitios">
+    <Key>
+      <PropertyRef Name="IdSitio" />
+    </Key>
+    <Property Name="IdSitio" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar" MaxLength="300" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Estatus" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="IdEstablecimiento" Type="int" />
+  </EntityType>
+  <EntityType Name="tarjetaCredito">
+    <Key>
+      <PropertyRef Name="IdTarjeta" />
+    </Key>
+    <Property Name="IdTarjeta" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NumTarjeta" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="cvv" Type="varchar" MaxLength="3" Nullable="false" />
+    <Property Name="anio" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="mes" Type="char" MaxLength="25" />
+    <Property Name="IdUsuario" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TipoEstablecimiento">
+    <Key>
+      <PropertyRef Name="IdTipoEstablecimiento" />
+    </Key>
+    <Property Name="IdTipoEstablecimiento" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NombreTipo" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TipoPago">
+    <Key>
+      <PropertyRef Name="IdTipoPago" />
+    </Key>
+    <Property Name="IdTipoPago" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="25" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ubicaciones">
+    <Key>
+      <PropertyRef Name="IdUbicacion" />
+    </Key>
+    <Property Name="IdUbicacion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Direccion" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Latitud" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Longitud" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IdSitio" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="IdUsuario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Apellidos" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Contrasena" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="Usuario" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="FOTOUS" Type="varchar" MaxLength="3000" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'ProyectoBA.dbo.VISTARECIBO' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="VISTARECIBO">
+    <Key>
+      <PropertyRef Name="Clave" />
+      <PropertyRef Name="fecha" />
+      <PropertyRef Name="Membresia" />
+      <PropertyRef Name="Idmembresia" />
+      <PropertyRef Name="Duracion" />
+      <PropertyRef Name="Costo" />
+      <PropertyRef Name="numeroSitios" />
+      <PropertyRef Name="TipoPago" />
+    </Key>
+    <Property Name="Clave" Type="int" Nullable="false" />
+    <Property Name="fecha" Type="date" Nullable="false" />
+    <Property Name="Membresia" Type="varchar" MaxLength="25" Nullable="false" />
+    <Property Name="Idmembresia" Type="int" Nullable="false" />
+    <Property Name="Duracion" Type="int" Nullable="false" />
+    <Property Name="Costo" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="numeroSitios" Type="int" Nullable="false" />
+    <Property Name="TipoPago" Type="int" Nullable="false" />
+    <Property Name="idUsuario" Type="int" />
+  </EntityType>
+  <Association Name="RefEstablecimientos13">
+    <End Role="Establecimientos" Type="Self.Establecimientos" Multiplicity="0..1" />
+    <End Role="Sitios" Type="Self.Sitios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Establecimientos">
+        <PropertyRef Name="IdEstablecimiento" />
+      </Principal>
+      <Dependent Role="Sitios">
+        <PropertyRef Name="IdEstablecimiento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Refmembresia51">
+    <End Role="membresia" Type="Self.membresia" Multiplicity="1" />
+    <End Role="Recibo" Type="Self.Recibo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="membresia">
+        <PropertyRef Name="IdMembresia" />
+      </Principal>
+      <Dependent Role="Recibo">
+        <PropertyRef Name="IdMembresia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefSitios47">
+    <End Role="Sitios" Type="Self.Sitios" Multiplicity="1" />
+    <End Role="Fotos" Type="Self.Fotos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sitios">
+        <PropertyRef Name="IdSitio" />
+      </Principal>
+      <Dependent Role="Fotos">
+        <PropertyRef Name="IdSitio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefSitios48">
+    <End Role="Sitios" Type="Self.Sitios" Multiplicity="1" />
+    <End Role="ubicaciones" Type="Self.ubicaciones" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sitios">
+        <PropertyRef Name="IdSitio" />
+      </Principal>
+      <Dependent Role="ubicaciones">
+        <PropertyRef Name="IdSitio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefSitios9">
+    <End Role="Sitios" Type="Self.Sitios" Multiplicity="1" />
+    <End Role="Administra" Type="Self.Administra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sitios">
+        <PropertyRef Name="IdSitio" />
+      </Principal>
+      <Dependent Role="Administra">
+        <PropertyRef Name="IdSitio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefTipoEstablecimiento15">
+    <End Role="TipoEstablecimiento" Type="Self.TipoEstablecimiento" Multiplicity="0..1" />
+    <End Role="Establecimientos" Type="Self.Establecimientos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoEstablecimiento">
+        <PropertyRef Name="IdTipoEstablecimiento" />
+      </Principal>
+      <Dependent Role="Establecimientos">
+        <PropertyRef Name="IdTipoEstablecimiento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefTipoPago50">
+    <End Role="TipoPago" Type="Self.TipoPago" Multiplicity="1" />
+    <End Role="Recibo" Type="Self.Recibo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoPago">
+        <PropertyRef Name="IdTipoPago" />
+      </Principal>
+      <Dependent Role="Recibo">
+        <PropertyRef Name="IdTipoPago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefUsuario4">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+    <End Role="Recibo" Type="Self.Recibo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="Recibo">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefUsuario49">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="tarjetaCredito" Type="Self.tarjetaCredito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="tarjetaCredito">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="RefUsuario8">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="1" />
+    <End Role="Administra" Type="Self.Administra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="Administra">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="AgregarADMINISTRA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDUSUARIO" Type="int" Mode="In" />
+    <Parameter Name="IDSITIO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="AgregarESTABLECIMIENTOS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NOMBRE" Type="varchar" Mode="In" />
+    <Parameter Name="IDTIPOESTABLECIMIENTO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="AgregarFOTOS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FOTO" Type="varchar" Mode="In" />
+    <Parameter Name="IDSITIO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="AgregarMEMBRESIA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NOMBREMEMBRESIA" Type="varchar" Mode="In" />
+    <Parameter Name="DURACIONMESES" Type="int" Mode="In" />
+    <Parameter Name="COSTO" Type="decimal" Mode="In" />
+    <Parameter Name="NUMSITIOS" Type="int" Mode="In" />
+  </Function>
+  <Function Name="AgregarRECIBO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="FECHA" Type="date" Mode="In" />
+    <Parameter Name="IDUSUARIO" Type="int" Mode="In" />
+    <Parameter Name="IDMEMBRESIA" Type="int" Mode="In" />
+    <Parameter Name="IDTIPOPAGO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="AgregarSITIOS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DESCRIPCION" Type="nvarchar" Mode="In" />
+    <Parameter Name="NOMBRE" Type="varchar" Mode="In" />
+    <Parameter Name="IDESTABLECIMIENTO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="AgregarTARJETACREDITO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NUMTARJETA" Type="varchar" Mode="In" />
+    <Parameter Name="CVV" Type="varchar" Mode="In" />
+    <Parameter Name="MES" Type="varchar" Mode="In" />
+    <Parameter Name="ANIO" Type="varchar" Mode="In" />
+    <Parameter Name="IDUSUARIO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="AgregarTipoEstablecimiento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NombreTipo" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="AgregarTIPOPAGO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NOMBRE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="AgregarUBICACIONES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="DIRECCION" Type="varchar" Mode="In" />
+    <Parameter Name="LATITUD" Type="varchar" Mode="In" />
+    <Parameter Name="LONGITUD" Type="varchar" Mode="In" />
+    <Parameter Name="IDSITIO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="AgregarUSUARIO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="NOMBRE" Type="varchar" Mode="In" />
+    <Parameter Name="APELLIDOS" Type="varchar" Mode="In" />
+    <Parameter Name="CONTRASENA" Type="varchar" Mode="In" />
+    <Parameter Name="USUARIO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="DevolverTablaADMINISTRA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="DevolverTablaESTABLECIMIENTOS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="DevolverTablaFOTOS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="DevolverTablaMEMBRESIA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="DevolverTablaRECIBO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="DevolverTablaSITIOS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="DevolverTablaTARJETACREDITO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="DevolverTablaTipoEstablecimiento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="DevolverTablaTIPOPAGO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="DevolverTablaUSUARIO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="EliminarADMINISTRA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDADMINISTRA" Type="int" Mode="In" />
+  </Function>
+  <Function Name="EliminarESTABLECIMIENTOS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDESTABLECIMIENTO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="EliminarFOTOS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDFOTO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="EliminarMEMBRESIA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDMEMBRESIA" Type="int" Mode="In" />
+  </Function>
+  <Function Name="EliminarRECIBO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDRECIBO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="EliminarSITIOS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDSITIO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="EliminarTARJETACREDITO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDTARJETA" Type="int" Mode="In" />
+  </Function>
+  <Function Name="EliminarTipoEstablecimiento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdTipoEstablecimiento" Type="int" Mode="In" />
+  </Function>
+  <Function Name="EliminarTIPOPAGO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDTIPOPAGO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="EliminarUBICACIONES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UBICACION" Type="int" Mode="In" />
+  </Function>
+  <Function Name="EliminarUSUARIO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDUSUARIO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="FiltrarADMINISTRA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDADMINISTRA" Type="int" Mode="In" />
+    <Parameter Name="IDUSUARIO" Type="int" Mode="In" />
+    <Parameter Name="IDSITIO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="FiltrarESTABLECIMIENTOS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDESTABLECIMIENTO" Type="int" Mode="In" />
+    <Parameter Name="NOMBRE" Type="varchar" Mode="In" />
+    <Parameter Name="IDTIPOESTABLECIMIENTO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="FiltrarFOTOS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDFOTO" Type="int" Mode="In" />
+    <Parameter Name="FOTO" Type="varchar" Mode="In" />
+    <Parameter Name="IDSITIO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="FiltrarMEMBRESIA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDMEMBRESIA" Type="int" Mode="In" />
+    <Parameter Name="NOMBREMEMBRESIA" Type="varchar" Mode="In" />
+    <Parameter Name="DURACIONMESES" Type="int" Mode="In" />
+    <Parameter Name="COSTO" Type="decimal" Mode="In" />
+    <Parameter Name="NUMSITIOS" Type="int" Mode="In" />
+  </Function>
+  <Function Name="FiltrarRECIBO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDRECIBO" Type="int" Mode="In" />
+    <Parameter Name="FECHA" Type="date" Mode="In" />
+    <Parameter Name="IDUSUARIO" Type="int" Mode="In" />
+    <Parameter Name="IDMEMBRESIA" Type="int" Mode="In" />
+    <Parameter Name="IDTIPOPAGO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="FiltrarSITIOS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDSITIO" Type="int" Mode="In" />
+    <Parameter Name="DESCRIPCION" Type="nvarchar" Mode="In" />
+    <Parameter Name="NOMBRE" Type="varchar" Mode="In" />
+    <Parameter Name="IDESTABLECIMIENTO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="FiltrarTARJETACREDITO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDTARJETA" Type="int" Mode="In" />
+    <Parameter Name="NUMTARJETA" Type="varchar" Mode="In" />
+    <Parameter Name="CVV" Type="varchar" Mode="In" />
+    <Parameter Name="MES" Type="varchar" Mode="In" />
+    <Parameter Name="ANIO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="FiltrarTipoEstablecimiento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdTipoEstablecimiento" Type="int" Mode="In" />
+    <Parameter Name="NombreTipo" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="FiltrarTIPOPAGO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDTIPOPAGO" Type="int" Mode="In" />
+    <Parameter Name="NOMBRE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="FiltrarUBICACIONES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="UBICACION" Type="int" Mode="In" />
+    <Parameter Name="DIRECCION" Type="varchar" Mode="In" />
+    <Parameter Name="LATITUD" Type="varchar" Mode="In" />
+    <Parameter Name="LONGITUD" Type="varchar" Mode="In" />
+    <Parameter Name="IDSITIO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="FiltrarUSUARIO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDUSUARIO" Type="int" Mode="In" />
+    <Parameter Name="NOMBRE" Type="varchar" Mode="In" />
+    <Parameter Name="APELLIDOS" Type="varchar" Mode="In" />
+    <Parameter Name="CONTRASENA" Type="varchar" Mode="In" />
+    <Parameter Name="USUARIO" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="ModifcarADMINISTRA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDADMINISTRA" Type="int" Mode="In" />
+    <Parameter Name="IDUSUARIO" Type="int" Mode="In" />
+    <Parameter Name="IDSITIO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ModifcarESTABLECIMIENTOS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDESTABLECIMIENTO" Type="int" Mode="In" />
+    <Parameter Name="NOMBRE" Type="varchar" Mode="In" />
+    <Parameter Name="IDTIPOESTABLECIMIENTO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ModifcarFOTOS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDFOTO" Type="int" Mode="In" />
+    <Parameter Name="FOTO" Type="varchar" Mode="In" />
+    <Parameter Name="IDSITIO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ModifcarMEMBRESIA" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDMEMBRESIA" Type="int" Mode="In" />
+    <Parameter Name="NOMBREMEMBRESIA" Type="varchar" Mode="In" />
+    <Parameter Name="DURACIONMESES" Type="int" Mode="In" />
+    <Parameter Name="COSTO" Type="decimal" Mode="In" />
+    <Parameter Name="NUMSITIOS" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ModifcarRECIBO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDRECIBO" Type="int" Mode="In" />
+    <Parameter Name="FECHA" Type="date" Mode="In" />
+    <Parameter Name="IDUSUARIO" Type="int" Mode="In" />
+    <Parameter Name="IDMEMBRESIA" Type="int" Mode="In" />
+    <Parameter Name="IDTIPOPAGO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ModifcarSITIOS" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDSITIO" Type="int" Mode="In" />
+    <Parameter Name="DESCRIPCION" Type="nvarchar" Mode="In" />
+    <Parameter Name="NOMBRE" Type="varchar" Mode="In" />
+    <Parameter Name="IDESTABLECIMIENTO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ModifcarTARJETACREDITO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDTARJETA" Type="int" Mode="In" />
+    <Parameter Name="NUMTARJETA" Type="varchar" Mode="In" />
+    <Parameter Name="CVV" Type="varchar" Mode="In" />
+    <Parameter Name="MES" Type="varchar" Mode="In" />
+    <Parameter Name="ANIO" Type="varchar" Mode="In" />
+    <Parameter Name="IDUSUARIO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ModifcarTipoEstablecimiento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IdTipoEstablecimiento" Type="int" Mode="In" />
+    <Parameter Name="NombreTipo" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="ModifcarTIPOPAGO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDTIPOPAGO" Type="int" Mode="In" />
+    <Parameter Name="NOMBRE" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="ModifcarUBICACIONES" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDUBICACION" Type="int" Mode="In" />
+    <Parameter Name="DIRECCION" Type="varchar" Mode="In" />
+    <Parameter Name="LATITUD" Type="varchar" Mode="In" />
+    <Parameter Name="LONGITUD" Type="varchar" Mode="In" />
+    <Parameter Name="IDSITIO" Type="int" Mode="In" />
+  </Function>
+  <Function Name="ModifcarUSUARIO" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="IDUSUARIO" Type="int" Mode="In" />
+    <Parameter Name="NOMBRE" Type="varchar" Mode="In" />
+    <Parameter Name="APELLIDOS" Type="varchar" Mode="In" />
+    <Parameter Name="CONTRASENA" Type="varchar" Mode="In" />
+    <Parameter Name="USUARIO" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="ProyectoBAModelStoreContainer">
+    <EntitySet Name="Administra" EntityType="Self.Administra" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Establecimientos" EntityType="Self.Establecimientos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Fotos" EntityType="Self.Fotos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="membresia" EntityType="Self.membresia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Recibo" EntityType="Self.Recibo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sitios" EntityType="Self.Sitios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tarjetaCredito" EntityType="Self.tarjetaCredito" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TipoEstablecimiento" EntityType="Self.TipoEstablecimiento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TipoPago" EntityType="Self.TipoPago" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ubicaciones" EntityType="Self.ubicaciones" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VISTARECIBO" EntityType="Self.VISTARECIBO" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [VISTARECIBO].[Clave] AS [Clave], 
+    [VISTARECIBO].[fecha] AS [fecha], 
+    [VISTARECIBO].[Membresia] AS [Membresia], 
+    [VISTARECIBO].[Idmembresia] AS [Idmembresia], 
+    [VISTARECIBO].[Duracion] AS [Duracion], 
+    [VISTARECIBO].[Costo] AS [Costo], 
+    [VISTARECIBO].[numeroSitios] AS [numeroSitios], 
+    [VISTARECIBO].[TipoPago] AS [TipoPago], 
+    [VISTARECIBO].[idUsuario] AS [idUsuario]
+    FROM [dbo].[VISTARECIBO] AS [VISTARECIBO]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="RefEstablecimientos13" Association="Self.RefEstablecimientos13">
+      <End Role="Establecimientos" EntitySet="Establecimientos" />
+      <End Role="Sitios" EntitySet="Sitios" />
+    </AssociationSet>
+    <AssociationSet Name="Refmembresia51" Association="Self.Refmembresia51">
+      <End Role="membresia" EntitySet="membresia" />
+      <End Role="Recibo" EntitySet="Recibo" />
+    </AssociationSet>
+    <AssociationSet Name="RefSitios47" Association="Self.RefSitios47">
+      <End Role="Sitios" EntitySet="Sitios" />
+      <End Role="Fotos" EntitySet="Fotos" />
+    </AssociationSet>
+    <AssociationSet Name="RefSitios48" Association="Self.RefSitios48">
+      <End Role="Sitios" EntitySet="Sitios" />
+      <End Role="ubicaciones" EntitySet="ubicaciones" />
+    </AssociationSet>
+    <AssociationSet Name="RefSitios9" Association="Self.RefSitios9">
+      <End Role="Sitios" EntitySet="Sitios" />
+      <End Role="Administra" EntitySet="Administra" />
+    </AssociationSet>
+    <AssociationSet Name="RefTipoEstablecimiento15" Association="Self.RefTipoEstablecimiento15">
+      <End Role="TipoEstablecimiento" EntitySet="TipoEstablecimiento" />
+      <End Role="Establecimientos" EntitySet="Establecimientos" />
+    </AssociationSet>
+    <AssociationSet Name="RefTipoPago50" Association="Self.RefTipoPago50">
+      <End Role="TipoPago" EntitySet="TipoPago" />
+      <End Role="Recibo" EntitySet="Recibo" />
+    </AssociationSet>
+    <AssociationSet Name="RefUsuario4" Association="Self.RefUsuario4">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Recibo" EntitySet="Recibo" />
+    </AssociationSet>
+    <AssociationSet Name="RefUsuario49" Association="Self.RefUsuario49">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="tarjetaCredito" EntitySet="tarjetaCredito" />
+    </AssociationSet>
+    <AssociationSet Name="RefUsuario8" Association="Self.RefUsuario8">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Administra" EntitySet="Administra" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

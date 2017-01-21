@@ -1,0 +1,479 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPageFrontEnd.master.cs" Inherits="ProyectoIntegrador.GUI.MasterPageFrontEnd" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title> <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</title>
+   
+  
+      <!-- Bootstrap -->    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <!-- font awesome for icons -->
+    <!-- flex slider css -->
+    <link href="../css/flexslider.css" rel="stylesheet"  type="text/css" media="screen"/>
+  
+    <!-- animated css  -->
+    <link href="../css/animate.css" rel="stylesheet"  type="text/css" media="screen"/>
+
+    <!-- Revolution Style-sheet -->
+    <link rel="stylesheet" type="text/css" href="../css/settings.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/rev-style.css"/>
+    <!--owl carousel css-->
+    <link href="../css/owl.carousel.css" rel="stylesheet" type="text/css" media="screen"/>
+    <link href="../css/owl.theme.css" rel="stylesheet" type="text/css" media="screen"/>
+    <!--mega menu -->
+
+     <link href="../css/yamm.css" rel="stylesheet" type="text/css"/>
+    <!--cube css-->
+    <link href="../css/cubeportfolio.min.css" rel="stylesheet" type="text/css"/>
+    <!-- custom css-->
+    
+    <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen"/>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+         
+
+    <![endif]-->
+    <asp:ContentPlaceHolder ID="scripHeader" runat="server"></asp:ContentPlaceHolder>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/revolution-custom.js"></script>
+</head>
+<body onload="initialize()">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+          <script type="text/javascript">
+    function openModal() {
+        $('#myModal').modal('show');
+    }
+</script>
+          <div class ="modal fade" id="LogUP" tabindex="-1" role="dialog" aria-labelledby ="Mymodal" aria-hidden ="true">
+              <div class ="modal-dialog">
+                  <div class=" modal-content">
+
+                      <div class ="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden ="true">&times;</button>
+
+                          <h3>Crea tu cuenta y goza de los beneficios</h3>
+                      </div>
+                      <div class="modal-body">
+                              <div class="form-group">
+                                        
+                          <div class="row">
+                              <div class="col-md-6">
+                                  <div class="row ">
+                                       <div class =" col-md-11 pull-right">
+                                      <div class="input-group ">
+                                      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                      <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control" placeholder="Nombre" value="" onfocus="this.Text = '';" onblur="if (this.Text == '') {this.Text = 'txtNombre';}" required="" ></asp:TextBox>
+                                       </div>
+                                        </div>
+                                  </div>
+                                  <div class="row">
+                                      <div class =" col-md-11 pull-right">
+                                          <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                           <asp:TextBox ID="txtApePat" runat="server" class="form-control" placeholder="Apellido paterno" value="" onfocus="this.Text = '';" onblur="if (this.Text == '') {this.Text = 'txtApePat';}" required=""></asp:TextBox>
+                                        </div>
+                                      </div>
+                                      
+                                  </div>
+                                  <div class="row">
+                                      <div class =" col-md-11 pull-right">
+                                          <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                           <asp:TextBox ID="txtApeMat" runat="server" class="form-control" placeholder="Apellido materno"  onfocus="this.Text = '';" onblur="if (this.Text == '') {this.Text = 'txtApeMat';}" required="" ></asp:TextBox>
+                                        </div>
+                                      </div>
+                                      
+                                  </div>
+                                  <div class="row">
+                                      <div class =" col-md-11 pull-right">
+                                          <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                           <asp:TextBox ID="txtUsuarioModal" runat="server" class="form-control" placeholder="Usuario"></asp:TextBox>
+                                        </div>
+                                      </div>
+                                      
+                                  </div>
+                                  <div class="row">
+                                      <div class =" col-md-11 pull-right">
+                                          <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-link"></i></span>
+                                           <asp:TextBox ID="txtContrasenaModal" runat="server" class="form-control" placeholder="Contraseña" TextMode="Password"></asp:TextBox>
+                                        </div>
+                                      </div>
+                                      
+                                  </div>
+                              </div>
+                              <div class="col-md-6 pull-right"> <img src="../img/meridon.png" /></div>
+
+                          </div>
+
+                              </div>
+                      </div>
+                      <div class="modal-footer">
+                          <asp:LinkButton ID="BtnCerrar"  runat="server"  CssClass="btn btn-primary glyphicon glyphicon-chevron-right" OnClick="BtnCerrar_Click" >Siguiente</asp:LinkButton>
+                      </div>
+                       
+                  </div>
+              </div>
+         </div>
+        
+                                                    <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+                                                        <ContentTemplate>
+          <div class ="modal fade" id="myModal" role="dialog"  tabindex="-1" aria-labelledby ="Mymodal" aria-hidden ="true">
+              <div class ="modal-dialog">
+                  <div class=" modal-content">
+
+                      <div class ="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden ="true">&times;</button>
+
+                          <h3>Selecciona tus opciones de pago</h3>
+                      </div>
+                      <div class="modal-body">
+                              <div class="form-group">
+                                        
+                          <div class="row">
+                              <div class="col-md-1"></div>
+                              <div class="col-md-6">
+                                  <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                                  <ContentTemplate>
+                                  <div class="row ">
+                                       
+                                           <h5>Selecciona tu tipo de membresia</h5>
+                                      
+
+                                      <asp:DropDownList ID="ddlMembresia" runat="server">
+                                        <asp:ListItem Value="1">PROMO</asp:ListItem>
+                                        <asp:ListItem Value="2">BASICO</asp:ListItem>
+                                        <asp:ListItem Value="5">PREMIUM</asp:ListItem>
+                                      </asp:DropDownList>
+                                 
+                                  </div>
+
+
+                                  <div class="row">
+                                   
+                                            <h5>Selecciona tu forma de pago</h5>
+                                      
+                                            
+                                         
+                                         <asp:DropDownList ID="ddlTipoPago" runat="server" AutoPostBack="True">
+                                              <asp:ListItem Value="2">TARJETA DE CREDITO</asp:ListItem>
+                                         </asp:DropDownList>
+                                       
+                                    
+                                      
+                                  </div>
+                                   </ContentTemplate>
+                                  </asp:UpdatePanel>
+
+                                  <div class="row ">
+                                      
+                                      <h5>Tarjeta de credito</h5>
+                                      <div class ="col-md-6">
+                                          <div class="input-group">
+                                           <asp:TextBox ID="txtNumtarjeta" runat="server" class="form-control" placeholder="Número de tarjeta"></asp:TextBox>
+                                        </div>
+                                      </div>
+                                       <div class ="col-md-6">
+                                            <div class="input-group">
+                                           <asp:TextBox ID="txtCvv" runat="server" class="form-control" placeholder="Cvv"></asp:TextBox>
+                                        </div>
+                                      </div>
+                                   </div>
+                                  
+                                  <div class="row">
+                                       <h5>Vencimiento</h5>
+                                      <div class =" col-md-6">
+                                          <asp:DropDownList ID="ddlMes" runat="server">
+                                              <asp:ListItem Value="1">ENERO</asp:ListItem>
+                                              <asp:ListItem Value="2">FEBRERO</asp:ListItem>
+                                              <asp:ListItem Value="3">MARZO</asp:ListItem>
+                                              <asp:ListItem Value="4">ABRIL</asp:ListItem>
+                                              <asp:ListItem Value="5">MAYO</asp:ListItem>
+                                              <asp:ListItem Value="6">JUNIO</asp:ListItem>
+                                              <asp:ListItem Value="7">JULIO</asp:ListItem>
+                                              <asp:ListItem Value="8">AGOSTO</asp:ListItem>
+                                              <asp:ListItem Value="9">SEPTIEMBRE</asp:ListItem>
+                                              <asp:ListItem Value="10">OCTUBRE</asp:ListItem>
+                                              <asp:ListItem Value="11">NOVIEMBRE</asp:ListItem>
+                                              <asp:ListItem Value="12">DICIEMBRE</asp:ListItem>
+                                          </asp:DropDownList>
+                                      </div>
+                                      <div class =" col-md-6">
+                                          <asp:DropDownList ID="ddlAnio" runat="server">
+                                              <asp:ListItem>2017</asp:ListItem>
+                                              <asp:ListItem>2018</asp:ListItem>
+                                              <asp:ListItem>2019</asp:ListItem>
+                                              <asp:ListItem>2020</asp:ListItem>
+                                              <asp:ListItem>2021</asp:ListItem>
+                                              <asp:ListItem>2022</asp:ListItem>
+                                              <asp:ListItem>2023</asp:ListItem>
+                                              <asp:ListItem>2024</asp:ListItem>
+                                              <asp:ListItem>2025</asp:ListItem>
+                                              <asp:ListItem>2026</asp:ListItem>
+                                              <asp:ListItem>2027</asp:ListItem>
+                                              <asp:ListItem>2029</asp:ListItem>
+                                              <asp:ListItem>2030</asp:ListItem>
+                                              <asp:ListItem></asp:ListItem>
+                                          </asp:DropDownList>
+                                      </div>
+                                  </div>
+                                      
+                             </div> 
+                              <div class="col-md-5">
+                                  <img src="../img/meridon.png" />
+                              </div>
+                          </div>
+                            
+
+                            
+                              </div>
+                           
+                      </div>
+
+                      <div class="modal-footer">
+                          <asp:LinkButton ID="btnGuardarInfo"  runat="server" CssClass="btn btn-primary glyphicon glyphicon-chevron-right glyphicon glyphicon-floppy-disk"  OnClick="btnGuardarInfo_Click" >Guardar</asp:LinkButton>
+                      </div>
+
+                  </div>
+              </div>
+         </div>
+         
+                                                             </ContentTemplate>
+                                                        </asp:UpdatePanel>
+
+
+
+
+    <!--rev slider start-->
+        <div class="header-center">
+            <div class="container text-center">
+                <a href="indi.aspx"><img src="../img/logoDM.png" alt="DM"/></a>
+
+            </div>
+        </div>
+    <!-- Static navbar -->
+        <div class="navbar navbar-default navbar-static-top menu-header-center yamm sticky" role="navigation">
+            <div class="container">
+                
+                <div class="navbar-collapse collapse">
+                     <ul class="nav navbar-nav ">
+                    <li class="dropdown active ">
+                        <a href="indi.aspx"  class="dropdown-toggle">Página principal </a>
+                    
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Acerca de...</a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="sobre.aspx">Misión y visión</a></li>
+                           
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="App.aspx"  class="dropdown-toggle">Conoce la app</a>
+                       
+                    </li>
+
+                
+                    <li>   <a href="Galeria.aspx"  class="dropdown-toggle">Galería </a>
+                    </li>
+
+                </ul>
+                     <ul class="nav navbar-nav navbar-right">
+                        
+                     
+                        <li class="dropdown">
+                            <a href="#" class=" dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-user"></i></a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-login-box animated fadeInUp">
+                                <div role="form">
+                                    <h4>Inicia sesión</h4>
+
+                                    <div class="form-group">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                           <asp:TextBox ID="txtUsuario" runat="server" class="form-control" placeholder="Usuario" onfocus="this.Text = '';" onblur="if (this.Text == '') {this.Text = 'txtUsuario';}" required=""></asp:TextBox>
+                                        </div>
+                                        <br>
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="glyphicon glyphicon-link"></i></span>
+                                            <asp:TextBox ID="txtContrasena" runat="server" class="form-control" placeholder="Contraseña" TextMode="Password" onfocus="this.Text = '';" onblur="if (this.Text == '') {this.Text = 'txtContrasena';}" required="" ></asp:TextBox>
+                                         
+                                        </div>
+                                        <%--<div class="checkbox pull-left">
+                                            <label>
+                                                <input type="checkbox"> Remember me
+                                            </label>
+                                        </div>--%>
+                                        <asp:LinkButton ID="InicioSesion" runat="server" CssClass="btn btn-theme-bg pull-right" OnClick="InicioSesion_Click">Iniciar sesión</asp:LinkButton>
+                             <!--<button type="submit" class="btn btn-theme pull-right">Login</button> -->
+                                        <div class="clearfix"></div>
+                                        <hr>
+                                        <p>¿Aún no formas parte del equipo DM ?<a data-toggle="modal" data-target="#LogUP"> Registrate ahora</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li> <!--menu login li end here-->
+                    </ul>
+
+                </div><!--/.nav-collapse -->
+            </div><!--container-->
+        </div><!--navbar-default-->
+
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+
+            <footer>
+        <!-- COLOR BAR -->
+        <div class="container-fluid color-bar clearfix">
+            
+        </div>
+        <!-- FOOTER INFO AREA -->
+           
+                
+              
+        <div class="footerInfoArea full-width clearfix" style="background-image: url('../img/bg-2abajo.png'); ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 col-xs-12">
+                        <div class="footerTitle ">
+                            
+                            <a href="indi.aspx"><img src="../img/LogoDM2.png" /></a>
+                        </div>
+                        <div class="footerInfo">
+                            <p>Esta app también estará disponible para los turistas para brindarles una experiencia más grata así ayudar al turismo  de Mérida
+                                  </p>
+                            <p>y esperar que los turistas vuelvan a nuestra hermosa tierra Mérida en el futuro.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-xs-12">
+                        <div class="footerTitle">
+                            <h4>Páginas del sitio</h4>
+                        </div>
+                        <div class="footerInfo">
+                            <ul class="list-unstyled footerList">
+                                <li>
+                                    <a href="">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>Página principal
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>¿Quienes somos y qué  hacemos?
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>Misión y visión
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fa fa-angle-double-right" aria-hidden="true"></i>vuelvete socio
+                                    </a>
+                                </li>
+                               
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-12">
+                        <div class="footerTitle">
+                            <h4>Descargala en:</h4>
+                        </div>
+                        <div class="footerInfo">
+                       
+                            <div class="row">
+                            <div class="col-md-12">
+                                
+                                <img src="../img/Googleplay.png" />
+                            </div>
+                           </div>
+                           <br />
+                            <div class="row">
+                            <div class="col-md-12">
+                                <img src="../img/Appstore.png" />
+                            </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- COPY RIGHT -->
+        <div class="copyRight clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-5 col-sm-push-7 col-xs-12">
+                        <ul class="list-inline top-dark-right">
+  
+                            <li class="hidden-sm hidden-xs"> <img src="../img/Iconos/face3.png" /></li>
+                            <li class="hidden-sm hidden-xs"> <img src="../img/Iconos/twitt3.png" /></li>
+                            <li class="hidden-sm hidden-xs"> <img src="../img/Iconos/google3.png" /></li>       
+
+                        </ul>
+                    </div>
+                    <div class="col-sm-7 col-sm-pull-5 col-xs-12">
+                        <div class="copyRightText">
+                            <p>© 2016 DisfrutaMérida <a href="indi.aspx"></a>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--default footer end here-->
+    <!--scripts and plugins -->
+    <!--must need plugin jquery-->
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery-migrate.min.js"></script>
+    <!--bootstrap js plugin-->
+    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+    <!--easing plugin for smooth scroll-->
+    <script src="../js/jquery.easing.1.3.min.js" type="text/javascript"></script>
+    <!--sticky header-->
+    <script type="text/javascript" src="../js/jquery.sticky.js"></script>
+    <!--flex slider plugin-->
+    <script src="../js/jquery.flexslider-min.js" type="text/javascript"></script>
+    <!--parallax background plugin-->
+    <script src="../js/jquery.stellar.min.js" type="text/javascript"></script>
+    <!--digit countdown plugin-->
+    <script src="../js/waypoints.min.js"></script>
+    <!--digit countdown plugin-->
+    <script src="../js/jquery.counterup.min.js" type="text/javascript"></script>
+    <!--on scroll animation-->
+    <script src="../js/wow.min.js" type="text/javascript"></script>
+    <!--owl carousel slider-->
+    <script src="../js/owl.carousel.min.js" type="text/javascript"></script>
+    <!--popup js-->
+    <script src="../js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+    <!--you tube player-->
+    <script src="../js/jquery.mb.YTPlayer.min.js" type="text/javascript"></script>
+    <!--customizable plugin edit according to your needs-->
+    <script src="../js/custom.js" type="text/javascript"></script>
+    <script type="text/javascript" src="../js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="rs-plugin/../js/jquery.themepunch.revolution.min.js"></script>
+
+    
+     <script type="text/javascript" src="../js/revolution-custom.js"></script>
+    <!--cube portfolio plugin-->
+
+    <script src="../js/cubeportfolio.min.js" type="text/javascript"></script>
+    <script src="../js/cube-portfolio.js" type="text/javascript"></script>
+    <script src="../js/pace.min.js" type="text/javascript"></script>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProyectoBAModelStoreContainer" CdmEntityContainer="ProyectoBAEntities2">
+    <EntitySetMapping Name="Administra">
+      <EntityTypeMapping TypeName="ProyectoBAModel.Administra">
+        <MappingFragment StoreEntitySet="Administra">
+          <ScalarProperty Name="IdAdministra" ColumnName="IdAdministra" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="IdSitio" ColumnName="IdSitio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Establecimientos">
+      <EntityTypeMapping TypeName="ProyectoBAModel.Establecimientos">
+        <MappingFragment StoreEntitySet="Establecimientos">
+          <ScalarProperty Name="IdEstablecimiento" ColumnName="IdEstablecimiento" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IdTipoEstablecimiento" ColumnName="IdTipoEstablecimiento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fotos">
+      <EntityTypeMapping TypeName="ProyectoBAModel.Fotos">
+        <MappingFragment StoreEntitySet="Fotos">
+          <ScalarProperty Name="IdFoto" ColumnName="IdFoto" />
+          <ScalarProperty Name="Foto" ColumnName="Foto" />
+          <ScalarProperty Name="IdSitio" ColumnName="IdSitio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="membresia">
+      <EntityTypeMapping TypeName="ProyectoBAModel.membresia">
+        <MappingFragment StoreEntitySet="membresia">
+          <ScalarProperty Name="IdMembresia" ColumnName="IdMembresia" />
+          <ScalarProperty Name="NombreMembresia" ColumnName="NombreMembresia" />
+          <ScalarProperty Name="DuracionMeses" ColumnName="DuracionMeses" />
+          <ScalarProperty Name="Costo" ColumnName="Costo" />
+          <ScalarProperty Name="NumSitios" ColumnName="NumSitios" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Recibo">
+      <EntityTypeMapping TypeName="ProyectoBAModel.Recibo">
+        <MappingFragment StoreEntitySet="Recibo">
+          <ScalarProperty Name="IdRecibo" ColumnName="IdRecibo" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="IdTipoPago" ColumnName="IdTipoPago" />
+          <ScalarProperty Name="IdMembresia" ColumnName="IdMembresia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sitios">
+      <EntityTypeMapping TypeName="ProyectoBAModel.Sitios">
+        <MappingFragment StoreEntitySet="Sitios">
+          <ScalarProperty Name="IdSitio" ColumnName="IdSitio" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="IdEstablecimiento" ColumnName="IdEstablecimiento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tarjetaCredito">
+      <EntityTypeMapping TypeName="ProyectoBAModel.tarjetaCredito">
+        <MappingFragment StoreEntitySet="tarjetaCredito">
+          <ScalarProperty Name="IdTarjeta" ColumnName="IdTarjeta" />
+          <ScalarProperty Name="NumTarjeta" ColumnName="NumTarjeta" />
+          <ScalarProperty Name="cvv" ColumnName="cvv" />
+          <ScalarProperty Name="anio" ColumnName="anio" />
+          <ScalarProperty Name="mes" ColumnName="mes" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoEstablecimiento">
+      <EntityTypeMapping TypeName="ProyectoBAModel.TipoEstablecimiento">
+        <MappingFragment StoreEntitySet="TipoEstablecimiento">
+          <ScalarProperty Name="IdTipoEstablecimiento" ColumnName="IdTipoEstablecimiento" />
+          <ScalarProperty Name="NombreTipo" ColumnName="NombreTipo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoPago">
+      <EntityTypeMapping TypeName="ProyectoBAModel.TipoPago">
+        <MappingFragment StoreEntitySet="TipoPago">
+          <ScalarProperty Name="IdTipoPago" ColumnName="IdTipoPago" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ubicaciones">
+      <EntityTypeMapping TypeName="ProyectoBAModel.ubicaciones">
+        <MappingFragment StoreEntitySet="ubicaciones">
+          <ScalarProperty Name="IdUbicacion" ColumnName="IdUbicacion" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Latitud" ColumnName="Latitud" />
+          <ScalarProperty Name="Longitud" ColumnName="Longitud" />
+          <ScalarProperty Name="IdSitio" ColumnName="IdSitio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="ProyectoBAModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Contrasena" ColumnName="Contrasena" />
+          <ScalarProperty Name="Usuario1" ColumnName="Usuario" />
+          <ScalarProperty Name="FOTOUS" ColumnName="FOTOUS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VISTARECIBO">
+      <EntityTypeMapping TypeName="ProyectoBAModel.VISTARECIBO">
+        <MappingFragment StoreEntitySet="VISTARECIBO">
+          <ScalarProperty Name="Clave" ColumnName="Clave" />
+          <ScalarProperty Name="fecha" ColumnName="fecha" />
+          <ScalarProperty Name="Membresia" ColumnName="Membresia" />
+          <ScalarProperty Name="Idmembresia" ColumnName="Idmembresia" />
+          <ScalarProperty Name="Duracion" ColumnName="Duracion" />
+          <ScalarProperty Name="Costo" ColumnName="Costo" />
+          <ScalarProperty Name="numeroSitios" ColumnName="numeroSitios" />
+          <ScalarProperty Name="TipoPago" ColumnName="TipoPago" />
+          <ScalarProperty Name="idUsuario" ColumnName="idUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="AgregarADMINISTRA" FunctionName="ProyectoBAModel.Store.AgregarADMINISTRA" />
+    <FunctionImportMapping FunctionImportName="AgregarESTABLECIMIENTOS" FunctionName="ProyectoBAModel.Store.AgregarESTABLECIMIENTOS" />
+    <FunctionImportMapping FunctionImportName="AgregarFOTOS" FunctionName="ProyectoBAModel.Store.AgregarFOTOS" />
+    <FunctionImportMapping FunctionImportName="AgregarMEMBRESIA" FunctionName="ProyectoBAModel.Store.AgregarMEMBRESIA" />
+    <FunctionImportMapping FunctionImportName="AgregarRECIBO" FunctionName="ProyectoBAModel.Store.AgregarRECIBO" />
+    <FunctionImportMapping FunctionImportName="AgregarSITIOS" FunctionName="ProyectoBAModel.Store.AgregarSITIOS" />
+    <FunctionImportMapping FunctionImportName="AgregarTARJETACREDITO" FunctionName="ProyectoBAModel.Store.AgregarTARJETACREDITO" />
+    <FunctionImportMapping FunctionImportName="AgregarTipoEstablecimiento" FunctionName="ProyectoBAModel.Store.AgregarTipoEstablecimiento" />
+    <FunctionImportMapping FunctionImportName="AgregarTIPOPAGO" FunctionName="ProyectoBAModel.Store.AgregarTIPOPAGO" />
+    <FunctionImportMapping FunctionImportName="AgregarUBICACIONES" FunctionName="ProyectoBAModel.Store.AgregarUBICACIONES" />
+    <FunctionImportMapping FunctionImportName="AgregarUSUARIO" FunctionName="ProyectoBAModel.Store.AgregarUSUARIO" />
+    <FunctionImportMapping FunctionImportName="DevolverTablaADMINISTRA" FunctionName="ProyectoBAModel.Store.DevolverTablaADMINISTRA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ProyectoBAModel.DevolverTablaADMINISTRA_Result">
+          <ScalarProperty Name="IdAdministra" ColumnName="IdAdministra" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="IdSitio" ColumnName="IdSitio" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DevolverTablaESTABLECIMIENTOS" FunctionName="ProyectoBAModel.Store.DevolverTablaESTABLECIMIENTOS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ProyectoBAModel.DevolverTablaESTABLECIMIENTOS_Result">
+          <ScalarProperty Name="IdEstablecimiento" ColumnName="IdEstablecimiento" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="IdTipoEstablecimiento" ColumnName="IdTipoEstablecimiento" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DevolverTablaFOTOS" FunctionName="ProyectoBAModel.Store.DevolverTablaFOTOS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ProyectoBAModel.DevolverTablaFOTOS_Result">
+          <ScalarProperty Name="IdFoto" ColumnName="IdFoto" />
+          <ScalarProperty Name="Foto" ColumnName="Foto" />
+          <ScalarProperty Name="IdSitio" ColumnName="IdSitio" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DevolverTablaMEMBRESIA" FunctionName="ProyectoBAModel.Store.DevolverTablaMEMBRESIA">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ProyectoBAModel.DevolverTablaMEMBRESIA_Result">
+          <ScalarProperty Name="IdMembresia" ColumnName="IdMembresia" />
+          <ScalarProperty Name="NombreMembresia" ColumnName="NombreMembresia" />
+          <ScalarProperty Name="DuracionMeses" ColumnName="DuracionMeses" />
+          <ScalarProperty Name="Costo" ColumnName="Costo" />
+          <ScalarProperty Name="NumSitios" ColumnName="NumSitios" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DevolverTablaRECIBO" FunctionName="ProyectoBAModel.Store.DevolverTablaRECIBO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ProyectoBAModel.DevolverTablaRECIBO_Result">
+          <ScalarProperty Name="IdRecibo" ColumnName="IdRecibo" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="IdTipoPago" ColumnName="IdTipoPago" />
+          <ScalarProperty Name="IdMembresia" ColumnName="IdMembresia" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DevolverTablaSITIOS" FunctionName="ProyectoBAModel.Store.DevolverTablaSITIOS">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ProyectoBAModel.DevolverTablaSITIOS_Result">
+          <ScalarProperty Name="IdSitio" ColumnName="IdSitio" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Estatus" ColumnName="Estatus" />
+          <ScalarProperty Name="IdEstablecimiento" ColumnName="IdEstablecimiento" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DevolverTablaTARJETACREDITO" FunctionName="ProyectoBAModel.Store.DevolverTablaTARJETACREDITO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ProyectoBAModel.DevolverTablaTARJETACREDITO_Result">
+          <ScalarProperty Name="IdTarjeta" ColumnName="IdTarjeta" />
+          <ScalarProperty Name="NumTarjeta" ColumnName="NumTarjeta" />
+          <ScalarProperty Name="cvv" ColumnName="cvv" />
+          <ScalarProperty Name="anio" ColumnName="anio" />
+          <ScalarProperty Name="mes" ColumnName="mes" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DevolverTablaTipoEstablecimiento" FunctionName="ProyectoBAModel.Store.DevolverTablaTipoEstablecimiento">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ProyectoBAModel.DevolverTablaTipoEstablecimiento_Result">
+          <ScalarProperty Name="IdTipoEstablecimiento" ColumnName="IdTipoEstablecimiento" />
+          <ScalarProperty Name="NombreTipo" ColumnName="NombreTipo" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DevolverTablaTIPOPAGO" FunctionName="ProyectoBAModel.Store.DevolverTablaTIPOPAGO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ProyectoBAModel.DevolverTablaTIPOPAGO_Result">
+          <ScalarProperty Name="IdTipoPago" ColumnName="IdTipoPago" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="DevolverTablaUSUARIO" FunctionName="ProyectoBAModel.Store.DevolverTablaUSUARIO">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ProyectoBAModel.DevolverTablaUSUARIO_Result">
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Contrasena" ColumnName="Contrasena" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="FOTOUS" ColumnName="FOTOUS" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="EliminarADMINISTRA" FunctionName="ProyectoBAModel.Store.EliminarADMINISTRA" />
+    <FunctionImportMapping FunctionImportName="EliminarESTABLECIMIENTOS" FunctionName="ProyectoBAModel.Store.EliminarESTABLECIMIENTOS" />
+    <FunctionImportMapping FunctionImportName="EliminarFOTOS" FunctionName="ProyectoBAModel.Store.EliminarFOTOS" />
+    <FunctionImportMapping FunctionImportName="EliminarMEMBRESIA" FunctionName="ProyectoBAModel.Store.EliminarMEMBRESIA" />
+    <FunctionImportMapping FunctionImportName="EliminarRECIBO" FunctionName="ProyectoBAModel.Store.EliminarRECIBO" />
+    <FunctionImportMapping FunctionImportName="EliminarSITIOS" FunctionName="ProyectoBAModel.Store.EliminarSITIOS" />
+    <FunctionImportMapping FunctionImportName="EliminarTARJETACREDITO" FunctionName="ProyectoBAModel.Store.EliminarTARJETACREDITO" />
+    <FunctionImportMapping FunctionImportName="EliminarTipoEstablecimiento" FunctionName="ProyectoBAModel.Store.EliminarTipoEstablecimiento" />
+    <FunctionImportMapping FunctionImportName="EliminarTIPOPAGO" FunctionName="ProyectoBAModel.Store.EliminarTIPOPAGO" />
+    <FunctionImportMapping FunctionImportName="EliminarUBICACIONES" FunctionName="ProyectoBAModel.Store.EliminarUBICACIONES" />
+    <FunctionImportMapping FunctionImportName="EliminarUSUARIO" FunctionName="ProyectoBAModel.Store.EliminarUSUARIO" />
+    <FunctionImportMapping FunctionImportName="FiltrarADMINISTRA" FunctionName="ProyectoBAModel.Store.FiltrarADMINISTRA" />
+    <FunctionImportMapping FunctionImportName="FiltrarESTABLECIMIENTOS" FunctionName="ProyectoBAModel.Store.FiltrarESTABLECIMIENTOS" />
+    <FunctionImportMapping FunctionImportName="FiltrarFOTOS" FunctionName="ProyectoBAModel.Store.FiltrarFOTOS" />
+    <FunctionImportMapping FunctionImportName="FiltrarMEMBRESIA" FunctionName="ProyectoBAModel.Store.FiltrarMEMBRESIA" />
+    <FunctionImportMapping FunctionImportName="FiltrarRECIBO" FunctionName="ProyectoBAModel.Store.FiltrarRECIBO" />
+    <FunctionImportMapping FunctionImportName="FiltrarSITIOS" FunctionName="ProyectoBAModel.Store.FiltrarSITIOS" />
+    <FunctionImportMapping FunctionImportName="FiltrarTARJETACREDITO" FunctionName="ProyectoBAModel.Store.FiltrarTARJETACREDITO" />
+    <FunctionImportMapping FunctionImportName="FiltrarTipoEstablecimiento" FunctionName="ProyectoBAModel.Store.FiltrarTipoEstablecimiento" />
+    <FunctionImportMapping FunctionImportName="FiltrarTIPOPAGO" FunctionName="ProyectoBAModel.Store.FiltrarTIPOPAGO" />
+    <FunctionImportMapping FunctionImportName="FiltrarUBICACIONES" FunctionName="ProyectoBAModel.Store.FiltrarUBICACIONES" />
+    <FunctionImportMapping FunctionImportName="FiltrarUSUARIO" FunctionName="ProyectoBAModel.Store.FiltrarUSUARIO" />
+    <FunctionImportMapping FunctionImportName="ModifcarADMINISTRA" FunctionName="ProyectoBAModel.Store.ModifcarADMINISTRA" />
+    <FunctionImportMapping FunctionImportName="ModifcarESTABLECIMIENTOS" FunctionName="ProyectoBAModel.Store.ModifcarESTABLECIMIENTOS" />
+    <FunctionImportMapping FunctionImportName="ModifcarFOTOS" FunctionName="ProyectoBAModel.Store.ModifcarFOTOS" />
+    <FunctionImportMapping FunctionImportName="ModifcarMEMBRESIA" FunctionName="ProyectoBAModel.Store.ModifcarMEMBRESIA" />
+    <FunctionImportMapping FunctionImportName="ModifcarRECIBO" FunctionName="ProyectoBAModel.Store.ModifcarRECIBO" />
+    <FunctionImportMapping FunctionImportName="ModifcarSITIOS" FunctionName="ProyectoBAModel.Store.ModifcarSITIOS" />
+    <FunctionImportMapping FunctionImportName="ModifcarTARJETACREDITO" FunctionName="ProyectoBAModel.Store.ModifcarTARJETACREDITO" />
+    <FunctionImportMapping FunctionImportName="ModifcarTipoEstablecimiento" FunctionName="ProyectoBAModel.Store.ModifcarTipoEstablecimiento" />
+    <FunctionImportMapping FunctionImportName="ModifcarTIPOPAGO" FunctionName="ProyectoBAModel.Store.ModifcarTIPOPAGO" />
+    <FunctionImportMapping FunctionImportName="ModifcarUBICACIONES" FunctionName="ProyectoBAModel.Store.ModifcarUBICACIONES" />
+    <FunctionImportMapping FunctionImportName="ModifcarUSUARIO" FunctionName="ProyectoBAModel.Store.ModifcarUSUARIO" />
+  </EntityContainerMapping>
+</Mapping>
