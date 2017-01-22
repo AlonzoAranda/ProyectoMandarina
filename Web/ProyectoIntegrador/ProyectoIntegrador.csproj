@@ -286,20 +286,14 @@
     <Content Include="css\v-shortcodes.css" />
     <Content Include="css\validationEngine.jquery.css" />
     <Content Include="css\yamm.css" />
-    <Content Include="GUI\AgregarSitio.aspx" />
     <Content Include="GUI\AgregarSitio2.aspx" />
-    <Content Include="GUI\App.aspx" />
     <Content Include="GUI\CatalogoEstablecimientos.aspx" />
     <Content Include="GUI\CatalogoMembresias.aspx" />
     <Content Include="GUI\CatalogoTipoEstablecimiento.aspx" />
     <Content Include="GUI\CatalogoTipoPago.aspx" />
     <Content Include="GUI\CatalogoUsuario.aspx" />
     <Content Include="GUI\Facturas.aspx" />
-    <Content Include="GUI\Galeria.aspx" />
-    <Content Include="GUI\Indi.aspx" />
     <Content Include="GUI\InformacionUser.aspx" />
-    <Content Include="GUI\Parques.aspx" />
-    <Content Include="GUI\Prueba.aspx" />
     <Content Include="GUI\VerFactura.aspx" />
     <Content Include="ImagenesWeb\Usuarios\logoDM.png" />
     <Content Include="ImagenesWeb\Usuarios\museo.jpg" />
@@ -515,7 +509,6 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
-    <Content Include="GUI\sobre.aspx" />
     <Content Include="img\2.jpg" />
     <Content Include="img\2.png" />
     <Content Include="img\4.jpg" />
@@ -559,7 +552,6 @@
     </Content>
     <Content Include="GUI\MasterPage.Master" />
     <Content Include="GUI\Index.aspx" />
-    <Content Include="GUI\MasterPageFrontEnd.Master" />
     <Content Include="css\FontAwesome.otf" />
     <Content Include="plugins\rs-plugin\assets\arrows.psd" />
     <Content Include="plugins\rs-plugin\assets\bullets.psd" />
@@ -743,13 +735,6 @@
     <Compile Include="GUI\Facturas.aspx.designer.cs">
       <DependentUpon>Facturas.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Prueba.aspx.cs">
-      <DependentUpon>Prueba.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GUI\Prueba.aspx.designer.cs">
-      <DependentUpon>Prueba.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Reportes\Administra.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -811,40 +796,12 @@
     <Compile Include="Reportes\Fotos.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="GUI\AgregarSitio.aspx.cs">
-      <DependentUpon>AgregarSitio.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GUI\AgregarSitio.aspx.designer.cs">
-      <DependentUpon>AgregarSitio.aspx</DependentUpon>
-    </Compile>
     <Compile Include="GUI\AgregarSitio2.aspx.cs">
       <DependentUpon>AgregarSitio2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="GUI\AgregarSitio2.aspx.designer.cs">
       <DependentUpon>AgregarSitio2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\App.aspx.cs">
-      <DependentUpon>App.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GUI\App.aspx.designer.cs">
-      <DependentUpon>App.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Galeria.aspx.cs">
-      <DependentUpon>Galeria.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GUI\Galeria.aspx.designer.cs">
-      <DependentUpon>Galeria.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Indi.aspx.cs">
-      <DependentUpon>Indi.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GUI\Indi.aspx.designer.cs">
-      <DependentUpon>Indi.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\InformacionUser.aspx.cs">
       <DependentUpon>InformacionUser.aspx</DependentUpon>
@@ -859,20 +816,6 @@
     </Compile>
     <Compile Include="GUI\MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\MasterPageFrontEnd.Master.cs">
-      <DependentUpon>MasterPageFrontEnd.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GUI\MasterPageFrontEnd.Master.designer.cs">
-      <DependentUpon>MasterPageFrontEnd.Master</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\Parques.aspx.cs">
-      <DependentUpon>Parques.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GUI\Parques.aspx.designer.cs">
-      <DependentUpon>Parques.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\VerFactura.aspx.cs">
       <DependentUpon>VerFactura.aspx</DependentUpon>
@@ -900,13 +843,6 @@
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="ObjUsuario.cs" />
-    <Compile Include="GUI\sobre.aspx.cs">
-      <DependentUpon>sobre.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="GUI\sobre.aspx.designer.cs">
-      <DependentUpon>sobre.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GUI\Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
