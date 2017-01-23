@@ -1,0 +1,121 @@
+//
+// Tiles
+// --------------------------------------------------
+
+// Base class
+.tile {
+  width: 100%;
+  background-color: $tile-bg;
+  margin-bottom: 30px;
+  @include box-shadow(0px 1px 2px 0px rgba(0,0,0,0.1));
+
+  .tile-body {
+    padding: $tile-padding;
+  }
+  
+  // Icon list inside tile
+  .list-icon { margin-bottom: 0; }
+
+  &.tile-transparent {
+  	max-width: $side-nav-max-width;
+  	background: none;
+  	@include box-shadow(none);
+	  .tile-body { padding: $tile-padding 0; }
+  }
+  a { text-decoration: none; }
+
+  // Form inside tile
+  > form {
+    padding: 30px 22px 25px 22px;
+    h1, h2, h3, h4, h5 { margin-bottom: floor($line-height-computed / 2); }
+  }
+
+  // Tile with icon
+  &.tile-with-icon {
+    text-align: center;
+    .tile-body { padding-bottom: 25px; }
+    i {
+      display: block;
+      font-size: $tile-icon-size;
+      color: $headings-color;
+      margin: 6px auto 18px auto;
+    }
+    h3, h4 {
+      font-size: $font-size-h4;
+      &:after {
+        display: block;
+        content: "";
+        width: 40px;
+        height: 1px;
+        background-color: $headings-color;
+        margin: floor($line-height-computed / 2) auto;
+      } 
+    }
+    p { margin-bottom: floor($line-height-computed / 2); }
+  }
+}
+
+// Gallery Tile
+.gallery-tile {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  &:focus, &:active { outline: none; }
+  .image {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include transform(scale(1));
+    @include transition(all .7s);
+  }
+  &:before {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    @include primary-gradient;
+    @include transition(opacity .4s);
+  }
+  .icon {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: $tile-gal-icon-circle;
+    text-align: center;
+    top: 50%;
+    left: 0;
+    margin-top: -(floor($tile-gal-icon-circle / 2));
+    @include transform(scale(0));
+    @include transition(all .4s);
+    > i {
+      display: inline-block;
+      width: $tile-gal-icon-circle;
+      height: $tile-gal-icon-circle;
+      line-height: $tile-gal-icon-circle;
+      font-size: $tile-icon-size;
+      color: $tile-gal-icon-color;
+      background-color: $tile-gal-icon-bg;
+      border-radius: 50%;
+    }
+  }
+  &:hover {
+    .image { @include transform(scale(1.15)); }
+    .icon { @include transform(scale(1)); }
+    &:before { opacity: $tile-overlay-opacity; }
+  }
+}

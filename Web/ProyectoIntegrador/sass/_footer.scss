@@ -1,0 +1,157 @@
+//
+// Footer
+// --------------------------------------------------
+
+.footer {
+  width: 100%;
+  background-color: $footer-bg;
+
+  .subscription {
+    padding-top: floor($line-height-computed * 2.5);
+    .btn { margin-top: 0; }
+    .text-muted {
+      display: block;
+      margin-top: 15px;
+    }
+  }
+
+  // Copyright
+  .copyright {
+    padding: floor($line-height-computed / 1.8) 0;
+    border-top: 1px solid $hr-border;
+    
+    .inner {
+      display: table;
+      width: 100%;
+      .column {
+        display: table-cell;
+        vertical-align: middle;
+        padding-right: 25px;
+        &:last-child {
+          text-align: right;
+          padding-right: 0;
+        }
+      }
+    }
+
+    .site-logo {
+      vertical-align: middle;
+      margin: 10px 15px 10px 0;
+    }
+    .copy-text {
+      display: inline-block;
+      vertical-align: middle;
+      color: $text-muted;
+      font-size: $font-size-small;
+      margin: 10px 0;
+    }
+    .social-bar > a {
+      color: lighten($gray, 10%);
+      &:last-child { margin-right: 0; }
+    }
+  }
+
+  // Footer Navigation
+  .footer-nav {
+    display: block;
+    margin: 10px 0;
+    > ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      > li {
+        display: inline-block;
+        margin-right: 22px;
+        &:last-child { margin-right: 0; }
+        > a {
+          text-decoration: none;
+          color: $brand-default;
+          @include transition(color .25s);
+          &:hover { color: $link-color; }
+        }
+      }
+    }
+  }
+
+  // Dark skin
+  &.footer-dark {
+    background-color: $footer-dark-bg;
+    textarea,
+    select,
+    input[type=text],
+    input[type=email],
+    input[type=password],
+    input[type=number],
+    input[type=url],
+    input[type=time],
+    input[type=tel],
+    input[type=search] {
+      color: #fff;
+      font-weight: 300;
+      border-bottom: 1px solid rgba(#fff, .25);
+      &:focus { border-color: rgba(#fff, .75); }
+      @include placeholder(#fff);
+      &.placeholder {
+        color: #fff;
+      }
+    }
+    .copyright {
+      border-top: 1px solid rgba(#fff, .15);
+      .copy-text {
+        font-weight: 300;
+        color: #fff;
+        opacity: .5;
+      }
+    }
+    .subscription .text-muted {
+      font-weight: 300;
+      color: #fff;
+      opacity: .5;
+    }
+    .footer-nav > ul > li > a {
+      color: #fff;
+      font-weight: 300;
+      &:hover { color: $link-color; }
+    }
+  }
+
+  @media #{$tablet-land} {
+    .copyright {
+      .inner,
+      .inner .column {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+        &:last-child { text-align: center; }
+      }
+      .social-bar {
+        margin-top: $line-height-computed;
+        > a {
+          margin-left: 8px;
+          margin-right: 8px;
+          &:last-child { margin-right: 8px; }
+        }
+      }
+    }
+    .footer-nav > ul > li {
+       margin-left: 11px;
+      margin-right: 11px;
+      &:last-child { margin-right: 11px; }
+    }
+  }
+}
+.market-counter {
+  color: lighten($gray, 10%);
+  font-size: $font-size-h4;
+  font-weight: 300;
+  margin-top: 6px;
+  > span, i {
+    font-size: floor(($font-size-base * 1.875)); // ~30px
+  }
+  i {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -9px;
+  }
+}

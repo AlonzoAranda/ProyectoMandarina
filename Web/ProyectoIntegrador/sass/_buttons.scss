@@ -1,0 +1,301 @@
+//
+// Buttons
+// --------------------------------------------------
+
+// Base styles
+// --------------------------------------------------
+.btn {
+  display: inline-block;
+  height: $btn-height;
+  line-height: $btn-height - 3;
+  font-size: $btn-font-size;
+  font-weight: $btn-font-weight;
+  color: $btn-font-color;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: ($btn-height / 2);
+  padding: 0 30px;
+  margin: 10px 0;
+  margin-right: 8px;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  white-space: nowrap;
+  @include user-select(none);
+  @include transition(color 0.3s ease-out, background-color 0.3s ease-out);
+  @include button-variant($btn-default-bg);
+  
+  &:hover {
+    color: $btn-font-color;
+    text-decoration: none;
+    outline: none;
+  }
+  &:focus { outline: none; }
+
+  &:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+  }
+
+  &.disabled,
+  &[disabled] {
+    cursor: $cursor-disabled;
+    background-color: $gray-light !important;
+    &:hover { background-color: $gray-light !important; }
+  }
+
+  i, i:before {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    margin-top: -2px;
+    font-size: floor($btn-font-size * 1.2);
+  }
+}
+
+a.btn {
+  &.disabled,
+  fieldset[disabled] & {
+    opacity: .5;
+    pointer-events: none;
+    pointer: not-allowed;
+  }
+}
+
+// Alternate buttons
+// --------------------------------------------------
+.btn-default, .btn-default:hover,
+.btn-primary, .btn-primary:hover,
+.btn-primary:active, .btn-primary:focus,
+.btn-success, .btn-success:hover,
+.btn-success:active, .btn-success:focus,
+.btn-info, .btn-info:hover,
+.btn-info:active, .btn-info:focus,
+.btn-warning, .btn-warning:hover,
+.btn-warning:active, .btn-warning:focus,
+.btn-danger, .btn-danger:hover,
+.btn-danger:active, .btn-danger:focus {
+  color: $btn-font-color;
+}
+.btn-default {
+  @include button-variant($btn-default-bg);
+}
+.btn-primary {
+  @include button-variant($btn-primary-bg);
+}
+.btn-success {
+  @include button-variant($btn-success-bg);
+}
+.btn-info {
+  @include button-variant($btn-info-bg);
+}
+.btn-warning {
+  @include button-variant($btn-warning-bg);
+}
+.btn-danger {
+  @include button-variant($btn-danger-bg);
+}
+.btn-light {
+  @include button-variant(#fff);
+  color: $gray-darker;
+  &:hover { color: $gray-darker; }
+}
+
+// Ghost Buttons
+// --------------------------------------------------
+.btn-ghost {
+  @include ghost-button-variant($btn-default-bg, $btn-default-bg);
+  &.btn-default {
+    @include ghost-button-variant($btn-default-bg, $btn-default-bg);
+  }
+  &.btn-primary {
+    @include ghost-button-variant($btn-primary-bg, $btn-primary-bg);
+  }
+  &.btn-success {
+    @include ghost-button-variant($btn-success-bg, $btn-success-bg);
+  }
+  &.btn-info {
+    @include ghost-button-variant($btn-info-bg, $btn-info-bg);
+  }
+  &.btn-warning {
+    @include ghost-button-variant($btn-warning-bg, $btn-warning-bg);
+  }
+  &.btn-danger {
+    @include ghost-button-variant($btn-danger-bg, $btn-danger-bg);
+  }
+  &.btn-light {
+    @include ghost-button-variant(#fff, #fff);
+    &:hover { color: $gray-darker; }
+  }
+}
+
+// Small Button
+// --------------------------------------------------
+.btn-sm {
+  height: $btn-sm-height;
+  font-size: $btn-sm-font-size;
+  font-weight: $btn-sm-font-weight;
+  line-height: $btn-sm-height - 3;
+  padding: 0 25px;
+  border-radius: ($btn-sm-height / 2);
+  &.btn-ghost { font-weight: $btn-font-weight; }
+}
+
+// Inline Buttons
+// --------------------------------------------------
+.btn-inline {
+  margin-top: 0;
+  margin-bottom: 0; 
+}
+
+// Button icons alignment
+// --------------------------------------------------
+.btn {
+  i, i:before {
+    display: inline-block;
+   // font-weight: normal;
+    margin-top: -3px;
+  }
+}
+.btn-icon-left {
+  padding-left: 25px;
+  i { margin-right: 7px; }
+  &.btn-sm {
+    padding-left: 18px;
+    i { margin-right: 5px; }
+  }
+}
+.btn-icon-right {
+  padding-right: 25px;
+  i { margin-left: 7px; }
+  &.btn-sm {
+    padding-right: 18px;
+    i { margin-left: 5px; }
+  }
+}
+
+// Block button
+// --------------------------------------------------
+.btn-block {
+  display: block;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 0;
+}
+
+// Vertically space out multiple block buttons
+.btn-block + .btn-block {
+  margin-top: 20px;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.btn-block {
+    width: 100%;
+  }
+}
+
+// Buttons alignment
+.text-center .btn {
+  margin-left: 5px;
+  margin-right: 5px;
+  &.btn-block {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+.text-right .btn {
+  margin-left: 10px;
+  margin-right: 0;
+  &.btn-block { margin-left: 0; }
+}
+
+// Scroll to Top Button 
+.scroll-to-top-btn {
+  display: block;
+  position: fixed;
+  text-align: center;
+  text-decoration: none;
+  z-index: $navbar-zindex;
+  right: -60px;
+  bottom: 20px;
+  font-size: $scroll-top-btn-size;
+  color: $scroll-top-btn-color;
+  border-radius: 50%;
+  padding-left: 1px;
+  opacity: 0;
+  -webkit-transition: right 400ms $ease-in-out-back, opacity .3s, color .3s; /* older webkit */
+  -webkit-transition: right 400ms $ease-in-out-back, opacity .3s, color .3s; 
+  -moz-transition: right 400ms $ease-in-out-back, opacity .3s, color .3s; 
+  transition: right 400ms $ease-in-out-back, opacity .3s, color .3s; /* easeInOutBack */
+
+  &:hover {
+    color: $scroll-top-btn-hover-color;
+  }
+  &.visible {
+    right: 15px;
+    opacity: 1;
+  }
+}
+
+// Load More Button
+.load-more-btn {
+  width: 100%;
+  max-width: 270px;
+  > i:before {
+    font-size: 1.1em;
+  }
+}
+
+// Market Buttons
+.app-store-btn,
+.google-play-btn,
+.amazon-btn,
+.windows-btn {
+  display: inline-block;
+  width: 130px;
+  height: 40px;
+  margin: 10px 14px 10px 0;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-position: no-repeat;
+  background-size: cover;
+}
+.app-store-btn {
+  background-image: url(../img/market-btns/app-store.png);
+}
+.google-play-btn {
+  background-image: url(../img/market-btns/google-play.png);
+}
+.amazon-btn {
+  background-image: url(../img/market-btns/amazon.png);
+}
+.windows-btn {
+  width: 157px;
+  height: 40px;
+  background-image: url(../img/market-btns/windows.png);
+}
+.text-center {
+  .app-store-btn,
+  .google-play-btn,
+  .amazon-btn,
+  .windows-btn {
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+}
+.text-left {
+  .app-store-btn,
+  .google-play-btn,
+  .amazon-btn,
+  .windows-btn {
+    margin-left: 14px;
+    margin-right: 0;
+  }
+}

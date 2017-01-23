@@ -1,0 +1,253 @@
+//
+// Color Sheme
+// --------------------------------------------------
+
+// Accent color variable
+$brand-primary: #ff3366;
+
+// Main gardient colors
+$primary-gradient-color-1: #453f84;
+$primary-gradient-color-2: #3a2d46;
+
+@mixin primary-gradient($color1: $primary-gradient-color-1, $color2: $primary-gradient-color-2) {
+  background: $color1;
+  background: -moz-linear-gradient(top, $color1 0%, $color2 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, $color1), color-stop(100%, $color2));
+  background: -webkit-linear-gradient(top, $color1 0%, $color2 100%);
+  background: -o-linear-gradient(top, $color1 0%, $color2 100%);
+  background: -ms-linear-gradient(top, $color1 0%, $color2 100%);
+  background: linear-gradient(to bottom, $color1 0%, $color2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=0 );
+}
+
+.btn {
+	&.btn-primary {
+		background-color: $brand-primary;
+		&:hover {
+			background-color: lighten($brand-primary, 10%);
+		}
+	}
+	&.btn-ghost.btn-primary {
+		color: $brand-primary;
+		border-color: $brand-primary;
+		background-color: transparent;
+		&:hover {
+			color: #fff;
+			background-color: $brand-primary;
+		}
+	}
+}
+.toolbar .search-btn:hover,
+.toolbar .search-btn.active,
+.toolbar .share-btn:hover,
+.toolbar .share-btn.active,
+a, a:hover, .text-primary,
+.search-box button[type="submit"],
+.search-box.static button[type="submit"]:hover,
+.mobile-tools .search-box button[type="submit"]:hover,
+.nav-tabs > li > a:hover,
+.page-title .title .back-btn:hover,
+.page-title .breadcrumbs a:hover,
+.page-title.pt-dark .title .back-btn:hover,
+.page-title.pt-dark .breadcrumbs a:hover,
+.panel-heading .panel-title.collapsed:hover,
+.post-share-btn.active > a,
+.post-share-btn > a:hover,
+.pagination .nav-links a.current,
+.pagination .nav-links a:hover,
+.pagination .nav-links span.current,
+.comment .comment-meta .comment-like:hover,
+.comment .comment-meta .comment-reply-link:hover,
+.comment .comment-meta .comment-like:hover > i,
+.comment .comment-meta .comment-reply-link:hover > i,
+.comment .comment-meta .comment-like.active > i,
+.comment .comment-meta .comment-reply-link.active > i,
+.counters > li > i,
+.sharing-links > li > a:hover,
+.sharing-links > li > a:hover > i,
+.widget_calendar table td#today,
+.widget_calendar table th#today,
+.widget_calendar table td > a:hover,
+.widget_calendar table th > a:hover,
+.widget_authors .author-row .author:hover h4,
+.widget_tags .tag:hover,
+.post-tags .tag:hover,
+.scroll-to-top-btn:hover,
+.footer .footer-nav > ul > li > a:hover,
+.footer.footer-dark .footer-nav > ul > li > a:hover,
+.side-nav.dark-skin > ul > li:hover > a,
+.side-nav.dark-skin > ul > li.active > a,
+.post-tile .post-meta .post-date a:hover,
+.post-tile .post-meta .comments-count a:hover,
+.post-tile .post-meta .post-author a:hover,
+.post-tile .post-meta .post-taxonomy a:hover,
+.post-tile .post-body .post-title > a:hover,
+.single-post-toolbar .post-date a:hover,
+.single-post-toolbar .post-author a:hover,
+.single-post-toolbar .post-taxonomy a:hover {
+  color: $brand-primary;
+}
+.sharing-links.light-skin > li > a:hover,
+.sharing-links.light-skin > li > a:hover > i,
+.post-tile .post-thumb .post-meta .post-date a,
+.post-tile .post-thumb .post-meta .comments-count a {
+  color: #fff;
+}
+.nav-tabs > li {
+  &.active > a {
+    &,
+    &:hover,
+    &:focus { color: $brand-primary; }
+  }
+  > a:hover,
+  &.active > a {
+    .icon-list span {
+      border-top-color: $brand-primary;
+      border-bottom-color: $brand-primary;
+      &:after, &:before {
+        background-color: $brand-primary;
+      }
+    }
+  }
+}
+.nav-filters > li {
+  > a:hover,
+  > a:hover > i,
+  &.active > a,
+  &.active > a > i { color: $brand-primary; }
+}
+.main-navigation > .menu li,
+.submenu-dark .main-navigation > .menu > li .sub-menu > li {
+	&:hover > a,
+	&.current-menu-item > a,
+	&.current_page_item > a,
+	&.current-menu-ancestor > a,
+	&.current-menu-parent > a { color: $brand-primary; }
+}
+.bg-primary, .list-featured li:before,
+.pricing-table > table thead .plan-name .label.label-primary,
+.widget_tags .tag:hover span,
+.post-tags .tag:hover span,
+.nav-filters > li > a:hover .icon-list span:after,
+.nav-filters > li > a:hover .icon-list span:before,
+.nav-filters > li.active > a .icon-list span:after,
+.nav-filters > li.active > a .icon-list span:before,
+.format-image .post-format, .format-gallery .post-format,
+.format-video .post-format, .format-audio .post-format,
+.format-quote .post-format, .format-link .post-format,
+.format-chat .post-format {
+	background-color: $brand-primary;
+}
+.box-with-icon,
+.box-with-image {
+  &:hover {
+    .box-with-icon-icon {
+      color: $brand-primary;
+      border-color: $brand-primary;
+    }
+  }
+  &.light-skin {
+    &:hover {
+      .box-with-icon-icon {
+      	color: #fff;
+        border-color: #fff;
+      }
+    }
+  }
+}
+.video-popup-placeholder .play-btn {
+	border-color: $brand-primary;
+}
+.video-popup-placeholder .play-btn:before {
+	border-left-color: $brand-primary;
+}
+.side-nav > ul > li {
+  &:hover > a,
+  &.active > a { color: $brand-primary; }
+  &.active > a {
+    border-left-color: $brand-primary;
+  }
+  &.dark-skin {
+    > ul > li {
+      &:hover > a,
+      &.active > a { color: $brand-primary; }
+    }
+  }
+}
+.video-popup-btn {
+  &:hover {
+    color: $brand-primary;
+    border-color: $brand-primary;
+  }
+  &.light-skin {
+    &:hover {
+      color: $brand-primary;
+      border-color: transparent;
+    }
+  }
+}
+.widget_archive,
+.widget_categories,
+.widget_pages,
+.widget_recent_comments {
+	> ul li {
+		a {
+			&:hover {
+				color: $brand-primary;
+				.count {
+					color: #fff;
+					background-color: $brand-primary;
+				}
+			}
+		}
+		&.active a,
+		&.current-cat a {
+			color: $brand-primary;
+			.count {
+				color: #fff;
+				background-color: $brand-primary;
+			}
+		}
+	}
+}
+.nav-filters > li > a:hover .icon-list span,
+.nav-filters > li.active > a .icon-list span {
+	border-top-color: $brand-primary;
+	border-bottom-color: $brand-primary;
+}
+@media screen and (max-width: 991px) {
+	.navbar .mobile-dropdown .main-navigation > .menu > li.menu-item-has-children.open > a {
+		color: $brand-primary;
+	}
+	.navbar .mobile-dropdown .main-navigation > .menu > li {
+		&.current-menu-item > a,
+		&.current_page_item > a,
+		&.current-menu-ancestor > a,
+		&.current-menu-parent > a {
+			border-left-color: $brand-primary;
+		}
+		&.menu-item-has-children.open > a,
+		.sub-menu > li {
+			> a:hover { color: $brand-primary; }
+			&.current-menu-item > a,
+			&.current_page_item > a { color: $brand-primary; }
+		}
+	}
+}
+.intro-section .overlay,
+.page-title .overlay,
+.fw-section .overlay,
+.pricing-table-container .pricing-header .overlay,
+.gallery-tile:before {
+	@include primary-gradient;
+}
+.no-csstransitions {
+  .intro-section .overlay,
+  .page-title .overlay,
+	.fw-section .overlay,
+	.pricing-table-container .pricing-header .overlay,
+	.gallery-tile:before { filter: none; }
+}
+.color-switcher .toggle:hover {
+  color: $brand-primary !important;
+}

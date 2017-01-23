@@ -1,0 +1,266 @@
+.btn.btn-primary {
+  background-color: #ff3366;
+}
+
+.btn.btn-primary:hover {
+  background-color: #ff668c;
+}
+
+.btn.btn-ghost.btn-primary {
+  color: #ff3366;
+  border-color: #ff3366;
+  background-color: transparent;
+}
+
+.btn.btn-ghost.btn-primary:hover {
+  color: #fff;
+  background-color: #ff3366;
+}
+
+.toolbar .search-btn:hover,
+.toolbar .search-btn.active,
+.toolbar .share-btn:hover,
+.toolbar .share-btn.active,
+a, a:hover, .text-primary,
+.search-box button[type="submit"],
+.search-box.static button[type="submit"]:hover,
+.mobile-tools .search-box button[type="submit"]:hover,
+.nav-tabs > li > a:hover,
+.page-title .title .back-btn:hover,
+.page-title .breadcrumbs a:hover,
+.page-title.pt-dark .title .back-btn:hover,
+.page-title.pt-dark .breadcrumbs a:hover,
+.panel-heading .panel-title.collapsed:hover,
+.post-share-btn.active > a,
+.post-share-btn > a:hover,
+.pagination .nav-links a.current,
+.pagination .nav-links a:hover,
+.pagination .nav-links span.current,
+.comment .comment-meta .comment-like:hover,
+.comment .comment-meta .comment-reply-link:hover,
+.comment .comment-meta .comment-like:hover > i,
+.comment .comment-meta .comment-reply-link:hover > i,
+.comment .comment-meta .comment-like.active > i,
+.comment .comment-meta .comment-reply-link.active > i,
+.counters > li > i,
+.sharing-links > li > a:hover,
+.sharing-links > li > a:hover > i,
+.widget_calendar table td#today,
+.widget_calendar table th#today,
+.widget_calendar table td > a:hover,
+.widget_calendar table th > a:hover,
+.widget_authors .author-row .author:hover h4,
+.widget_tags .tag:hover,
+.post-tags .tag:hover,
+.scroll-to-top-btn:hover,
+.footer .footer-nav > ul > li > a:hover,
+.footer.footer-dark .footer-nav > ul > li > a:hover,
+.side-nav.dark-skin > ul > li:hover > a,
+.side-nav.dark-skin > ul > li.active > a,
+.post-tile .post-meta .post-date a:hover,
+.post-tile .post-meta .comments-count a:hover,
+.post-tile .post-meta .post-author a:hover,
+.post-tile .post-meta .post-taxonomy a:hover,
+.post-tile .post-body .post-title > a:hover,
+.single-post-toolbar .post-date a:hover,
+.single-post-toolbar .post-author a:hover,
+.single-post-toolbar .post-taxonomy a:hover {
+  color: #ff3366;
+}
+
+.sharing-links.light-skin > li > a:hover,
+.sharing-links.light-skin > li > a:hover > i,
+.post-tile .post-thumb .post-meta .post-date a,
+.post-tile .post-thumb .post-meta .comments-count a {
+  color: #fff;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #ff3366;
+}
+
+.nav-tabs > li > a:hover .icon-list span,
+.nav-tabs > li.active > a .icon-list span {
+  border-top-color: #ff3366;
+  border-bottom-color: #ff3366;
+}
+
+.nav-tabs > li > a:hover .icon-list span:after,
+.nav-tabs > li > a:hover .icon-list span:before,
+.nav-tabs > li.active > a .icon-list span:after, .nav-tabs > li.active > a .icon-list span:before {
+  background-color: #ff3366;
+}
+
+.nav-filters > li > a:hover,
+.nav-filters > li > a:hover > i,
+.nav-filters > li.active > a,
+.nav-filters > li.active > a > i {
+  color: #ff3366;
+}
+
+.main-navigation > .menu li:hover > a,
+.main-navigation > .menu li.current-menu-item > a,
+.main-navigation > .menu li.current_page_item > a,
+.main-navigation > .menu li.current-menu-ancestor > a,
+.main-navigation > .menu li.current-menu-parent > a,
+.submenu-dark .main-navigation > .menu > li .sub-menu > li:hover > a,
+.submenu-dark .main-navigation > .menu > li .sub-menu > li.current-menu-item > a,
+.submenu-dark .main-navigation > .menu > li .sub-menu > li.current_page_item > a,
+.submenu-dark .main-navigation > .menu > li .sub-menu > li.current-menu-ancestor > a,
+.submenu-dark .main-navigation > .menu > li .sub-menu > li.current-menu-parent > a {
+  color: #ff3366;
+}
+
+.bg-primary, .list-featured li:before,
+.pricing-table > table thead .plan-name .label.label-primary,
+.widget_tags .tag:hover span,
+.post-tags .tag:hover span,
+.nav-filters > li > a:hover .icon-list span:after,
+.nav-filters > li > a:hover .icon-list span:before,
+.nav-filters > li.active > a .icon-list span:after,
+.nav-filters > li.active > a .icon-list span:before,
+.format-image .post-format, .format-gallery .post-format,
+.format-video .post-format, .format-audio .post-format,
+.format-quote .post-format, .format-link .post-format,
+.format-chat .post-format {
+  background-color: #ff3366;
+}
+
+.box-with-icon:hover .box-with-icon-icon,
+.box-with-image:hover .box-with-icon-icon {
+  color: #ff3366;
+  border-color: #ff3366;
+}
+
+.box-with-icon.light-skin:hover .box-with-icon-icon,
+.box-with-image.light-skin:hover .box-with-icon-icon {
+  color: #fff;
+  border-color: #fff;
+}
+
+.video-popup-placeholder .play-btn {
+  border-color: #ff3366;
+}
+
+.video-popup-placeholder .play-btn:before {
+  border-left-color: #ff3366;
+}
+
+.side-nav > ul > li:hover > a,
+.side-nav > ul > li.active > a {
+  color: #ff3366;
+}
+
+.side-nav > ul > li.active > a {
+  border-left-color: #ff3366;
+}
+
+.side-nav > ul > li.dark-skin > ul > li:hover > a,
+.side-nav > ul > li.dark-skin > ul > li.active > a {
+  color: #ff3366;
+}
+
+.video-popup-btn:hover {
+  color: #ff3366;
+  border-color: #ff3366;
+}
+
+.video-popup-btn.light-skin:hover {
+  color: #ff3366;
+  border-color: transparent;
+}
+
+.widget_archive > ul li a:hover,
+.widget_categories > ul li a:hover,
+.widget_pages > ul li a:hover,
+.widget_recent_comments > ul li a:hover {
+  color: #ff3366;
+}
+
+.widget_archive > ul li a:hover .count,
+.widget_categories > ul li a:hover .count,
+.widget_pages > ul li a:hover .count,
+.widget_recent_comments > ul li a:hover .count {
+  color: #fff;
+  background-color: #ff3366;
+}
+
+.widget_archive > ul li.active a,
+.widget_archive > ul li.current-cat a,
+.widget_categories > ul li.active a,
+.widget_categories > ul li.current-cat a,
+.widget_pages > ul li.active a,
+.widget_pages > ul li.current-cat a,
+.widget_recent_comments > ul li.active a,
+.widget_recent_comments > ul li.current-cat a {
+  color: #ff3366;
+}
+
+.widget_archive > ul li.active a .count,
+.widget_archive > ul li.current-cat a .count,
+.widget_categories > ul li.active a .count,
+.widget_categories > ul li.current-cat a .count,
+.widget_pages > ul li.active a .count,
+.widget_pages > ul li.current-cat a .count,
+.widget_recent_comments > ul li.active a .count,
+.widget_recent_comments > ul li.current-cat a .count {
+  color: #fff;
+  background-color: #ff3366;
+}
+
+.nav-filters > li > a:hover .icon-list span,
+.nav-filters > li.active > a .icon-list span {
+  border-top-color: #ff3366;
+  border-bottom-color: #ff3366;
+}
+
+@media screen and (max-width: 991px) {
+  .navbar .mobile-dropdown .main-navigation > .menu > li.menu-item-has-children.open > a {
+    color: #ff3366;
+  }
+  .navbar .mobile-dropdown .main-navigation > .menu > li.current-menu-item > a,
+  .navbar .mobile-dropdown .main-navigation > .menu > li.current_page_item > a,
+  .navbar .mobile-dropdown .main-navigation > .menu > li.current-menu-ancestor > a,
+  .navbar .mobile-dropdown .main-navigation > .menu > li.current-menu-parent > a {
+    border-left-color: #ff3366;
+  }
+  .navbar .mobile-dropdown .main-navigation > .menu > li.menu-item-has-children.open > a > a:hover,
+  .navbar .mobile-dropdown .main-navigation > .menu > li .sub-menu > li > a:hover {
+    color: #ff3366;
+  }
+  .navbar .mobile-dropdown .main-navigation > .menu > li.menu-item-has-children.open > a.current-menu-item > a,
+  .navbar .mobile-dropdown .main-navigation > .menu > li.menu-item-has-children.open > a.current_page_item > a,
+  .navbar .mobile-dropdown .main-navigation > .menu > li .sub-menu > li.current-menu-item > a,
+  .navbar .mobile-dropdown .main-navigation > .menu > li .sub-menu > li.current_page_item > a {
+    color: #ff3366;
+  }
+}
+
+.intro-section .overlay,
+.page-title .overlay,
+.fw-section .overlay,
+.pricing-table-container .pricing-header .overlay,
+.gallery-tile:before {
+  background: #453f84;
+  background: -moz-linear-gradient(top, #453f84 0%, #3a2d46 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #453f84), color-stop(100%, #3a2d46));
+  background: -webkit-linear-gradient(top, #453f84 0%, #3a2d46 100%);
+  background: -o-linear-gradient(top, #453f84 0%, #3a2d46 100%);
+  background: -ms-linear-gradient(top, #453f84 0%, #3a2d46 100%);
+  background: linear-gradient(to bottom, #453f84 0%, #3a2d46 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2', GradientType=0 );
+}
+
+.no-csstransitions .intro-section .overlay,
+.no-csstransitions .page-title .overlay,
+.no-csstransitions .fw-section .overlay,
+.no-csstransitions .pricing-table-container .pricing-header .overlay,
+.no-csstransitions .gallery-tile:before {
+  filter: none;
+}
+
+.color-switcher .toggle:hover {
+  color: #ff3366 !important;
+}
