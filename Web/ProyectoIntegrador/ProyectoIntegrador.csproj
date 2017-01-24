@@ -291,7 +291,8 @@
     <Content Include="GUI\CatalogoTipoPago.aspx" />
     <Content Include="GUI\CatalogoUsuario.aspx" />
     <Content Include="GUI\Facturas.aspx" />
-    <Content Include="GUI\Front.aspx" />
+    <Content Include="GUI\FrontEnd\Indice.aspx" />
+    <Content Include="GUI\FrontEnd\InicioSesion.aspx" />
     <Content Include="GUI\InformacionUser.aspx" />
     <Content Include="GUI\VerFactura.aspx" />
     <Content Include="ImagenesWeb\Usuarios\logoDM.png" />
@@ -437,6 +438,7 @@
     <Content Include="img\widgets\instagram\04.jpg" />
     <Content Include="img\widgets\instagram\05.jpg" />
     <Content Include="img\widgets\instagram\06.jpg" />
+    <Content Include="Indice.aspx" />
     <Content Include="js\actions.js" />
     <Content Include="js\GMapsLatLonPicker.js" />
     <Content Include="js\jquery.validate.js" />
@@ -575,6 +577,7 @@
     <Content Include="css\bootstrap\bootstrap.css.map" />
     <Content Include="mailer\config.ini" />
     <Content Include="mailer\mailer.php" />
+    <Content Include="GUI\FrontEnd\FrontMetheor.Master" />
     <None Include="Reportes\DsFactura.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
@@ -720,12 +723,33 @@
     <Compile Include="GUI\Facturas.aspx.designer.cs">
       <DependentUpon>Facturas.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Front.aspx.cs">
-      <DependentUpon>Front.aspx</DependentUpon>
+    <Compile Include="GUI\FrontEnd\FrontMetheor.Master.cs">
+      <DependentUpon>FrontMetheor.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GUI\Front.aspx.designer.cs">
-      <DependentUpon>Front.aspx</DependentUpon>
+    <Compile Include="GUI\FrontEnd\FrontMetheor.Master.designer.cs">
+      <DependentUpon>FrontMetheor.Master</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrontEnd\Indice.aspx.cs">
+      <DependentUpon>Indice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\FrontEnd\Indice.aspx.designer.cs">
+      <DependentUpon>Indice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrontEnd\InicioSesion.aspx.cs">
+      <DependentUpon>InicioSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\FrontEnd\InicioSesion.aspx.designer.cs">
+      <DependentUpon>InicioSesion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Indice.aspx.cs">
+      <DependentUpon>Indice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Indice.aspx.designer.cs">
+      <DependentUpon>Indice.aspx</DependentUpon>
     </Compile>
     <Compile Include="Reportes\Administra.cs">
       <DependentUpon>Model1.tt</DependentUpon>

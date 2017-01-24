@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace ProyectoIntegrador.GUI
+namespace ProyectoIntegrador.GUI.FrontEnd
 {
-    public partial class Front : System.Web.UI.Page
+    public partial class FrontMetheor : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

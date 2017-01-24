@@ -1,0 +1,213 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FrontMetheor.master.cs" Inherits="ProyectoIntegrador.GUI.FrontEnd.FrontMetheor" %>
+
+<!DOCTYPE html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <meta charset="utf-8"/>
+  <title>Metheor | Home Version 1</title>
+
+  <!--SEO Meta Tags-->
+  <meta name="description" content="Metheor - Multi-Purpose App Showcase Template" />
+  <meta name="keywords" content="multipurpose, app showcase, mobile, blog, business, corporate, startup, landing, shortcodes, html5, css3, jquery, js, gallery, slider, touch, creative" />
+  <meta name="author" content="Rokathemes" />
+
+  <!--Mobile Specific Meta Tag-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+
+  <!-- All Theme Styles including Bootstrap, Bourbon, Pixeden, etc. compiled from styles.scss-->
+  <link href="../../css/styles.min.css" rel="stylesheet" media="screen"/>
+    <link href="../../css/styles.css" rel="stylesheet" />
+  <!-- Pixeden Icon Font -->
+  <link href="../../css/vendor/pixeden.min.css" rel="stylesheet" media="screen"/>
+    
+  <!-- Feather Icon Font -->
+  <link href="../../css/vendor/feather-icons.min.css" rel="stylesheet" media="screen"/>
+
+  <!-- FontAwesome Icon Font -->
+  <link href="../../css/vendor/fontawesome.min.css" rel="stylesheet" media="screen"/>
+
+  <!-- Bootstrap -->
+  <link href="../../css/vendor/bootstrap.min.css" rel="stylesheet" media="screen"/>
+
+  <!-- Theme Styles -->
+  <link href="../../css/styles.min.css" rel="stylesheet" media="screen"/>
+
+  <!--Color Scheme-->
+  <!-- <link class="color-scheme" href="../../css/colors/color-ff3366.css" rel="stylesheet" media="screen"> -->
+
+  <!--Modernizr / Detectizr-->
+  <script src="../../js/vendor/modernizr.custom.js"></script>
+
+  <!-- Page Preloader (Pace) -->
+  
+  <script src="js/vendor/pace.min.js"></script>
+
+</head>
+<body class="is-preloader parallax">
+    <form id="form1" runat="server">
+
+    <div>
+   
+
+  <!-- Page Wrapper -->
+  <div class="page-wrapper">
+
+    <!-- Navbar -->
+    <!-- Remove ".navbar-fixed" class to make navigation bar scrollable with the page. Another modifier calss is ".submenu-dark" to alter submenu appearance. -->
+      <header class="navbar navbar-fixed">
+      <div class="container">
+        <div class="inner">
+            
+          <!-- Site Logo -->
+          <a href="index.html" class="site-logo">
+            <img src="../../img/logo.svg" alt="Metheor"/>
+          </a><!-- .site-logo -->
+
+          <!-- Mobile Dropdown -->
+          <div class="mobile-dropdown">
+
+            <!-- Mobile Tools -->
+            <div class="mobile-tools">
+              <form method="post" class="search-box">
+                <input type="text" placeholder="Enter your search query">
+                <button type="submit"><i class="pe-7s-search"></i></button>
+              </form><!-- .search-box -->
+              <div class="social-bar text-center">
+                <a href="#" class="sb-facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="sb-twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="sb-google-plus"><i class="fa fa-google-plus"></i></a>
+                <a href="#" class="sb-instagram"><i class="fa fa-instagram"></i></a>
+              </div><!-- .social-bar -->
+            </div><!-- .mobile-tools -->
+
+            <!-- Main Navigation -->
+            <nav class="main-navigation">
+              <ul class="menu">
+                <li class="menu-item-has-children current-menu-item">
+                  <a href="Indice.aspx">Inicio<span></span></a>
+                 
+                </li>
+              
+                <li><a href="InicioSesion.aspx">Inicio de sesión</a></li>
+               
+              </ul><!-- .menu -->
+            </nav><!-- .main-navigation -->
+          </div><!-- .mobile-dropdown -->
+
+          <!-- Toolbar -->
+          <div class="toolbar">
+            <div class="search-btn">
+              <i class="pe-7s-search"></i>
+              <form method="post" class="search-box">
+                <input type="text" placeholder="Enter your search query">
+                <button type="submit"><i class="pe-7s-search"></i></button>
+              </form>
+            </div>
+            <span class="divider"></span>
+            <div class="share-btn">
+              <i class="pe-7s-share"></i>
+              <ul class="dropdown">
+                <li><a href="#" class="sb-facebook"><i class="fa fa-facebook"></i>Facebook</a></li>
+                <li><a href="#" class="sb-twitter"><i class="fa fa-twitter"></i>Twitter</a></li>
+                <li><a href="#" class="sb-google-plus"><i class="fa fa-google-plus"></i>Google+</a></li>
+                <li><a href="#" class="sb-instagram"><i class="fa fa-instagram"></i>Instagram</a></li>
+              </ul>
+            </div>
+            <a href="#markets" class="btn btn-sm btn-primary btn-icon-left scroll-to" data-offset-top="115">
+              <i class="pe-7s-download"></i>Get App
+            </a>
+            <!-- Mobile Menu Toggle -->
+            <div class="nav-toggle"><span></span></div>
+          </div><!-- .toolbar -->
+        </div><!-- .inner -->
+      </div><!-- .container -->
+    </header>
+
+
+
+      
+
+      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+
+      
+
+    <!-- Scroll To Top Button -->
+    <a href="#" class="scroll-to-top-btn">
+      <i class="icon-arrow-up"></i>
+    </a><!-- .scroll-to-top-btn -->
+
+    <!-- Footer -->
+    <!-- Use modifier class ".footer-dark" to switch to dark skin. -->
+    <footer class="footer space-top-3x">
+      <div class="container">
+        <!-- .row.subscription -->
+        <div class="padding-top-3x padding-bottom-2x text-center">
+          <h6 class="text-thin">Application available on:</h6>
+          <a href="#" class="app-store-btn"></a>
+          <a href="#" class="google-play-btn"></a>
+          <a href="#" class="windows-btn"></a>
+          <a href="#" class="amazon-btn"></a>
+          <div class="market-counter">
+            <i class="pe-7s-download"></i>
+            <span>133K</span>
+            downloads
+          </div><!-- .market-counter -->
+        </div><!-- .padding-top-3x.padding-bottom-2x.text-center -->
+
+        <!-- Copyright -->
+        <div class="copyright">
+          <div class="inner">
+            <div class="column">
+              <a href="index.html" class="site-logo">
+                <img src="../../../../img/footer-logo-def.svg" alt="Metheor">
+              </a>
+              <span class="copy-text">&copy; 2016. All rights reserved</span>
+            </div><!-- .column -->
+            <div class="column">
+              <nav class="footer-nav">
+                <ul>
+                  <li><a href="#">Terms of service</a></li>
+                  <li><a href="#">Privacy policy</a></li>
+                  <li><a href="contacts.html">Contacts</a></li>
+                  <li><a href="help-center.html">Support</a></li>
+                </ul>
+              </nav><!-- .footer-nav -->
+            </div><!-- .column -->
+            <div class="column">
+              <div class="social-bar">
+                <a href="#" class="sb-facebook" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="sb-twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="sb-google-plus" data-toggle="tooltip" data-placement="top" title="Google+"><i class="fa fa-google-plus"></i></a>
+                <a href="#" class="sb-instagram"><i class="fa fa-instagram"></i></a>
+              </div><!-- .social-bar -->
+            </div><!-- .column -->
+          </div><!-- .inner -->
+        </div><!-- .copyright -->
+      </div><!-- .container -->
+    </footer><!-- .footer -->
+  </div><!-- .page-wrapper -->
+
+  <!-- JavaScript (jQuery) libraries, plugins and custom scripts -->
+  <script src="../../js/vendor/jquery-2.1.4.min.js"></script>
+  <script src="../../js/vendor/bootstrap.min.js"></script>
+  <script src="../../js/vendor/placeholder.js"></script>
+  <script src="../../js/vendor/smoothscroll.js"></script>
+  <script src="../../js/vendor/jquery.stellar.min.js"></script>
+  <script src="../../js/vendor/velocity.min.js"></script>
+  <script src="../../js/vendor/jquery.parallax.min.js"></script>
+  <script src="../../js/vendor/magnific-popup.min.js"></script>
+  <script src="../../js/vendor/owl.carousel.min.js"></script>
+  <script src="../../js/scripts.js"></script>
+   <script src="../../js/vendor/jquery.mCustomScrollbar.min.js"></script>
+
+    </div>
+    </form>
+</body>
+</html>
