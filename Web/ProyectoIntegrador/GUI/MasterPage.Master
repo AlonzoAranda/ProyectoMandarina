@@ -77,7 +77,9 @@
                     <li>
                         <a href="AgregarSitio2.aspx"><span class="fa fa-desktop"></span> <span class="xn-text">Agregar sitio</span></a>
                     </li>
-                  
+                   <li>
+                        <a href="AgregarEvento.aspx"><span class="fa fa-desktop"></span> <span class="xn-text">Agregar eventos</span></a>
+                    </li>
                     <li class="xn-openable">
                         <a href="#"><span class="fa fa-file-text-o"></span> <span class="xn-text">Perfil</span></a>
                         <ul>

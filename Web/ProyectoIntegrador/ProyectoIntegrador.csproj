@@ -284,6 +284,7 @@
     <Content Include="fonts\feather-webfont.svg" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\Pe-icon-7-stroke.svg" />
+    <Content Include="GUI\AgregarEvento.aspx" />
     <Content Include="GUI\AgregarSitio2.aspx" />
     <Content Include="GUI\CatalogoEstablecimientos.aspx" />
     <Content Include="GUI\CatalogoMembresias.aspx" />
@@ -681,6 +682,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GUI\AgregarEvento.aspx.cs">
+      <DependentUpon>AgregarEvento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\AgregarEvento.aspx.designer.cs">
+      <DependentUpon>AgregarEvento.aspx</DependentUpon>
+    </Compile>
     <Compile Include="GUI\CatalogoEstablecimientos.aspx.cs">
       <DependentUpon>CatalogoEstablecimientos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

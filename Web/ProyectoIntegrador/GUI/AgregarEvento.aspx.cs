@@ -8,9 +8,10 @@ using System.Data;
 using System.IO;
 using CrystalDecisions.Shared;
 using CrystalDecisions.CrystalReports.Engine;
+
 namespace ProyectoIntegrador.GUI
 {
-    public partial class AgregarSitio2 : System.Web.UI.Page
+    public partial class AgregarEvento : System.Web.UI.Page
     {
         localhost.WSDisfruta servicio = new localhost.WSDisfruta();
         localhost.SitioBO sitio = new localhost.SitioBO();
@@ -25,9 +26,6 @@ namespace ProyectoIntegrador.GUI
         DataTable Dt = new DataTable();
 
         int indice;
-
-
-
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -43,10 +41,9 @@ namespace ProyectoIntegrador.GUI
 
                     ddl.Visible = false;
                 }
-             
+
             }
         }
-
         public void validarNumeroSitios()
         {
             US = (DataTable)Session["Usuarios"];
@@ -72,7 +69,7 @@ namespace ProyectoIntegrador.GUI
             return Dt;
         }
 
-        public void llenarGrid(object obj )
+        public void llenarGrid(object obj)
         {
             US = (DataTable)Session["Usuarios"];
             if (Convert.ToInt32(US.Rows[0].ItemArray[9]) != 1)
@@ -95,14 +92,14 @@ namespace ProyectoIntegrador.GUI
             DatosGrid = null;
             US = (DataTable)Session["Usuarios"];
             administra.IdUsuario = Convert.ToInt32(US.Rows[0].ItemArray[0]);
-            Datos =  servicio.BuscarAdministraDAO(administra);
+            Datos = servicio.BuscarAdministraDAO(administra);
             DataTable Dt2 = new DataTable();
             Dt2.Columns.Add("IdSitio");
             Dt2.Columns.Add("Nombre");
             Dt2.Columns.Add("Descripcion");
             Dt2.Columns.Add("direccion");
             Dt2.Columns.Add("Estatus");
-            for (int i = 0; i < Datos.Rows.Count; i++ )
+            for (int i = 0; i < Datos.Rows.Count; i++)
             {
                 try
                 {
@@ -119,7 +116,7 @@ namespace ProyectoIntegrador.GUI
                 }
                 catch
                 { }
-             
+
             }
             grResultado.DataSource = Dt2;
             grResultado.DataBind();
@@ -154,33 +151,33 @@ namespace ProyectoIntegrador.GUI
         protected void DdlEstablecimiento_SelectedIndexChanged(object sender, EventArgs e)
         {
             sitio.IdEstablecimiento = Convert.ToInt32(DdlEstablecimiento.SelectedValue);
-           
+
             llenarGrid(llenarVistaDetallesitio(sitio, Foto, Ubicacion));
         }
 
         protected void ddlTipo_TextChanged(object sender, EventArgs e)
         {
             llenarddlEstablecimiento();
-            
+
             llenarGrid(llenarVistaDetallesitio(sitio, Foto, Ubicacion));
         }
         public void AgregarImagen(string nombre)
-        { 
+        {
 
-                    try
-                    {
-                        string filename = Path.GetFileName(FileUpload2.FileName);
-                        FileUpload2.SaveAs(Server.MapPath("~/ImagenesWeb/Sitos/") + ( filename) + nombre);
-                        
+            try
+            {
+                string filename = Path.GetFileName(FileUpload2.FileName);
+                FileUpload2.SaveAs(Server.MapPath("~/ImagenesWeb/Sitos/") + (filename) + nombre);
 
-                        //Response.Redirect("Inicio.aspx");
 
-                    }
-                    catch (Exception ex)
-                    {
-                        Mensaje(ex.Message);
-                    }
-    
+                //Response.Redirect("Inicio.aspx");
+
+            }
+            catch (Exception ex)
+            {
+                Mensaje(ex.Message);
+            }
+
         }
 
         protected void btnEnviar_Click(object sender, EventArgs e)
@@ -210,11 +207,11 @@ namespace ProyectoIntegrador.GUI
             {
                 AgregarImagen(txtNombre.Text);
 
-                Foto.Foto = FileUpload2.FileName.ToString() +  txtNombre.Text ;
-                
+                Foto.Foto = FileUpload2.FileName.ToString() + txtNombre.Text;
+
             }
-        
-            if (mensaje.Trim().Length == 0 )
+
+            if (mensaje.Trim().Length == 0)
             {
                 VistaSitio.Nombre = txtNombre.Text;
                 VistaSitio.Descripcion = txtDescripcion.Text;
@@ -236,14 +233,14 @@ namespace ProyectoIntegrador.GUI
                 {
                     Foto.IdSitio = Convert.ToInt32(servicio.BuscarSitioDAO(VistaSitio).Rows[0].ItemArray[0].ToString());
                     Ubicacion.IdSitio = Foto.IdSitio;
-                   
+
                     int j = servicio.agregarFotoDAO(Foto);
                     if (j == 1)
+                    {
+
+                        int h = servicio.agregarUbicacionesDAO(Ubicacion);
+                        if (h == 1)
                         {
-                                             
-                            int h = servicio.agregarUbicacionesDAO(Ubicacion);
-                            if (h == 1)
-                            {
                             Mensaje("Los datos se agregaron correctamente");
                             llenarGrid(llenarVistaDetallesitio(VistaSitio, Foto, Ubicacion));
                             US = (DataTable)Session["Usuarios"];
@@ -262,14 +259,14 @@ namespace ProyectoIntegrador.GUI
                             }
                             else
                             {
-                                
+
                                 llenarGrid(VistaSitio);
                                 validarNumeroSitios();
 
                             }
 
                             limpiar();
-                            }
+                        }
                     }
                 }
                 else
@@ -287,12 +284,12 @@ namespace ProyectoIntegrador.GUI
 
         protected void txtLatitude_TextChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         protected void txtLongitud_TextChanged(object sender, EventArgs e)
         {
-           
+
         }
 
         protected void txtLimpiar_Click(object sender, EventArgs e)
@@ -318,17 +315,17 @@ namespace ProyectoIntegrador.GUI
 
             if (txtNombre.Text.Trim().Length == 0)
             {
-                mensaje = mensaje + "Introduce el Nombre \n";          
+                mensaje = mensaje + "Introduce el Nombre \n";
             }
             if (txtDescripcion.Text.Trim().Length == 0)
             {
-                mensaje = mensaje + "Introduce la descripción \n";   
+                mensaje = mensaje + "Introduce la descripción \n";
             }
             if (txtUbicacion.Text.Trim().Length == 0)
             {
-                mensaje = mensaje + "Introduce el Dirección \n";   
+                mensaje = mensaje + "Introduce el Dirección \n";
             }
-            if(txtLongitud.Text.Trim().Length == 0)
+            if (txtLongitud.Text.Trim().Length == 0)
             {
                 mensaje = mensaje + "Introduce el longitud \n";
             }
@@ -336,7 +333,7 @@ namespace ProyectoIntegrador.GUI
             {
                 mensaje = mensaje + "Introduce el latitud \n";
             }
-          
+
             //else
             //{
             //    mensaje = mensaje + "Introduce la Imagen \n";
@@ -375,15 +372,15 @@ namespace ProyectoIntegrador.GUI
                         Ubicacion.Longitud = txtLongitud.Text;
                         Ubicacion.Latitud = txtLatitude.Text;
                         Ubicacion.Direccion = txtUbicacion.Text;
-                        int  h = servicio.ModificarUbicacionesDAO(Ubicacion);
-                        if(h != 1)
+                        int h = servicio.ModificarUbicacionesDAO(Ubicacion);
+                        if (h != 1)
                         {
                             Mensaje("Los datos se agregaron correctamente");
                             llenarGrid(llenarVistaDetallesitio(VistaSitio, Foto, Ubicacion));
                             limpiar();
                         }
                     }
-                   
+
                 }
                 else
                 {
@@ -391,13 +388,13 @@ namespace ProyectoIntegrador.GUI
                 }
 
             }
-            else if(mensaje.Trim().Length  > 0)
+            else if (mensaje.Trim().Length > 0)
             {
                 Mensaje("Favor de ingresar los siguientes datos:\n" + mensaje);
             }
 
 
-         
+
         }
         protected void grResultado_RowCommand(object sender, GridViewCommandEventArgs e)
         {
@@ -410,7 +407,7 @@ namespace ProyectoIntegrador.GUI
                 txtUbicacion.Text = grResultado.Rows[indice].Cells[3].Text;
                 ddlEstatus.SelectedValue = grResultado.Rows[indice].Cells[4].Text;
                 Session["Id"] = Convert.ToInt32(grResultado.Rows[indice].Cells[0].Text);
-                Session["IdU"] =Convert.ToInt32(servicio.BuscarUbicacionesDAO(Ubicacion).Rows[0].ItemArray[0].ToString());
+                Session["IdU"] = Convert.ToInt32(servicio.BuscarUbicacionesDAO(Ubicacion).Rows[0].ItemArray[0].ToString());
 
                 try
                 {
@@ -425,7 +422,7 @@ namespace ProyectoIntegrador.GUI
                 indice = Convert.ToInt32(e.CommandArgument);
 
                 sitio.IdSitio = Convert.ToInt32(grResultado.Rows[indice].Cells[0].Text);
-                Foto.IdSitio =  Convert.ToInt32(grResultado.Rows[indice].Cells[0].Text);
+                Foto.IdSitio = Convert.ToInt32(grResultado.Rows[indice].Cells[0].Text);
                 Ubicacion.IdSitio = Convert.ToInt32(grResultado.Rows[indice].Cells[0].Text);
 
                 try
@@ -459,9 +456,9 @@ namespace ProyectoIntegrador.GUI
                         servicio.EliminarSitioDAO(sitio);
                     }
                     catch { }
-                        llenarGridUsuario();
-                        validarNumeroSitios();
-                   
+                    llenarGridUsuario();
+                    validarNumeroSitios();
+
                 }
                 else
                 {
@@ -470,7 +467,7 @@ namespace ProyectoIntegrador.GUI
                         administra.IdSitio = Convert.ToInt32(Session["Id"]);
                         administra.IdAdministra = Convert.ToInt32(servicio.BuscarAdministraDAO(administra).Rows[0].ItemArray[0]);
                         servicio.EliminarAdministraDAO(administra);
-                       
+
                     }
                     catch
                     { }
@@ -482,16 +479,16 @@ namespace ProyectoIntegrador.GUI
                     catch { }
                 }
 
-                
+
 
                 //indice = 0;
-               
+
             }
         }
 
         protected void grResultado_SelectedIndexChanged(object sender, EventArgs e)
         {
-         
+
         }
         public object llenarVistaDetallesitio(localhost.SitioBO sitio, localhost.FotoBO foto, localhost.UbicacionBO ubicacion)
         {
@@ -509,7 +506,7 @@ namespace ProyectoIntegrador.GUI
 
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
-            
+
             //VistaSitio.IdSitio = sitio.IdSitio;
             if (txtDescripcion.Text.Trim().Length != 0)
             {
@@ -556,15 +553,15 @@ namespace ProyectoIntegrador.GUI
 
         protected void btnImprimir_Click(object sender, EventArgs e)
         {
-           
-           // Session["ResultadoAlumno"] = servicio.BuscarVISTADETALLESITIO(obj);
+
+            // Session["ResultadoAlumno"] = servicio.BuscarVISTADETALLESITIO(obj);
             String ruta = Server.MapPath("~/Reportes/CrDetalleSitios.rpt");
             ReportDocument doc = new ReportDocument();
             DataTable dt = (DataTable)Session["ResultadoAlumno"];
 
             doc.Load(ruta);
             doc.SetDataSource(dt);
-    
+
             Response.Buffer = false;
             Response.ClearContent();
             Response.ClearHeaders();
@@ -578,13 +575,13 @@ namespace ProyectoIntegrador.GUI
             //{
             //    Button btn=(Button)item.Controls()
             //}
-       
+
         }
 
         protected void btnEliminar_Click(object sender, EventArgs e)
         {
-           
-           
+
+
         }
 
 
