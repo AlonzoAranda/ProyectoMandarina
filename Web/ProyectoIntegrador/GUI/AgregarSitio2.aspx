@@ -196,9 +196,9 @@
                                                                 }
                                                             </style>
                                                             <fieldset class="gllpLatlonPicker">
-                                                                <input type="text" class="gllpSearchField" />
+                                                             <%--   <input type="text" class="gllpSearchField" />
                                                                 <input type="button" class="gllpSearchButton" value="Buscar" />
-                                                               
+                                                               --%>
                                                                 <div class="gllpMap">Google Maps</div>
                                                                 <div class="input-group">
                                                                   
