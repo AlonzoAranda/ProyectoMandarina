@@ -7,7 +7,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
    <meta charset="utf-8"/>
-  <title>Metheor | Home Version 1</title>
+  <title>Ximbal Merida</title>
 
   <!--SEO Meta Tags-->
   <meta name="description" content="Metheor - Multi-Purpose App Showcase Template" />
@@ -67,7 +67,7 @@
             
           <!-- Site Logo -->
           <a href="index.html" class="site-logo">
-            <img src="../../img/logo.svg" alt="Metheor"/>
+            <img src="../../img/logo.gif" alt="Metheor"/>
           </a><!-- .site-logo -->
 
           <!-- Mobile Dropdown -->
@@ -166,7 +166,7 @@
           <div class="inner">
             <div class="column">
               <a href="index.html" class="site-logo">
-                <img src="../../../../img/footer-logo-def.svg" alt="Metheor">
+                <img src="../img/footer-logo-def.svg" alt="Metheor">
               </a>
               <span class="copy-text">&copy; 2016. All rights reserved</span>
             </div><!-- .column -->

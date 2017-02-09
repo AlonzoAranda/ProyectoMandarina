@@ -9,19 +9,21 @@
     Agregar sitio
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+   <script src="../js/gmaps.js"></script>
     
-
     <div class="row">
+
                         <div class="panel-footer col-md-12">
                       
+
                               <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
                         
                             <div  class="form-horizontal">
                                    
-                            <div class="panel panel-default">
+                            <div class="row">
                                 <div class ="panel-body">
                                     
-
+                                <div class="row" style="background-color: white">
                                 <div class=" pull-right">
                               
                                     
@@ -65,7 +67,8 @@
                                      
                                 </div>
                                                    
-                                
+                                </div>
+                                <div style="background-color: white">
                                 <div id ="PanelDatos" runat="server" class="panel-body">                                                                        
                                     
                               
@@ -90,19 +93,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="form-group">
-                                               <label class="col-md-3 control-label">Dirección</label>
-                                                <div class="col-md-9">   
-                                                    
-                                                                     
-                                                    <div class="input-group">
-
-                                                        <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
-                                                         <asp:TextBox ID="txtUbicacion" class="form-control" runat="server" value="" onfocus="this.Text = '';" onblur="if (this.Text == '') {this.Text = 'txtUbicacion';}" required="" AutoPostBack="False"></asp:TextBox>                                                      </div>                                            
-                                               
-                                                   
-                                                </div>
-                                            </div>
+                                           
                                                         
                                             <div runat="server" id="ddl" class="form-group">
                                                 <label class="col-md-3 control-label">Tipo de establecimiento</label>
@@ -182,49 +173,83 @@
                                                       
                                          </div>
                                         <div class="col-md-1"></div>
-                                        <div class="col-md-5">
-
-                                                            <script src="../js/jquery-1.11.0.min.js"></script>
-                                                            <script src="../js/GMapsLatLonPicker.js"></script>
-
-                                                            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBh85_Qcuh0YZH_RmXXa1aly6cU7cU_q9M"></script>
-
-                                                            <style rel="stylesheet" type="text/css">
-                                                                .gllpMap {
-                                                                    width: 400px;
-                                                                    height: 300px;
-                                                                }
-                                                            </style>
-                                                            <fieldset class="gllpLatlonPicker">
-                                                             <%--   <input type="text" class="gllpSearchField" />
-                                                                <input type="button" class="gllpSearchButton" value="Buscar" />
-                                                               --%>
-                                                                <div class="gllpMap">Google Maps</div>
-                                                                <div class="input-group">
-                                                                  
-                                                                <span class="input-group-addon"><span class="glyphicon glyphicon-map-marker"></span></span>
-                                                                 <asp:TextBox ID="txtLatitude" type="text" class="gllpLatitude form-control" runat="server" value="20.96645955666419" Visible="True" OnTextChanged="txtLatitude_TextChanged"></asp:TextBox>                                        
-                                                               
-
-                                                           <span class="input-group-addon"><span class="glyphicon glyphicon-map-marker"></span></span>
-                                                          <asp:TextBox ID="txtLongitud" type="text" class="gllpLongitude form-control" runat="server" value="-89.62270814819334" OnTextChanged="txtLongitud_TextChanged"></asp:TextBox>
-                                                          </div>
-                                                                <div class="input-group">
-                                                     <%--   <span class="input-group-addon"><span class="glyphicon glyphicon-zoom-in"></span></span>
-                                                      --%>  <asp:TextBox ID="txtZomm" runat="server"  class="form-control" type="text" value="7" Visible ="False"></asp:TextBox>
-                                                          </div>
-
-
-                                                            </fieldset>
-
-                                          </div>
+                                        <div class="col-md-5 ">
+                                            <div class="form-group">
                                             
-                               </div>
+                                               <label class=" control-label pull-left">Dirección</label>
+                                                <br />
+                                            <br />
+                                                  
+                                            <input  id="address" type="text"  style="width:350px "  />
+                                                <br />
+                                                <br />
+                                            <input id="Buscar" type="button" value="Buscar Dirección" class="btn btn-primary"/> 
+                                          
+                                            <br />
+                                             <div id="map" style="width: 400px; height: 400px;">  
+                                              <br />
+                                                        <script type='text/javascript'>
+                                                    var map = null;
+	                                        var marker = null;
+
+	                                        function initialize() {
+	                                            var myLatlng = new google.maps.LatLng(20.9373538, -89.60034059999998);
+	                                            var myOptions = {
+	                                                zoom: 10,
+	                                                center: myLatlng,
+	                                                mapTypeId: google.maps.MapTypeId.ROADMAP
+	                                            };
+	                                            map = new google.maps.Map($("#map").get(0), myOptions);
+		                                        marker = new google.maps.Marker({ map: map });
+	                                        }
+
+	                                        $('#Buscar').live('click', function() {
+	                                            var address = $("#address").val() + " Merida yucatan";
+	                                            var geocoder = new google.maps.Geocoder();
+	                                            geocoder.geocode({ 'address': address }, geocodeResult);
+	                                            document.getElementById('<%=txtDireccion.ClientID %>').value = (address);
+	                                               
+	                                            //$("#dire").val(address);
+	                                        });
+                                           
+
+	                                        function geocodeResult(results, status) {
+	                                            if (status == 'OK') {
+			                                        map.setCenter(results[0].geometry.location);
+			                                        //$('#Text1').va(results[0].geometry.location.lat());
+	                                                //$('#longitude').text(results[0].geometry.location.lng());
+			                                        document.getElementById('<%=latitude.ClientID %>').value = (results[0].geometry.location.lat());
+                                                    document.getElementById('<%=longitude.ClientID %>').value = (results[0].geometry.location.lng());
+	                                                map.fitBounds(results[0].geometry.viewport);
+	                                                marker.setPosition(results[0].geometry.location);
+	                                            } else {
+	                                                alert("Geocoding no tuvo éxito debido a: " + status);
+	                                            }
+	                                        }
+
+                                        $(document).ready(function() {
+                                            initialize();
+                                        gmaps_ads();
+                                        });        </script>
+           
+         
+                                            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRxC6Y4f-j6nECyHWigtBATtJyXyha-XU&libraries=adsense&sensor=true&language=es"></script>
+
+                                          </div>  
+                                            <asp:TextBox ID="latitude" runat="server"></asp:TextBox>
+                                            <asp:TextBox ID="txtDireccion" runat="server"  style="width:1px "></asp:TextBox>     
+                                            <asp:TextBox ID="longitude" runat="server"></asp:TextBox>
+                                        </div>
+                                                    
+                                         </div>
                              </div>  
                                
-                            
+                            </div>
                              </div>
-                        </div>
+                                
+                           </div>
+                                
+                                
                             
                           
                                       <div class="panel panel-default">
@@ -257,6 +282,10 @@
 
                             
                         </div>
-                    </div>        
+                    </div>   
+             
+        </div>
 
+
+    
 </asp:Content>

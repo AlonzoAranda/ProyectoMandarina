@@ -30,6 +30,7 @@ namespace ProyectoIntegrador.GUI
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            //txtDireccion.Visible = false;
             if (!IsPostBack)
             {
                 //btnEjemlop.Attributes.Add( "Class","<span class=\"fa fa-save\"></span>&nbsp;Agregar");
@@ -43,7 +44,7 @@ namespace ProyectoIntegrador.GUI
 
                     ddl.Visible = false;
                 }
-             
+                
             }
         }
 
@@ -77,7 +78,10 @@ namespace ProyectoIntegrador.GUI
             US = (DataTable)Session["Usuarios"];
             if (Convert.ToInt32(US.Rows[0].ItemArray[9]) != 1)
             {
-                llenarGridUsuario();
+                //llenarGridUsuario();
+                grResultado.DataSource = servicio.BuscarVISTADETALLESITIO(obj);
+                grResultado.DataBind();
+                Session["ResultadoAlumno"] = servicio.BuscarVISTADETALLESITIO(obj);
             }
             else
             {
@@ -194,18 +198,18 @@ namespace ProyectoIntegrador.GUI
             {
                 mensaje = mensaje + "Introduce la descripción \n";
             }
-            if (txtUbicacion.Text.Trim().Length == 0)
-            {
-                mensaje = mensaje + "Introduce el Dirección \n";
-            }
-            if (txtLongitud.Text.Trim().Length == 0)
-            {
-                mensaje = mensaje + "Introduce el longitud \n";
-            }
-            if (txtLatitude.Text.Trim().Length == 0)
-            {
-                mensaje = mensaje + "Introduce el latitud \n";
-            }
+            //if (txtUbicacion.Text.Trim().Length == 0)
+            //{
+            //    mensaje = mensaje + "Introduce el Dirección \n";
+            //}
+            //if (txtLongitud.Text.Trim().Length == 0)
+            //{
+            //    mensaje = mensaje + "Introduce el longitud \n";
+            //}
+            //if (txtLatitude.Text.Trim().Length == 0)
+            //{
+            //    mensaje = mensaje + "Introduce el latitud \n";
+            //}
             if (FileUpload2.HasFile)
             {
                 AgregarImagen(txtNombre.Text);
@@ -220,9 +224,10 @@ namespace ProyectoIntegrador.GUI
                 VistaSitio.Descripcion = txtDescripcion.Text;
                 VistaSitio.Estatus = ddlEstatus.Text;
                 VistaSitio.IdEstablecimiento = Convert.ToInt32(DdlEstablecimiento.SelectedValue);
-                Ubicacion.Longitud = txtLongitud.Text;
-                Ubicacion.Latitud = txtLatitude.Text;
-                Ubicacion.Direccion = txtUbicacion.Text;
+                Ubicacion.Longitud = longitude.Text;
+                Ubicacion.Latitud = latitude.Text;
+                Ubicacion.Direccion = txtDireccion.Text;
+
                 int i = 0;
                 try
                 {
@@ -285,16 +290,7 @@ namespace ProyectoIntegrador.GUI
 
         }
 
-        protected void txtLatitude_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
-
-        protected void txtLongitud_TextChanged(object sender, EventArgs e)
-        {
-           
-        }
-
+        
         protected void txtLimpiar_Click(object sender, EventArgs e)
         {
             limpiar();
@@ -302,12 +298,12 @@ namespace ProyectoIntegrador.GUI
         public void limpiar()
         {
             txtNombre.Text = "";
-            txtUbicacion.Text = "";
+            //address.Text = "";
             txtDescripcion.Text = "";
             ddlEstatus.SelectedValue = "Activo";
             FileUpload2 = null;
-            txtLatitude.Text = 20.96645955666419.ToString();
-            txtLongitud.Text = (-89.62270814819334).ToString();
+            //txtLatitude.Text = 20.96645955666419.ToString();
+            //txtLongitud.Text = (-89.62270814819334).ToString();
             VistaSitio = new localhost.VISTADETALLESITIOBO();
             llenarGrid(VistaSitio);
         }
@@ -318,29 +314,30 @@ namespace ProyectoIntegrador.GUI
 
             if (txtNombre.Text.Trim().Length == 0)
             {
-                mensaje = mensaje + "Introduce el Nombre \n";          
+                mensaje = mensaje + "Introduce el Nombre \n";
             }
             if (txtDescripcion.Text.Trim().Length == 0)
             {
-                mensaje = mensaje + "Introduce la descripción \n";   
+                mensaje = mensaje + "Introduce la descripción \n";
             }
-            if (txtUbicacion.Text.Trim().Length == 0)
+
+            if (longitude.Text.Trim().Length == 0)
             {
-                mensaje = mensaje + "Introduce el Dirección \n";   
+                mensaje = mensaje + "Introduce la dirección \n";
             }
-            if(txtLongitud.Text.Trim().Length == 0)
+            if (latitude.Text.Trim().Length == 0)
             {
-                mensaje = mensaje + "Introduce el longitud \n";
+                mensaje = mensaje + "Introduce la dirección \n";
             }
-            if (txtLatitude.Text.Trim().Length == 0)
+            if(txtDireccion.Text.Trim().Length == 0)
             {
-                mensaje = mensaje + "Introduce el latitud \n";
+                mensaje = mensaje + "Introduce la dirección \n";
             }
-          
-            //else
-            //{
-            //    mensaje = mensaje + "Introduce la Imagen \n";
-            //}
+
+            else
+            {
+                mensaje = mensaje + "Introduce la Imagen \n";
+            }
             if (mensaje.Trim().Length == 0)
             {
                 sitio.IdSitio = (Int32)Session["Id"];
@@ -372,9 +369,9 @@ namespace ProyectoIntegrador.GUI
 
                         Ubicacion.IdUbicacion = Convert.ToInt32(servicio.BuscarUbicacionesDAO(Ubicacion).Rows[0].ItemArray[0].ToString());
 
-                        Ubicacion.Longitud = txtLongitud.Text;
-                        Ubicacion.Latitud = txtLatitude.Text;
-                        Ubicacion.Direccion = txtUbicacion.Text;
+                        Ubicacion.Longitud = longitude.Text;
+                        Ubicacion.Latitud = latitude.Text;
+                        Ubicacion.Direccion = txtDireccion.Text;
                         int  h = servicio.ModificarUbicacionesDAO(Ubicacion);
                         if(h != 1)
                         {
@@ -407,7 +404,7 @@ namespace ProyectoIntegrador.GUI
                 Session["Id"] = Convert.ToInt32(grResultado.Rows[indice].Cells[0].Text);
                 txtNombre.Text = grResultado.Rows[indice].Cells[1].Text;
                 txtDescripcion.Text = grResultado.Rows[indice].Cells[2].Text;
-                txtUbicacion.Text = grResultado.Rows[indice].Cells[3].Text;
+                //address.Text = grResultado.Rows[indice].Cells[3].Text;
                 ddlEstatus.SelectedValue = grResultado.Rows[indice].Cells[4].Text;
                 Session["Id"] = Convert.ToInt32(grResultado.Rows[indice].Cells[0].Text);
                 Session["IdU"] =Convert.ToInt32(servicio.BuscarUbicacionesDAO(Ubicacion).Rows[0].ItemArray[0].ToString());
@@ -525,10 +522,10 @@ namespace ProyectoIntegrador.GUI
             }
             //VistaSitio.Latitud = Ubicacion.Latitud;
             //VistaSitio.Longitud = Ubicacion.Longitud;
-            if (txtUbicacion.Text.Trim().Length != 0)
-            {
-                VistaSitio.Direccion = txtUbicacion.Text;
-            }
+            //if (txtUbicacion.Text.Trim().Length != 0)
+            //{
+            //    VistaSitio.Direccion = txtUbicacion.Text;
+            //}
             if (Convert.ToInt32(Convert.ToInt32(DdlEstablecimiento.SelectedValue)) != 0)
             {
                 VistaSitio.IdEstablecimiento = Convert.ToInt32(Convert.ToInt32(DdlEstablecimiento.SelectedValue));

@@ -285,6 +285,7 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\Pe-icon-7-stroke.svg" />
     <Content Include="GUI\AgregarEvento.aspx" />
+    <Content Include="GUI\AgregarSitio.aspx" />
     <Content Include="GUI\AgregarSitio2.aspx" />
     <Content Include="GUI\CatalogoEstablecimientos.aspx" />
     <Content Include="GUI\CatalogoMembresias.aspx" />
@@ -441,7 +442,8 @@
     <Content Include="img\widgets\instagram\06.jpg" />
     <Content Include="Indice.aspx" />
     <Content Include="js\actions.js" />
-    <Content Include="js\GMapsLatLonPicker.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\gmaps.js" />
     <Content Include="js\jquery.validate.js" />
     <Content Include="js\jquery.validationEngine-en.js" />
     <Content Include="js\jquery.validationEngine.js" />
@@ -489,6 +491,7 @@
     <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-vi.js" />
     <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-zh_CN.js" />
     <Content Include="js\plugins\validationengine\languages\jquery.validationEngine-zh_TW.js" />
+    <Content Include="js\script.js" />
     <Content Include="js\scripts.js" />
     <Content Include="js\vendor\bootstrap.js" />
     <Content Include="js\vendor\bootstrap.min.js" />
@@ -688,6 +691,13 @@
     </Compile>
     <Compile Include="GUI\AgregarEvento.aspx.designer.cs">
       <DependentUpon>AgregarEvento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\AgregarSitio.aspx.cs">
+      <DependentUpon>AgregarSitio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GUI\AgregarSitio.aspx.designer.cs">
+      <DependentUpon>AgregarSitio.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\CatalogoEstablecimientos.aspx.cs">
       <DependentUpon>CatalogoEstablecimientos.aspx</DependentUpon>

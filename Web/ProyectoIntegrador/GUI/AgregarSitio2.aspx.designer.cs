@@ -94,15 +94,6 @@ namespace ProyectoIntegrador.GUI {
         protected global::System.Web.UI.WebControls.TextBox txtNombre;
         
         /// <summary>
-        /// txtUbicacion control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUbicacion;
-        
-        /// <summary>
         /// ddl control.
         /// </summary>
         /// <remarks>
@@ -175,31 +166,31 @@ namespace ProyectoIntegrador.GUI {
         protected global::System.Web.UI.WebControls.TextBox txtID;
         
         /// <summary>
-        /// txtLatitude control.
+        /// latitude control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtLatitude;
+        protected global::System.Web.UI.WebControls.TextBox latitude;
         
         /// <summary>
-        /// txtLongitud control.
+        /// txtDireccion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtLongitud;
+        protected global::System.Web.UI.WebControls.TextBox txtDireccion;
         
         /// <summary>
-        /// txtZomm control.
+        /// longitude control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtZomm;
+        protected global::System.Web.UI.WebControls.TextBox longitude;
         
         /// <summary>
         /// UpdatePanel2 control.
