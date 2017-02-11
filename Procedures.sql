@@ -2,6 +2,9 @@
 use ProyectoBA
 go
 
+
+
+--Inicio tabla tipoEstablecimiento
 create procedure AgregarTipoEstablecimiento(
   
  @NombreTipo Varchar(50) = null) 
@@ -9,7 +12,6 @@ create procedure AgregarTipoEstablecimiento(
  insert into TipoEstablecimiento( NombreTipo) 
 values( @NombreTipo)
  GO
- 
   CREATE PROCEDURE [dbo].[ModifcarTipoEstablecimiento] 
 (
  @IdTipoEstablecimiento int = null, 
@@ -21,7 +23,6 @@ SET
 NombreTipo = @NombreTipo 
 WHERE(IdTipoEstablecimiento = @IdTipoEstablecimiento) 
 GO
- 
  CREATE PROCEDURE[dbo].[EliminarTipoEstablecimiento]
 (
  @IdTipoEstablecimiento int = null 
@@ -29,8 +30,6 @@ GO
  AS 
 delete TipoEstablecimiento WHERE(IdTipoEstablecimiento = @IdTipoEstablecimiento)
 GO
-
- 
  CREATE PROCEDURE[dbo].[FiltrarTipoEstablecimiento] 
 ( 
  @IdTipoEstablecimiento int = null, 
@@ -43,8 +42,6 @@ if (@IdTipoEstablecimiento<> 0)
 SET @sql = @sql + ' and IdTipoEstablecimiento= ' + convert(varchar, @IdTipoEstablecimiento)if (@NombreTipo<> '') 
 SET @sql = @sql + ' and NombreTipo= ' + Quotename(@NombreTipo, '''')exec(@sql) 
 GO 
-
- 
  create PROCEDURE  DevolverTablaTipoEstablecimiento
 as 
 DECLARE @sql nvarchar(50) 
@@ -52,69 +49,9 @@ DECLARE @sql nvarchar(50)
 exec(@sql)
  GO
  
- 
- create procedure AgregarUBICACIONES(
- 
- @DIRECCION Varchar(50) = null, 
- @LATITUD Varchar(30) = null, 
- @LONGITUD Varchar(30) = null, 
- @IDSITIO int = null) 
- AS 
- insert into UBICACIONES(DIRECCION ,LATITUD ,LONGITUD ,IDSITIO) 
-values( @DIRECCION ,  @LATITUD ,  @LONGITUD ,  @IDSITIO)
- GO
- 
-  create PROCEDURE [dbo].[ModifcarUBICACIONES] 
-(
- @IDUBICACION int = null, 
- @DIRECCION Varchar(50) = null, 
- @LATITUD Varchar(30) = null, 
- @LONGITUD Varchar(30) = null, 
- @IDSITIO int = null)
-AS
-SET NOCOUNT ON 
-UPDATE UBICACIONES 
-SET 
-DIRECCION = @DIRECCION, 
-LATITUD = @LATITUD, 
-LONGITUD = @LONGITUD, 
-IDSITIO = @IDSITIO 
-WHERE(IDUBICACION = @IDUBICACION) 
-GO
- 
- create PROCEDURE[dbo].[EliminarUBICACIONES]
-(
- @UBICACION int = null 
-)
- AS 
-delete UBICACIONES WHERE(IDUBICACION = @UBICACION)
-GO
+ --Fin tabla tipoEstablecimiento
 
-
- Create PROCEDURE[dbo].[FiltrarUBICACIONES] 
-( 
- @IDUBICACION int = null, 
- @DIRECCION Varchar(50) = null, 
- @LATITUD Varchar(30) = null, 
- @LONGITUD Varchar(30) = null, 
- @IDSITIO int = null) 
-AS 
-SET NOCOUNT ON 
-DECLARE @sql nvarchar(4000)
-SET @sql = ' SELECT * FROM UBICACIONES where 1 = 1 '
-if (@IDUBICACION<> 0) 
-SET @sql = @sql + ' and IDUBICACION= ' + convert(varchar, @IDUBICACION)
-if (@DIRECCION<> '') 
-SET @sql = @sql + ' and DIRECCION= ' + Quotename(@DIRECCION, '''')
-if (@LATITUD<> '') 
-SET @sql = @sql + ' and LATITUD= ' + Quotename(@LATITUD, '''')
-if (@LONGITUD<> '') 
-SET @sql = @sql + ' and LONGITUD= ' + Quotename(@LONGITUD, '''')
-if (@IDSITIO<> 0) 
-SET @sql = @sql + ' and IDSITIO= ' + convert(varchar, @IDSITIO)
-exec(@sql) 
-GO 
-
+ --Inicio tabla Establecimiento
   create procedure AgregarESTABLECIMIENTOS(
   
  @NOMBRE Varchar(50) = null, 
@@ -122,8 +59,8 @@ GO
  AS 
  insert into ESTABLECIMIENTOS( NOMBRE ,IDTIPOESTABLECIMIENTO) 
 values(  @NOMBRE ,  @IDTIPOESTABLECIMIENTO)
- GO
  
+ GO
   CREATE PROCEDURE [dbo].[ModifcarESTABLECIMIENTOS] 
 (
  @IDESTABLECIMIENTO int = null, 
@@ -137,7 +74,6 @@ NOMBRE = @NOMBRE,
 IDTIPOESTABLECIMIENTO = @IDTIPOESTABLECIMIENTO 
 WHERE(IDESTABLECIMIENTO = @IDESTABLECIMIENTO) 
 GO
- 
  CREATE PROCEDURE[dbo].[EliminarESTABLECIMIENTOS]
 (
  @IDESTABLECIMIENTO int = null 
@@ -145,8 +81,6 @@ GO
  AS 
 delete ESTABLECIMIENTOS WHERE(IDESTABLECIMIENTO = @IDESTABLECIMIENTO)
 GO
-
- 
  CREATE PROCEDURE[dbo].[FiltrarESTABLECIMIENTOS] 
 ( 
  @IDESTABLECIMIENTO int = null, 
@@ -163,34 +97,32 @@ SET @sql = @sql + ' and NOMBRE= ' + Quotename(@NOMBRE, '''')if
 (@IDTIPOESTABLECIMIENTO<> 0) 
 SET @sql = @sql + ' and IDTIPOESTABLECIMIENTO= ' + convert(varchar, @IDTIPOESTABLECIMIENTO)exec(@sql) 
 GO 
-
- 
  create PROCEDURE  DevolverTablaESTABLECIMIENTOS
 as 
 DECLARE @sql nvarchar(50) 
  SET @sql = ' SELECT * FROM ESTABLECIMIENTOS where 1 = 1 ' 
 exec(@sql)
  GO
- 
- 
+ --Fin tabla Establecimiento
+
+ --Inicio tabla usuarios
  create procedure AgregarUSUARIO(
  
  @NOMBRE Varchar(50) = null, 
  @APEPAT Varchar(50) = null,
- @APEMAT Varchar(50) = null,   
+ @APEMAT Varchar(50) = null,
+ @USUARIO Varchar(50) = null,  
  @CONTRASENA Varchar(25) = null, 
- @USUARIO Varchar(50) = null,
+ @FOTOUS   varchar(50) = NULL,
  @IDMEMBRESIA int = null, 
  @IDTIPOPAGO int = null,
- @FOTOUS   varchar(50) = NULL,
+
  @TipoUS int = null
  ) 
  AS 
- insert into USUARIO( NOMBRE ,APEPAT , APEMAT ,CONTRASENA ,USUARIO,IDMEMBRESIA,IDTIPOPAGO,   FOTOUS , TipoUs ) 
-values( @NOMBRE ,  @APEPAT, @APEMAT ,  @CONTRASENA , @USUARIO, @IDMEMBRESIA, @IDTIPOPAGO,  @FOTOUS, @TipoUS )
+ insert into USUARIO( NOMBRE ,APEPAT , APEMAT ,USUARIO ,CONTRASENA, FotoUsuario ,IDMEMBRESIA,IDTIPOPAGO, IDTIPO ) 
+values( @NOMBRE ,  @APEPAT, @APEMAT , @USUARIO  ,@CONTRASENA,@FOTOUS , @IDMEMBRESIA, @IDTIPOPAGO, @TipoUS )
  GO
- 
- 
   create PROCEDURE [dbo].[ModifcarUSUARIO] 
 (
  @IDUSUARIO int = null, 
@@ -202,7 +134,7 @@ values( @NOMBRE ,  @APEPAT, @APEMAT ,  @CONTRASENA , @USUARIO, @IDMEMBRESIA, @ID
  @IDMEMBRESIA int = null, 
  @IDTIPOPAGO int = null,
  @FOTOUS   varchar(50) = NULL,
- @TipoUS   varchar(50) = NULL
+ @TipoUS int = null
 
 )
 AS
@@ -216,12 +148,11 @@ CONTRASENA = @CONTRASENA,
 USUARIO = @USUARIO,
 IDMEMBRESIA = @IDMEMBRESIA,
 IDTIPOPAGO = @IDTIPOPAGO,
-FOTOUS = @FOTOUS,
-TipoUS = @TipoUS
+FOTOUSUARIO = @FOTOUS,
+Idtipo = @TipoUS
 
 WHERE(IDUSUARIO = @IDUSUARIO) 
 GO
- 
  create PROCEDURE[dbo].[EliminarUSUARIO]
 (
  @IDUSUARIO int = null 
@@ -229,9 +160,7 @@ GO
  AS 
 delete USUARIO WHERE(IDUSUARIO = @IDUSUARIO)
 GO
-
- 
- alter PROCEDURE[dbo].[FiltrarUSUARIO] 
+ Create PROCEDURE[dbo].[FiltrarUSUARIO] 
 ( 
  @IDUSUARIO int = null, 
  @NOMBRE Varchar(50) = null, 
@@ -264,40 +193,45 @@ SET @sql = @sql + ' and IDMEMBRESIA= ' + convert(varchar, @IDMEMBRESIA)
 if (@IDTIPOPAGO<> 0) 
 SET @sql = @sql + ' and IDTIPOPAGO= ' + convert(varchar, @IDTIPOPAGO)
 if (@TipoUS<> 0) 
-SET @sql = @sql + ' and TipoUS= ' + convert(varchar,@TipoUS )
+SET @sql = @sql + ' and IdTipo= ' + convert(varchar,@TipoUS )
 
 set @sql = @sql + 'order by IdUsuario desc'
 exec(@sql)
 GO 
- 
  create PROCEDURE  DevolverTablaUSUARIO
 as 
 DECLARE @sql nvarchar(50) 
  SET @sql = ' SELECT * FROM USUARIO where 1 = 1 ' 
 exec(@sql)
  GO
- 
+--fin tabla usuarios 
 
 
+--Inicio tabla Sitios
 Create procedure AgregarSITIOS(
  
  @DESCRIPCION Varchar(300) = null, 
  @NOMBRE Varchar(50) = null, 
  @IDESTABLECIMIENTO int = null,
- @Estatus varchar(30) = null
- ) 
+ @Estatus varchar(1) = null,
+ @Direccion Varchar(100) = null,
+ @Latitud Varchar(100) = null,
+ @Longitud Varchar(100) = null
+) 
  AS 
- insert into SITIOS( DESCRIPCION ,NOMBRE ,IDESTABLECIMIENTO , Estatus) 
-values(  @DESCRIPCION ,  @NOMBRE ,  @IDESTABLECIMIENTO, @Estatus)
+ insert into SITIOS( DESCRIPCION ,NOMBRE ,IDESTABLECIMIENTO , Estatus, DIRECCION, LATITUD, LONGITUD) 
+values(  @DESCRIPCION ,  @NOMBRE ,  @IDESTABLECIMIENTO, @Estatus, @Direccion,@Latitud, @Longitud )
  GO
-
   Create PROCEDURE [dbo].[ModifcarSITIOS] 
 (
  @IDSITIO int = null, 
- @DESCRIPCION NVarchar(300) = null, 
+ @DESCRIPCION Varchar(300) = null, 
  @NOMBRE Varchar(50) = null, 
  @IDESTABLECIMIENTO int = null,
- @Estatus varchar(30) = null
+ @Estatus varchar(1) = null,
+ @Direccion Varchar(100) = null,
+ @Latitud Varchar(100) = null,
+ @Longitud Varchar(100) = null
  )
 AS
 SET NOCOUNT ON 
@@ -306,7 +240,10 @@ SET
 DESCRIPCION = @DESCRIPCION, 
 NOMBRE = @NOMBRE, 
 IDESTABLECIMIENTO = @IDESTABLECIMIENTO ,
-Estatus = @Estatus
+Estatus = @Estatus,
+Direccion = @Direccion,
+Latitud = @Latitud,
+Longitud = @Longitud
 WHERE(IDSITIO = @IDSITIO) 
 GO
  CREATE PROCEDURE[dbo].[EliminarSITIOS]
@@ -316,27 +253,39 @@ GO
  AS 
 delete SITIOS WHERE(IDSITIO = @IDSITIO)
 GO
- alter PROCEDURE[dbo].[FiltrarSITIOS] 
+ Create PROCEDURE[dbo].[FiltrarSITIOS] 
 ( 
  @IDSITIO int = null, 
- @DESCRIPCION NVarchar(300) = null, 
+ @DESCRIPCION Varchar(300) = null, 
  @NOMBRE Varchar(50) = null, 
  @IDESTABLECIMIENTO int = null,
- @Estatus varchar(30) = null
+ @Estatus varchar(1) = null,
+ @Direccion Varchar(100) = null,
+ @Latitud Varchar(100) = null,
+ @Longitud Varchar(100) = null
  ) 
 AS 
 SET NOCOUNT ON 
 DECLARE @sql nvarchar(4000)
 SET @sql = ' SELECT * FROM SITIOS where 1 = 1 '
 if (@IDSITIO<> 0) 
-SET @sql = @sql + ' and IDSITIO= ' + convert(varchar, @IDSITIO)if (@DESCRIPCION<> '') 
-SET @sql = @sql + ' and DESCRIPCION= ' + Quotename(@DESCRIPCION, '''')if (@NOMBRE<> '') 
+SET @sql = @sql + ' and IDSITIO= ' + convert(varchar, @IDSITIO)
+if (@DESCRIPCION<> '') 
+SET @sql = @sql + ' and DESCRIPCION= ' + Quotename(@DESCRIPCION, '''')
+if (@NOMBRE<> '') 
 SET @sql = @sql + ' and NOMBRE= ' + Quotename(@NOMBRE, '''')
 if (@Estatus<> '') 
 SET @sql = @sql + ' and Estatus= ' + Quotename(@Estatus, '''')
 if (@IDESTABLECIMIENTO<> 0) 
-SET @sql = @sql + ' and IDESTABLECIMIENTO= ' + convert(varchar, @IDESTABLECIMIENTO)exec(@sql) 
+SET @sql = @sql + ' and IDESTABLECIMIENTO= ' + convert(varchar, @IDESTABLECIMIENTO)
+if (@Direccion<> '') 
+SET @sql = @sql + ' and Direccion= ' + Quotename(@Direccion, '''')
+if (@Latitud<> '') 
+SET @sql = @sql + ' and Latitud= ' + Quotename(@Latitud, '''')
+if (@Longitud<> '') 
+SET @sql = @sql + ' and Longitud= ' + Quotename(@Longitud, '''')
 SET @sql = @sql + 'order by IdSitio desc'
+exec(@sql) 
 GO 
  create PROCEDURE  DevolverTablaSITIOS
 as 
@@ -344,8 +293,9 @@ DECLARE @sql nvarchar(50)
  SET @sql = ' SELECT * FROM SITIOS where 1 = 1 ' 
 exec(@sql)
  GO
+--fin tabla Sitios
  
- 
+ --Inicio tabla Fotos Sitios
    create procedure AgregarFOTOS(
  
  @FOTO varchar(3000) = null, 
@@ -396,64 +346,63 @@ DECLARE @sql nvarchar(50)
  SET @sql = ' SELECT * FROM FOTOS where 1 = 1 ' 
 exec(@sql)
  GO
+ --Fin tabla Fotos Sitios
  
-
-   create procedure AgregarADMINISTRA(
-
- @IDUSUARIO int = null, 
- @IDSITIO int = null) 
+--Inicio tabla Fotos Eventos
+   create procedure AgregarFOTOSE(
+ 
+ @FOTO varchar(3000) = null, 
+ @IDEVENTOS int = null) 
  AS 
- insert into ADMINISTRA( IDUSUARIO ,IDSITIO) 
-values( @IDUSUARIO ,  @IDSITIO)
+ insert into FOTOSEVENTOS( FOTO ,IDEVENTOS) 
+values( @FOTO ,  @IDEVENTOS)
  GO
  
-  CREATE PROCEDURE [dbo].[ModifcarADMINISTRA] 
+  CREATE PROCEDURE [dbo].[ModifcarFOTOSE] 
 (
- @IDADMINISTRA int = null, 
- @IDUSUARIO int = null, 
- @IDSITIO int = null)
+ @IDFOTO int = null, 
+ @FOTO varchar(3000) = null, 
+ @IDEVENTOS int = null)
 AS
 SET NOCOUNT ON 
-UPDATE ADMINISTRA 
+UPDATE FOTOSEVENTOS 
 SET 
-IDUSUARIO = @IDUSUARIO, 
-IDSITIO = @IDSITIO 
-WHERE(IDADMINISTRA = @IDADMINISTRA) 
+FOTO = @FOTO, 
+IDEVENTOS = @IDEVENTOS 
+WHERE(IDFOTO = @IDFOTO) 
 GO
  
- CREATE PROCEDURE[dbo].[EliminarADMINISTRA]
+ CREATE PROCEDURE[dbo].[EliminarFOTOSE]
 (
- @IDADMINISTRA int = null 
+ @IDFOTO int = null 
 )
  AS 
-delete ADMINISTRA WHERE(IDADMINISTRA = @IDADMINISTRA)
-GO
-
- 
- CREATE PROCEDURE[dbo].[FiltrarADMINISTRA] 
+delete FOTOSEVENTOS WHERE(IDFOTO = @IDFOTO)
+GO 
+ Create PROCEDURE[dbo].[FiltrarFOTOSE] 
 ( 
- @IDADMINISTRA int = null, 
- @IDUSUARIO int = null, 
- @IDSITIO int = null) 
+ @IDFOTO int = null, 
+ @FOTO Varchar(3000) = null, 
+ @IDEVENTOS int = null) 
 AS 
 SET NOCOUNT ON 
 DECLARE @sql nvarchar(4000)
-SET @sql = ' SELECT * FROM ADMINISTRA where 1 = 1 '
-if (@IDADMINISTRA<> 0) 
-SET @sql = @sql + ' and IDADMINISTRA= ' + convert(varchar, @IDADMINISTRA)if (@IDUSUARIO<> 0) 
-SET @sql = @sql + ' and IDUSUARIO= ' + convert(varchar, @IDUSUARIO)if (@IDSITIO<> 0) 
-SET @sql = @sql + ' and IDSITIO= ' + convert(varchar, @IDSITIO)exec(@sql) 
-GO 
-
- 
- create PROCEDURE  DevolverTablaADMINISTRA
+SET @sql = ' SELECT * FROM FOTOSEVENTOS where 1 = 1 '
+if (@IDFOTO<> 0) 
+SET @sql = @sql + ' and IDFOTO= ' + convert(varchar, @IDFOTO)if (@FOTO<> '') 
+SET @sql = @sql + ' and FOTO= ' + Quotename(@FOTO, '''')if (@IDEVENTOS<> 0) 
+SET @sql = @sql + ' and IDEVENTOS= ' + convert(varchar, @IDEVENTOS)exec(@sql) 
+GO  
+ Create PROCEDURE  DevolverTablaFOTOSE
 as 
 DECLARE @sql nvarchar(50) 
- SET @sql = ' SELECT * FROM ADMINISTRA where 1 = 1 ' 
+ SET @sql = ' SELECT * FROM FOTOSEVENTOS where 1 = 1 ' 
 exec(@sql)
  GO
+ --Fin tabla Fotos Eventos
+
  
- 
+--Inicio tabla Tarjeta de credito 
    create procedure AgregarTARJETACREDITO(
  
  @NUMTARJETA Varchar(25) = null, 
@@ -464,8 +413,8 @@ exec(@sql)
  AS 
  insert into TARJETACREDITO( NUMTARJETA ,CVV ,MES, ANIO, IDUSUARIO) 
 values(  @NUMTARJETA ,  @CVV ,  @MES , @ANIO , @IDUSUARIO)
- GO
  
+ GO
   CREATE PROCEDURE [dbo].[ModifcarTARJETACREDITO] 
 (
 @IDTARJETA INT = NULL,
@@ -485,7 +434,6 @@ ANIO = @ANIO,
 IDUSUARIO = @IDUSUARIO
 WHERE(IDTARJETA = @IDTARJETA) 
 GO
- 
  CREATE PROCEDURE[dbo].[EliminarTARJETACREDITO]
 (
  @IDTARJETA int = null 
@@ -493,8 +441,6 @@ GO
  AS 
 delete TARJETACREDITO WHERE(IDTARJETA = @IDTARJETA)
 GO
-
- 
  CREATE PROCEDURE[dbo].[FiltrarTARJETACREDITO] 
 ( 
  @IDTARJETA int = null, 
@@ -519,15 +465,16 @@ if (@ANIO<> '')
 SET @sql = @sql + ' and ANIO= ' + Quotename(@ANIO, '''')exec(@sql) 
 
 GO 
-
- 
  create PROCEDURE  DevolverTablaTARJETACREDITO
 as 
 DECLARE @sql nvarchar(50) 
  SET @sql = ' SELECT * FROM TARJETACREDITO where 1 = 1 ' 
 exec(@sql)
- GO
  
+ GO
+ --Fin tabla tarjeta de credito
+
+ --Inicio Tabla Tipo de pago
    create procedure AgregarTIPOPAGO(
  
  @NOMBRE Varchar(25) = null) 
@@ -535,7 +482,6 @@ exec(@sql)
  insert into TIPOPAGO( NOMBRE) 
 values( @NOMBRE)
  GO
- 
   CREATE PROCEDURE [dbo].[ModifcarTIPOPAGO] 
 (
  @IDTIPOPAGO int = null, 
@@ -546,8 +492,7 @@ UPDATE TIPOPAGO
 SET 
 NOMBRE = @NOMBRE 
 WHERE(IDTIPOPAGO = @IDTIPOPAGO) 
-GO
- 
+ GO 
  CREATE PROCEDURE[dbo].[EliminarTIPOPAGO]
 (
  @IDTIPOPAGO int = null 
@@ -573,8 +518,9 @@ DECLARE @sql nvarchar(50)
  SET @sql = ' SELECT * FROM TIPOPAGO where 1 = 1 ' 
 exec(@sql)
  GO
- 
- 
+ --Fin Tabla Tipo de pago
+
+ --Inicio Tabla recibo
    create procedure AgregarRECIBO(
 
  @FECHA DATE = null, 
@@ -585,8 +531,7 @@ exec(@sql)
  insert into RECIBO( FECHA ,IDUSUARIO ,IDMEMBRESIA ,IDTIPOPAGO) 
 values(  @FECHA ,  @IDUSUARIO ,  @IDMEMBRESIA ,  @IDTIPOPAGO)
  GO
- 
-  CREATE PROCEDURE [dbo].[ModifcarRECIBO] 
+ CREATE PROCEDURE [dbo].[ModifcarRECIBO] 
 (
  @IDRECIBO int = null, 
  @FECHA DATE = null, 
@@ -603,7 +548,6 @@ IDMEMBRESIA = @IDMEMBRESIA,
 IDTIPOPAGO = @IDTIPOPAGO 
 WHERE(IDRECIBO = @IDRECIBO) 
 GO
- 
  CREATE PROCEDURE[dbo].[EliminarRECIBO]
 (
  @IDRECIBO int = null 
@@ -611,8 +555,6 @@ GO
  AS 
 delete RECIBO WHERE(IDRECIBO = @IDRECIBO)
 GO
-
- 
  CREATE PROCEDURE[dbo].[FiltrarRECIBO] 
 ( 
  @IDRECIBO int = null, 
@@ -631,19 +573,17 @@ SET @sql = @sql + ' and IDUSUARIO= ' + convert(varchar, @IDUSUARIO)if (@IDMEMBRE
 SET @sql = @sql + ' and IDMEMBRESIA= ' + convert(varchar, @IDMEMBRESIA)if (@IDTIPOPAGO<> 0) 
 SET @sql = @sql + ' and IDTIPOPAGO= ' + convert(varchar, @IDTIPOPAGO)exec(@sql) 
 GO 
-
- 
  create PROCEDURE  DevolverTablaRECIBO
 as 
 DECLARE @sql nvarchar(50) 
  SET @sql = ' SELECT * FROM RECIBO where 1 = 1 ' 
 exec(@sql)
- GO
+  GO
  
+ --fin Tabla Tipo de Recibo
 
-
-
-   create procedure AgregarMEMBRESIA(
+ --Inicio Tabla Tipo de Membresia
+ create procedure AgregarMEMBRESIA(
 
  @NOMBREMEMBRESIA Varchar(25) = null, 
  @DURACIONMESES int = null, 
@@ -653,7 +593,6 @@ exec(@sql)
  insert into MEMBRESIA( NOMBREMEMBRESIA ,DURACIONMESES ,COSTO, NUMSITIOS) 
 values(  @NOMBREMEMBRESIA ,  @DURACIONMESES ,  @COSTO, @NUMSITIOS)
  GO
- 
   CREATE PROCEDURE [dbo].[ModifcarMEMBRESIA] 
 (
  @IDMEMBRESIA int = null, 
@@ -671,7 +610,6 @@ COSTO = @COSTO,
 NumSitios = @NUMSITIOS
 WHERE(IDMEMBRESIA = @IDMEMBRESIA) 
 GO
- 
  CREATE PROCEDURE[dbo].[EliminarMEMBRESIA]
 (
  @IDMEMBRESIA int = null 
@@ -679,8 +617,6 @@ GO
  AS 
 delete MEMBRESIA WHERE(IDMEMBRESIA = @IDMEMBRESIA)
 GO
-
- 
  Create PROCEDURE[dbo].[FiltrarMEMBRESIA] 
 ( 
  @IDMEMBRESIA int = null, 
@@ -703,17 +639,14 @@ SET @sql = @sql + ' and COSTO= ' + Quotename(@COSTO, '''')exec(@sql)
 if (@NUMSITIOS<> 0) 
 SET @sql = @sql + ' and NUMSITIOS= ' + Quotename(@NUMSITIOS, '''')exec(@sql) 
 GO 
-
- 
  create PROCEDURE  DevolverTablaMEMBRESIA
 as 
 DECLARE @sql nvarchar(50) 
  SET @sql = ' SELECT * FROM MEMBRESIA where 1 = 1 ' 
 exec(@sql)
+ 
  GO
-
-
- alter PROCEDURE[dbo].[FiltrarVISTARECIBO] 
+ Create PROCEDURE[dbo].[FiltrarVISTARECIBO] 
 ( 
  @CLAVE int = null, 
  @FECHA Varchar(50) = null, 
@@ -761,15 +694,14 @@ if (@ApeMat<> '')
 SET @sql = @sql + ' and ApePat= ' + Quotename(@ApeMat, '''')
 exec(@sql)
 GO 
+--fin Tabla membresia
 
-
-
+--Inicio Tabla Recibo
  create VIEW VISTARECIBO (Clave, fecha , Membresia, Idmembresia, Duracion, Costo, numeroSitios, TipoPago, idUsuario, Nombre , ApePat , ApeMat  )
 as
 select IdRecibo , fecha, membresia.Nombremembresia, membresia.IdMembresia ,DuracionMeses, Costo , NumSitios,Recibo.idTipoPago , Recibo.Idusuario, Nombre ,ApePat, ApeMat
 from (Recibo inner join membresia on Recibo.IdMembresia = membresia.IdMembresia)inner join usuario on usuario.Idusuario = Recibo.Idusuario
 GO
-
 Create PROCEDURE[dbo].[FiltrarVISTADETALLESITIO] 
 ( 
  @IDSITIO int = null, 
@@ -807,17 +739,12 @@ SET @sql = @sql + ' and IdEstablecimiento= ' + convert(varchar, @IdEstablecimien
 
 exec(@sql) 
 GO 
-
- 
- 
 Create View VistaEstablecimiento
 as 
 	Select u.Nombre, u.IdEstablecimiento, t.NombreTipo
 		from Establecimientos u inner join TipoEstablecimiento t
 		on u.IdTipoEstablecimiento = t.IdTipoEstablecimiento
 go
-
-
 CREATE PROCEDURE[dbo].[FiltrarVistaESTABLECIMIENTOS] 
 ( 
  @IDESTABLECIMIENTO int = null, 
@@ -837,10 +764,94 @@ SET @sql = @sql + ' and NombreTipo= ' + convert(varchar, @TipoEstablecimiento)
 
 exec(@sql) 
 GO 
+--Fin Tabla Recibo
 
- create View DetallesSitios 
-as 
-	Select  s.IdSitio , s.Nombre,  s.Descripcion,  u.Direccion, s.Estatus, s.IdEstablecimiento
-		from (Sitios s inner join ubicaciones u
-			on s.idSitio = u.IdSitio)
-go
+
+--Inicio Tabla Eventos
+Create procedure AgregarEvento(
+ 
+ @DESCRIPCION Varchar(300) = null, 
+ @NOMBRE Varchar(50) = null, 
+ @Concurrente Char(1) = null,
+ @Direccion Varchar(100) = null,
+ @Latitud Varchar(100) = null,
+ @Longitud Varchar(100) = null,
+ @FechaInicio DateTime = null,
+ @FechaFinal DateTime  = null
+) 
+ AS 
+ insert into Eventos( DESCRIPCION ,NOMBRE, Concurrente , DIRECCION, LATITUD, LONGITUD, FECHAINICIO, FechaFin) 
+values(  @DESCRIPCION ,  @NOMBRE , @Concurrente,   @Direccion,@Latitud, @Longitud, @FechaInicio, @FechaFinal )
+GO
+  Create PROCEDURE [dbo].[ModifcarEvento] 
+(
+ @idEvento int = null, 
+ @DESCRIPCION Varchar(300) = null, 
+ @NOMBRE Varchar(50) = null, 
+ @Concurrente Char(1) = null,
+ @Direccion Varchar(100) = null,
+ @Latitud Varchar(100) = null,
+ @Longitud Varchar(100) = null,
+ @FechaInicio DateTime = null,
+ @FechaFinal DateTime  = null
+ )
+AS
+SET NOCOUNT ON 
+UPDATE Eventos 
+SET 
+DESCRIPCION = @DESCRIPCION, 
+NOMBRE = @NOMBRE,
+concurrente = @Concurrente,
+Direccion = @Direccion,
+Latitud = @Latitud,
+Longitud = @Longitud,
+FechaInicio = @FechaInicio,
+FechaFin = @FechaFinal
+WHERE(IdEventos = @idEvento) 
+GO
+ CREATE PROCEDURE[dbo].[EliminarEvento]
+(
+ @IdEvento int = null 
+)
+ AS 
+delete Eventos WHERE(IDEVENTOS = @IdEvento)
+GO
+ Create PROCEDURE[dbo].[FiltrarEvento] 
+( 
+  @idEvento int = null, 
+ @DESCRIPCION Varchar(300) = null, 
+ @NOMBRE Varchar(50) = null, 
+ @Concurrente Char(1) = null,
+ @Direccion Varchar(100) = null,
+ @Latitud Varchar(100) = null,
+ @Longitud Varchar(100) = null,
+ @FechaInicio DateTime = null,
+ @FechaFinal DateTime  = null
+ ) 
+AS 
+SET NOCOUNT ON 
+DECLARE @sql nvarchar(4000)
+SET @sql = ' SELECT * FROM EVENTOS where 1 = 1 '
+if (@idEvento<> 0) 
+SET @sql = @sql + ' and IdEventos= ' + convert(varchar, @idEvento)
+if (@DESCRIPCION<> '') 
+SET @sql = @sql + ' and DESCRIPCION= ' + Quotename(@DESCRIPCION, '''')
+if (@NOMBRE<> '') 
+SET @sql = @sql + ' and NOMBRE= ' + Quotename(@NOMBRE, '''')
+if (@Concurrente<> '') 
+SET @sql = @sql + ' and Concurrente= ' + Quotename(@Concurrente, '''')
+if (@Direccion<> '') 
+SET @sql = @sql + ' and Direccion= ' + Quotename(@Direccion, '''')
+if (@Latitud<> '') 
+SET @sql = @sql + ' and Latitud= ' + Quotename(@Latitud, '''')
+if (@Longitud<> '') 
+SET @sql = @sql + ' and Longitud= ' + Quotename(@Longitud, '''')
+if (@FechaInicio<> '') 
+SET @sql = @sql + ' and FechaInicio= ' + Quotename(@FechaInicio, '''')
+if (@FechaFinal<> '') 
+SET @sql = @sql + ' and @FechaFin= ' + Quotename(@FechaFinal, '''')
+SET @sql = @sql + 'order by IdSitio desc'
+exec(@sql) 
+GO 
+
+--Fin Tabla Evento
