@@ -123,6 +123,7 @@
   <ItemGroup>
     <Compile Include="BO\AdministraBO.cs" />
     <Compile Include="BO\EstablecimientoBO.cs" />
+    <Compile Include="BO\EventoBO.cs" />
     <Compile Include="BO\FotoBO.cs" />
     <Compile Include="BO\MembresiaBO.cs" />
     <Compile Include="BO\ReciboBO.cs" />
@@ -136,7 +137,9 @@
     <Compile Include="DAO\AdministraDAO.cs" />
     <Compile Include="DAO\ConexionDAO.cs" />
     <Compile Include="DAO\EstablecimientoDAO.cs" />
+    <Compile Include="DAO\EventoDAO.cs" />
     <Compile Include="DAO\FotoDAO.cs" />
+    <Compile Include="DAO\FotoEDAO.cs" />
     <Compile Include="DAO\MembresiaDAO.cs" />
     <Compile Include="DAO\ReciboDAO.cs" />
     <Compile Include="DAO\SitioDAO.cs" />

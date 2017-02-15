@@ -6,7 +6,8 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="titulo" runat="server">
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-  <script src="../js/gmaps.js"></script>
+ 
+       <script src="../js/gmaps.js"></script>
     
     <div class="row">
 
@@ -58,7 +59,7 @@
                                     <span class="fa fa-filter"></span>&nbsp;Buscar</asp:LinkButton>
                                     </div>
                                     <div class ="col-xsm-2 btn-group espacio">
-                                    <asp:LinkButton ID="btnImprimir" runat="server" class="btn btn-primary" OnClick="btnImprimir_Click" > 
+                                    <asp:LinkButton ID="btnImprimir" runat="server" class="btn btn-primary" OnClick="btnImprimir_Click"> 
                                     <span class="glyphicon glyphicon-print"></span>&nbsp;Imprimir</asp:LinkButton>
                                     </div>
                                      
@@ -90,11 +91,13 @@
                                                 </div>
                                             </div>
 
-                                             <div runat="server" id="ddl" class="form-group">
-                                                <label class="col-md-3 control-label">Lugar</label>
+                                           
+                                                        
+                                            <div runat="server" id="ddl" class="form-group">
+                                                <label class="col-md-3 control-label">Tipo de establecimiento</label>
                                                 <div class="col-md-9">  
                                            
-                                                        <asp:DropDownList ID="ddlTipo" class="form-control"  runat="server" AutoPostBack="true" >
+                                                        <asp:DropDownList ID="ddlTipo" class="form-control"  runat="server" OnSelectedIndexChanged="ddlTipo_SelectedIndexChanged" OnTextChanged="ddlTipo_TextChanged"   AutoPostBack ="true" >
                                                             <asp:ListItem>...</asp:ListItem>
                                                          
                                                           
@@ -105,7 +108,21 @@
                                                    
                                                 </div>
                                             </div>
+                                                                              
+                                            <div class="form-group"> 
                                              
+                                                <label class="col-md-3 control-label">Establecimiento</label>
+                                                <div class="col-md-9">  
+                                            
+                                                        <asp:DropDownList ID="DdlEstablecimiento" class="form-control "  runat="server" OnSelectedIndexChanged="DdlEstablecimiento_SelectedIndexChanged" AutoPostBack="True">
+                                                            <asp:ListItem>...</asp:ListItem>
+                                     
+                                                        </asp:DropDownList> 
+                                                                 
+                                              
+                                                </div>
+                                             </div>
+                                                        
                                             <div class="form-group">
                                                 <label class="col-md-3 control-label">Descripción</label>
                                                 <div class="col-md-9">     
@@ -122,21 +139,17 @@
                                             
                                         </div>
                                                                    
-                                            <div class="form-group">
-                                                <label class="col-md-3 control-label">Fecha</label>
-                                                <div class="col-md-9">     
-                                                    
-                                                    <div class="input-group">
-                                                    <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
+                                            <div class="form-group"> 
+                                             
+                                                <label class="col-md-3 control-label">Estatus</label>
+                                                <div class="col-md-9">  
+                                                         <asp:DropDownList ID="ddlEstatus"  class="form-control"  runat="server" AutoPostBack="True">
+                                                    <asp:ListItem>Activo</asp:ListItem>
+                                                    <asp:ListItem>Desactivado</asp:ListItem>
 
-                                                     <asp:TextBox ID="txtFecha" runat="server" class="form-control" value="" onfocus="this.Text = '';" onblur="if (this.Text == '') {this.Text = 'txtFecha';}" required="" AutoPostBack="False"></asp:TextBox>                                      
-                                                   
-                                                    <span class="help-block">  </span>
+                                                </asp:DropDownList>
                                                 </div>
-                                            </div>
-
-                                            
-                                        </div>
+                                             </div>
                                                              </ContentTemplate>
                                                         </asp:UpdatePanel>
                                                              
@@ -153,12 +166,97 @@
                                                  </div>
                                           
                                               </div>
+                                                <div class="panel panel-default">
+                             <div class="col-md-9">
+
+                                            
+
+                        </div>
+                            </div>                        
+
                                                    
                                             </div>
                                                       
                                          </div>
-                                        <div class="col-md-2"></div>
-                                       
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-5 ">
+                                            <div class="form-group">
+                                            
+                                               <label class=" control-label pull-left">Dirección</label>
+                                                <br />
+                                            <br />
+                                                  
+                                            <input  id="address" type="text"  style="width:350px "  />
+                                                <br />
+                                                <br />
+                                            <input id="Buscar" type="button" value="Buscar Dirección" class="btn btn-primary"/> 
+                                          
+                                            <br />
+                                             <div id="map" style="width: 400px; height: 400px;">  
+                                              <br />
+                                                        <script type='text/javascript'>
+                                                    var map = null;
+	                                        var marker = null;
+
+	                                        function initialize() {
+	                                            var myLatlng = new google.maps.LatLng(20.9373538, -89.60034059999998);
+	                                            var myOptions = {
+	                                                zoom: 10,
+	                                                center: myLatlng,
+	                                                mapTypeId: google.maps.MapTypeId.ROADMAP
+	                                            };
+	                                            map = new google.maps.Map($("#map").get(0), myOptions);
+		                                        marker = new google.maps.Marker({ map: map });
+	                                        }
+
+	                                        $('#Buscar').live('click', function() {
+	                                            var address = $("#address").val() + " Merida yucatan";
+	                                            var geocoder = new google.maps.Geocoder();
+	                                            geocoder.geocode({ 'address': address }, geocodeResult);
+	                                            document.getElementById('<%=txtDireccion.ClientID %>').value = (address);
+	                                            document.getElementById("#address").value = (document.getElementById('<%=txtDireccion.ClientID %>').value);
+	                                            //$("#dire").val(address);
+	                                        });
+                                             $('#address').live('click', function () {
+	                                             document.getElementById('#address').value = (document.getElementById('<%=txtDireccion.ClientID %>').value);
+	                                            
+	                                        });
+                                           
+
+	                                        function geocodeResult(results, status) {
+	                                            if (status == 'OK') {
+			                                        map.setCenter(results[0].geometry.location);
+			                                        //$('#Text1').va(results[0].geometry.location.lat());
+	                                                //$('#longitude').text(results[0].geometry.location.lng());
+			                                        document.getElementById('<%=latitude.ClientID %>').value = (results[0].geometry.location.lat());
+                                                    document.getElementById('<%=longitude.ClientID %>').value = (results[0].geometry.location.lng());
+	                                                map.fitBounds(results[0].geometry.viewport);
+	                                                marker.setPosition(results[0].geometry.location);
+	                                            } else {
+	                                                alert("Geocoding no tuvo éxito debido a: " + status);
+	                                            }
+	                                        }
+
+                                        $(document).ready(function() {
+                                            initialize();
+                                        gmaps_ads();
+                                        });        </script>
+           
+         
+                                            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRxC6Y4f-j6nECyHWigtBATtJyXyha-XU&libraries=adsense&sensor=true&language=es"></script>
+
+                                          </div>  
+                                                 <asp:UpdatePanel ID="UpdatePanel3" runat="server">
+                                                        <ContentTemplate>
+                                            <asp:TextBox ID="latitude" runat="server" Text=""></asp:TextBox>
+                                            <asp:TextBox ID="txtDireccion" runat="server" Text="" style="width:0px "></asp:TextBox>     
+                                            <asp:TextBox ID="longitude" runat="server" Text=""></asp:TextBox>
+                                            </ContentTemplate>
+                                                        </asp:UpdatePanel>
+                                                             
+                                                            </div>
+                                                    
+                                         </div>
                              </div>  
                                
                             </div>
@@ -175,9 +273,9 @@
                                      <div class="panel-body">
                                           <asp:UpdatePanel ID="UpdatePanel2" runat="server">
                                                         <ContentTemplate>
-                                     <asp:GridView ID="grResultado" CssClass="table table-bordered table-striped" runat="server" AutoGenerateColumns="False" DataKeyNames="IdSitio" OnRowCommand="grResultado_RowCommand" OnSelectedIndexChanged="grResultado_SelectedIndexChanged" OnRowDeleting="grResultado_RowDeleting" OnRowDataBound="grResultado_RowDataBound">
+                                     <asp:GridView ID="grResultado" CssClass="table table-bordered table-striped" runat="server" AutoGenerateColumns="False" DataKeyNames="IdEventos" OnRowCommand="grResultado_RowCommand"  OnSelectedIndexChanged="grResultado_SelectedIndexChanged" OnRowDeleting="grResultado_RowDeleting" OnRowDataBound="grResultado_RowDataBound">
                                          <Columns>
-                                             <asp:BoundField DataField="IdSitio" HeaderText="CLAVE" SortExpression="IdSitio" />
+                                             <asp:BoundField DataField="IdEventos" HeaderText="CLAVE" SortExpression="IdEventos"/>
                                              <asp:BoundField DataField="Nombre" HeaderText="NOMBRE" SortExpression="Nombre" />
                                              <asp:BoundField DataField="Descripcion" HeaderText="DESCRIPCIÓN" SortExpression="Descripcion" />
                                              <asp:BoundField DataField="direccion" HeaderText="DIRECCIÓN" SortExpression="direccion" />
@@ -187,8 +285,8 @@
                                             
                                          </Columns>
                                          </asp:GridView>
-                                                             </ContentTemplate>
-                                                        </asp:UpdatePanel>
+                                             </ContentTemplate>
+                                             </asp:UpdatePanel>
                                      </div>
 
                                  </div>
@@ -204,5 +302,6 @@
         </div>
 
 
+    
     
 </asp:Content>

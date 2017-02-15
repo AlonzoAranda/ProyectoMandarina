@@ -21,6 +21,7 @@ namespace WebService
         AdministraDAO AdministraDAO = new AdministraDAO();
         EstablecimientoDAO EstablecimientoDAO = new EstablecimientoDAO();
         FotoDAO FotoDAO = new FotoDAO();
+        FotoEDAO FotoDAOE = new FotoEDAO();
         MembresiaDAO MembresiaDAO = new MembresiaDAO();
         ReciboDAO ReciboDAO = new ReciboDAO();
         SitioDAO SitioDAO = new SitioDAO();
@@ -32,7 +33,7 @@ namespace WebService
         VISTADETALLESITIODAO VISTADETALLESITIO = new VISTADETALLESITIODAO();
         VistaEstablecimientoDAO vistaEsta = new VistaEstablecimientoDAO();
         VISTARECIBOBO vistaRecibo = new VISTARECIBOBO();
-
+        EventoDAO EventoDAO = new EventoDAO();
 
 
 
@@ -70,7 +71,10 @@ namespace WebService
         [WebMethod]
         public void UsuarioBO(UsuarioBO obj)
         { }
-       
+        [WebMethod]
+        public void EventoBO(EventoBO obj)
+        { }
+
         //[WebMethod]
         //public void VISTADETALLESITIOBO(VISTADETALLESITIOBO obj)
         //{ }
@@ -163,6 +167,33 @@ namespace WebService
         }
 
 
+        [WebMethod]
+        public DataTable DatosFotoDAOE(object obj)
+        {
+            return FotoDAOE.Recuperar(obj);
+        }
+        [WebMethod]
+        public DataTable BuscarFotoDAOE(object obj)
+        {
+            return FotoDAOE.BuscarFoto(obj);
+        }
+        [WebMethod]
+        public int agregarFotoDAOE(object obj)
+        {
+            return FotoDAOE.AgregarFoto(obj);
+        }
+        [WebMethod]
+        public int ModificarFotoDAOE(object obj)
+        {
+            return FotoDAOE.ModificarFoto(obj);
+        }
+        [WebMethod]
+        public int EliminarFotoDAOE(object obj)
+        {
+            return FotoDAOE.EliminarFoto(obj);
+        }
+
+
 
 
         [WebMethod]
@@ -251,6 +282,35 @@ namespace WebService
         public int EliminarSitioDAO(object obj)
         {
             return SitioDAO.EliminarSitio(obj);
+        }
+
+
+
+
+        [WebMethod]
+        public DataTable DatosEventoDAO(object obj)
+        {
+            return EventoDAO.Recuperar(obj);
+        }
+        [WebMethod]
+        public DataTable BuscarEventoDAO(object obj)
+        {
+            return EventoDAO.BuscarEvento(obj);
+        }
+        [WebMethod]
+        public int agregarEventoDAO(object obj)
+        {
+            return EventoDAO.AgregarEvento(obj);
+        }
+        [WebMethod]
+        public int ModificarEventoDAO(object obj)
+        {
+            return EventoDAO.ModificarEvento(obj);
+        }
+        [WebMethod]
+        public int EliminarEventoDAO(object obj)
+        {
+            return EventoDAO.EliminarEvento(obj);
         }
 
 

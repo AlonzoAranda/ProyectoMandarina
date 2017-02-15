@@ -112,6 +112,15 @@ namespace ProyectoIntegrador.GUI {
         protected global::System.Web.UI.WebControls.DropDownList ddlTipo;
         
         /// <summary>
+        /// DdlEstablecimiento control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList DdlEstablecimiento;
+        
+        /// <summary>
         /// txtDescripcion control.
         /// </summary>
         /// <remarks>
@@ -121,13 +130,13 @@ namespace ProyectoIntegrador.GUI {
         protected global::System.Web.UI.WebControls.TextBox txtDescripcion;
         
         /// <summary>
-        /// txtFecha control.
+        /// ddlEstatus control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFecha;
+        protected global::System.Web.UI.WebControls.DropDownList ddlEstatus;
         
         /// <summary>
         /// Image1 control.
@@ -155,6 +164,42 @@ namespace ProyectoIntegrador.GUI {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtID;
+        
+        /// <summary>
+        /// UpdatePanel3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel3;
+        
+        /// <summary>
+        /// latitude control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox latitude;
+        
+        /// <summary>
+        /// txtDireccion control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtDireccion;
+        
+        /// <summary>
+        /// longitude control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox longitude;
         
         /// <summary>
         /// UpdatePanel2 control.

@@ -119,21 +119,19 @@ namespace ProyectoIntegrador.GUI
         {
             llenarddlEstablecimiento();
         }
-        public void AgregarImagen(string nombre)
+        public int AgregarImagen(string nombre)
         { 
 
                     try
                     {
                         string filename = Path.GetFileName(FileUpload2.FileName);
                         FileUpload2.SaveAs(Server.MapPath("~/ImagenesWeb/Sitos/") + ( filename) + nombre);
-                        
-
-                        //Response.Redirect("Inicio.aspx");
-
+                       return 1;
                     }
                     catch (Exception ex)
                     {
                         Mensaje(ex.Message);
+                       return 0;
                     }
     
         }
@@ -158,8 +156,6 @@ namespace ProyectoIntegrador.GUI
             sitio = new localhost.SitioBO();
             llenarDataGrid(sitio);
         }
-
-        
         protected void grResultado_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             sitio = new localhost.SitioBO();
@@ -217,8 +213,6 @@ namespace ProyectoIntegrador.GUI
                 }
               
                 }
-
-        
         protected void grResultado_SelectedIndexChanged(object sender, EventArgs e)
         {
          
@@ -253,11 +247,9 @@ namespace ProyectoIntegrador.GUI
             }
             llenarDataGrid(sitio);
         }
-
         protected void grResultado_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
         }
-
         protected void grResultado_RowEditing(object sender, GridViewEditEventArgs e)
         {
 
@@ -270,8 +262,6 @@ namespace ProyectoIntegrador.GUI
             mensaje = mensaje.Replace("'", "\"");
             ClientScript.RegisterClientScriptBlock(typeof(Page), "Error", "<script> alert('" + mensaje + "');</script>");
         }
-
-
         protected void btnImprimir_Click(object sender, EventArgs e)
         {
            
@@ -289,18 +279,7 @@ namespace ProyectoIntegrador.GUI
             doc.PrintToPrinter(1, false, 0, 1);
             doc.ExportToHttpResponse(ExportFormatType.PortableDocFormat, Response, false, "UTM");
         }
-
-    
-
-        protected void btnEliminar_Click(object sender, EventArgs e)
-        {
-           
-           
-        }
-
-
-
-
+        
         public string ValidarCampos()
         {
         string mensaje = "";
@@ -372,8 +351,9 @@ namespace ProyectoIntegrador.GUI
                         if (Foto.IdFoto != 0)
                         {
                             //Valida si hay foto anterior y la sobreEscribe
+                            AgregarImagen(sitio.Nombre);
                             Foto.Foto = FileUpload2.FileName.ToString() + sitio.Nombre;
-                             j = servicio.ModificarFotoDAO(Foto);
+                            j = servicio.ModificarFotoDAO(Foto);
                         }
                         else
                         {
@@ -423,7 +403,8 @@ namespace ProyectoIntegrador.GUI
                     if (FileUpload2.HasFile)
                     {
                         Foto.IdSitio = Convert.ToInt32(servicio.BuscarSitioDAO(sitio).Rows[0].ItemArray[0].ToString());
-
+                        AgregarImagen(sitio.Nombre);
+                        Foto.Foto = FileUpload2.FileName.ToString() + sitio.Nombre;
                         int j = servicio.agregarFotoDAO(Foto);
                         if (j == 1)
                         {

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:s1="http://microsoft.com/wsdl/types/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
   <wsdl:types>
     <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:import namespace="http://microsoft.com/wsdl/types/" />
       <s:element name="AdministraBO">
         <s:complexType>
           <s:sequence>
@@ -207,6 +208,29 @@
         </s:sequence>
       </s:complexType>
       <s:element name="UsuarioBOResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="EventoBO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" type="tns:EventoBO" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="EventoBO">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="IdEventos" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Concurrente" type="s1:char" />
+          <s:element minOccurs="0" maxOccurs="1" name="Direccion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Latitud" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Longitud" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="FechaInicio" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="FechaFin" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EventoBOResponse">
         <s:complexType />
       </s:element>
       <s:element name="VISTARECIBOBO">
@@ -487,6 +511,90 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="DatosFotoDAOE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DatosFotoDAOEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DatosFotoDAOEResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarFotoDAOE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarFotoDAOEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarFotoDAOEResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="agregarFotoDAOE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="agregarFotoDAOEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="agregarFotoDAOEResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModificarFotoDAOE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModificarFotoDAOEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ModificarFotoDAOEResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EliminarFotoDAOE">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EliminarFotoDAOEResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EliminarFotoDAOEResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
       <s:element name="DatosMembresiaDAO">
         <s:complexType>
           <s:sequence>
@@ -736,6 +844,90 @@
         <s:complexType>
           <s:sequence>
             <s:element minOccurs="1" maxOccurs="1" name="EliminarSitioDAOResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DatosEventoDAO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DatosEventoDAOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DatosEventoDAOResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarEventoDAO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarEventoDAOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarEventoDAOResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="agregarEventoDAO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="agregarEventoDAOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="agregarEventoDAOResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModificarEventoDAO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ModificarEventoDAOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ModificarEventoDAOResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EliminarEventoDAO">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="obj" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EliminarEventoDAOResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EliminarEventoDAOResult" type="s:int" />
           </s:sequence>
         </s:complexType>
       </s:element>
@@ -1114,6 +1306,11 @@
         </s:complexType>
       </s:element>
     </s:schema>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://microsoft.com/wsdl/types/">
+      <s:simpleType name="char">
+        <s:restriction base="s:unsignedShort" />
+      </s:simpleType>
+    </s:schema>
   </wsdl:types>
   <wsdl:message name="AdministraBOSoapIn">
     <wsdl:part name="parameters" element="tns:AdministraBO" />
@@ -1180,6 +1377,12 @@
   </wsdl:message>
   <wsdl:message name="UsuarioBOSoapOut">
     <wsdl:part name="parameters" element="tns:UsuarioBOResponse" />
+  </wsdl:message>
+  <wsdl:message name="EventoBOSoapIn">
+    <wsdl:part name="parameters" element="tns:EventoBO" />
+  </wsdl:message>
+  <wsdl:message name="EventoBOSoapOut">
+    <wsdl:part name="parameters" element="tns:EventoBOResponse" />
   </wsdl:message>
   <wsdl:message name="VISTARECIBOBOSoapIn">
     <wsdl:part name="parameters" element="tns:VISTARECIBOBO" />
@@ -1277,6 +1480,36 @@
   <wsdl:message name="EliminarFotoDAOSoapOut">
     <wsdl:part name="parameters" element="tns:EliminarFotoDAOResponse" />
   </wsdl:message>
+  <wsdl:message name="DatosFotoDAOESoapIn">
+    <wsdl:part name="parameters" element="tns:DatosFotoDAOE" />
+  </wsdl:message>
+  <wsdl:message name="DatosFotoDAOESoapOut">
+    <wsdl:part name="parameters" element="tns:DatosFotoDAOEResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarFotoDAOESoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarFotoDAOE" />
+  </wsdl:message>
+  <wsdl:message name="BuscarFotoDAOESoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarFotoDAOEResponse" />
+  </wsdl:message>
+  <wsdl:message name="agregarFotoDAOESoapIn">
+    <wsdl:part name="parameters" element="tns:agregarFotoDAOE" />
+  </wsdl:message>
+  <wsdl:message name="agregarFotoDAOESoapOut">
+    <wsdl:part name="parameters" element="tns:agregarFotoDAOEResponse" />
+  </wsdl:message>
+  <wsdl:message name="ModificarFotoDAOESoapIn">
+    <wsdl:part name="parameters" element="tns:ModificarFotoDAOE" />
+  </wsdl:message>
+  <wsdl:message name="ModificarFotoDAOESoapOut">
+    <wsdl:part name="parameters" element="tns:ModificarFotoDAOEResponse" />
+  </wsdl:message>
+  <wsdl:message name="EliminarFotoDAOESoapIn">
+    <wsdl:part name="parameters" element="tns:EliminarFotoDAOE" />
+  </wsdl:message>
+  <wsdl:message name="EliminarFotoDAOESoapOut">
+    <wsdl:part name="parameters" element="tns:EliminarFotoDAOEResponse" />
+  </wsdl:message>
   <wsdl:message name="DatosMembresiaDAOSoapIn">
     <wsdl:part name="parameters" element="tns:DatosMembresiaDAO" />
   </wsdl:message>
@@ -1366,6 +1599,36 @@
   </wsdl:message>
   <wsdl:message name="EliminarSitioDAOSoapOut">
     <wsdl:part name="parameters" element="tns:EliminarSitioDAOResponse" />
+  </wsdl:message>
+  <wsdl:message name="DatosEventoDAOSoapIn">
+    <wsdl:part name="parameters" element="tns:DatosEventoDAO" />
+  </wsdl:message>
+  <wsdl:message name="DatosEventoDAOSoapOut">
+    <wsdl:part name="parameters" element="tns:DatosEventoDAOResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarEventoDAOSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarEventoDAO" />
+  </wsdl:message>
+  <wsdl:message name="BuscarEventoDAOSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarEventoDAOResponse" />
+  </wsdl:message>
+  <wsdl:message name="agregarEventoDAOSoapIn">
+    <wsdl:part name="parameters" element="tns:agregarEventoDAO" />
+  </wsdl:message>
+  <wsdl:message name="agregarEventoDAOSoapOut">
+    <wsdl:part name="parameters" element="tns:agregarEventoDAOResponse" />
+  </wsdl:message>
+  <wsdl:message name="ModificarEventoDAOSoapIn">
+    <wsdl:part name="parameters" element="tns:ModificarEventoDAO" />
+  </wsdl:message>
+  <wsdl:message name="ModificarEventoDAOSoapOut">
+    <wsdl:part name="parameters" element="tns:ModificarEventoDAOResponse" />
+  </wsdl:message>
+  <wsdl:message name="EliminarEventoDAOSoapIn">
+    <wsdl:part name="parameters" element="tns:EliminarEventoDAO" />
+  </wsdl:message>
+  <wsdl:message name="EliminarEventoDAOSoapOut">
+    <wsdl:part name="parameters" element="tns:EliminarEventoDAOResponse" />
   </wsdl:message>
   <wsdl:message name="DatosTarjetaCreditoDAOSoapIn">
     <wsdl:part name="parameters" element="tns:DatosTarjetaCreditoDAO" />
@@ -1544,6 +1807,10 @@
       <wsdl:input message="tns:UsuarioBOSoapIn" />
       <wsdl:output message="tns:UsuarioBOSoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="EventoBO">
+      <wsdl:input message="tns:EventoBOSoapIn" />
+      <wsdl:output message="tns:EventoBOSoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="VISTARECIBOBO">
       <wsdl:input message="tns:VISTARECIBOBOSoapIn" />
       <wsdl:output message="tns:VISTARECIBOBOSoapOut" />
@@ -1608,6 +1875,26 @@
       <wsdl:input message="tns:EliminarFotoDAOSoapIn" />
       <wsdl:output message="tns:EliminarFotoDAOSoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="DatosFotoDAOE">
+      <wsdl:input message="tns:DatosFotoDAOESoapIn" />
+      <wsdl:output message="tns:DatosFotoDAOESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarFotoDAOE">
+      <wsdl:input message="tns:BuscarFotoDAOESoapIn" />
+      <wsdl:output message="tns:BuscarFotoDAOESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="agregarFotoDAOE">
+      <wsdl:input message="tns:agregarFotoDAOESoapIn" />
+      <wsdl:output message="tns:agregarFotoDAOESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarFotoDAOE">
+      <wsdl:input message="tns:ModificarFotoDAOESoapIn" />
+      <wsdl:output message="tns:ModificarFotoDAOESoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarFotoDAOE">
+      <wsdl:input message="tns:EliminarFotoDAOESoapIn" />
+      <wsdl:output message="tns:EliminarFotoDAOESoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="DatosMembresiaDAO">
       <wsdl:input message="tns:DatosMembresiaDAOSoapIn" />
       <wsdl:output message="tns:DatosMembresiaDAOSoapOut" />
@@ -1667,6 +1954,26 @@
     <wsdl:operation name="EliminarSitioDAO">
       <wsdl:input message="tns:EliminarSitioDAOSoapIn" />
       <wsdl:output message="tns:EliminarSitioDAOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DatosEventoDAO">
+      <wsdl:input message="tns:DatosEventoDAOSoapIn" />
+      <wsdl:output message="tns:DatosEventoDAOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEventoDAO">
+      <wsdl:input message="tns:BuscarEventoDAOSoapIn" />
+      <wsdl:output message="tns:BuscarEventoDAOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="agregarEventoDAO">
+      <wsdl:input message="tns:agregarEventoDAOSoapIn" />
+      <wsdl:output message="tns:agregarEventoDAOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarEventoDAO">
+      <wsdl:input message="tns:ModificarEventoDAOSoapIn" />
+      <wsdl:output message="tns:ModificarEventoDAOSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarEventoDAO">
+      <wsdl:input message="tns:EliminarEventoDAOSoapIn" />
+      <wsdl:output message="tns:EliminarEventoDAOSoapOut" />
     </wsdl:operation>
     <wsdl:operation name="DatosTarjetaCreditoDAO">
       <wsdl:input message="tns:DatosTarjetaCreditoDAOSoapIn" />
@@ -1858,6 +2165,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="EventoBO">
+      <soap:operation soapAction="http://tempuri.org/EventoBO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="VISTARECIBOBO">
       <soap:operation soapAction="http://tempuri.org/VISTARECIBOBO" style="document" />
       <wsdl:input>
@@ -2002,6 +2318,51 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="DatosFotoDAOE">
+      <soap:operation soapAction="http://tempuri.org/DatosFotoDAOE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarFotoDAOE">
+      <soap:operation soapAction="http://tempuri.org/BuscarFotoDAOE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="agregarFotoDAOE">
+      <soap:operation soapAction="http://tempuri.org/agregarFotoDAOE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarFotoDAOE">
+      <soap:operation soapAction="http://tempuri.org/ModificarFotoDAOE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarFotoDAOE">
+      <soap:operation soapAction="http://tempuri.org/EliminarFotoDAOE" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="DatosMembresiaDAO">
       <soap:operation soapAction="http://tempuri.org/DatosMembresiaDAO" style="document" />
       <wsdl:input>
@@ -2130,6 +2491,51 @@
     </wsdl:operation>
     <wsdl:operation name="EliminarSitioDAO">
       <soap:operation soapAction="http://tempuri.org/EliminarSitioDAO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DatosEventoDAO">
+      <soap:operation soapAction="http://tempuri.org/DatosEventoDAO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEventoDAO">
+      <soap:operation soapAction="http://tempuri.org/BuscarEventoDAO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="agregarEventoDAO">
+      <soap:operation soapAction="http://tempuri.org/agregarEventoDAO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarEventoDAO">
+      <soap:operation soapAction="http://tempuri.org/ModificarEventoDAO" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarEventoDAO">
+      <soap:operation soapAction="http://tempuri.org/EliminarEventoDAO" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -2437,6 +2843,15 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="EventoBO">
+      <soap12:operation soapAction="http://tempuri.org/EventoBO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="VISTARECIBOBO">
       <soap12:operation soapAction="http://tempuri.org/VISTARECIBOBO" style="document" />
       <wsdl:input>
@@ -2581,6 +2996,51 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="DatosFotoDAOE">
+      <soap12:operation soapAction="http://tempuri.org/DatosFotoDAOE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarFotoDAOE">
+      <soap12:operation soapAction="http://tempuri.org/BuscarFotoDAOE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="agregarFotoDAOE">
+      <soap12:operation soapAction="http://tempuri.org/agregarFotoDAOE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarFotoDAOE">
+      <soap12:operation soapAction="http://tempuri.org/ModificarFotoDAOE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarFotoDAOE">
+      <soap12:operation soapAction="http://tempuri.org/EliminarFotoDAOE" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="DatosMembresiaDAO">
       <soap12:operation soapAction="http://tempuri.org/DatosMembresiaDAO" style="document" />
       <wsdl:input>
@@ -2709,6 +3169,51 @@
     </wsdl:operation>
     <wsdl:operation name="EliminarSitioDAO">
       <soap12:operation soapAction="http://tempuri.org/EliminarSitioDAO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DatosEventoDAO">
+      <soap12:operation soapAction="http://tempuri.org/DatosEventoDAO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEventoDAO">
+      <soap12:operation soapAction="http://tempuri.org/BuscarEventoDAO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="agregarEventoDAO">
+      <soap12:operation soapAction="http://tempuri.org/agregarEventoDAO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarEventoDAO">
+      <soap12:operation soapAction="http://tempuri.org/ModificarEventoDAO" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarEventoDAO">
+      <soap12:operation soapAction="http://tempuri.org/EliminarEventoDAO" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

@@ -52,6 +52,8 @@ namespace ProyectoIntegrador.localhost {
         
         private System.Threading.SendOrPostCallback UsuarioBOOperationCompleted;
         
+        private System.Threading.SendOrPostCallback EventoBOOperationCompleted;
+        
         private System.Threading.SendOrPostCallback VISTARECIBOBOOperationCompleted;
         
         private System.Threading.SendOrPostCallback DatosAdministraDAOOperationCompleted;
@@ -84,6 +86,16 @@ namespace ProyectoIntegrador.localhost {
         
         private System.Threading.SendOrPostCallback EliminarFotoDAOOperationCompleted;
         
+        private System.Threading.SendOrPostCallback DatosFotoDAOEOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback BuscarFotoDAOEOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback agregarFotoDAOEOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ModificarFotoDAOEOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback EliminarFotoDAOEOperationCompleted;
+        
         private System.Threading.SendOrPostCallback DatosMembresiaDAOOperationCompleted;
         
         private System.Threading.SendOrPostCallback BuscarMembresiaDAOOperationCompleted;
@@ -113,6 +125,16 @@ namespace ProyectoIntegrador.localhost {
         private System.Threading.SendOrPostCallback ModificarSitioDAOOperationCompleted;
         
         private System.Threading.SendOrPostCallback EliminarSitioDAOOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback DatosEventoDAOOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback BuscarEventoDAOOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback agregarEventoDAOOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback ModificarEventoDAOOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback EliminarEventoDAOOperationCompleted;
         
         private System.Threading.SendOrPostCallback DatosTarjetaCreditoDAOOperationCompleted;
         
@@ -230,6 +252,9 @@ namespace ProyectoIntegrador.localhost {
         public event UsuarioBOCompletedEventHandler UsuarioBOCompleted;
         
         /// <remarks/>
+        public event EventoBOCompletedEventHandler EventoBOCompleted;
+        
+        /// <remarks/>
         public event VISTARECIBOBOCompletedEventHandler VISTARECIBOBOCompleted;
         
         /// <remarks/>
@@ -278,6 +303,21 @@ namespace ProyectoIntegrador.localhost {
         public event EliminarFotoDAOCompletedEventHandler EliminarFotoDAOCompleted;
         
         /// <remarks/>
+        public event DatosFotoDAOECompletedEventHandler DatosFotoDAOECompleted;
+        
+        /// <remarks/>
+        public event BuscarFotoDAOECompletedEventHandler BuscarFotoDAOECompleted;
+        
+        /// <remarks/>
+        public event agregarFotoDAOECompletedEventHandler agregarFotoDAOECompleted;
+        
+        /// <remarks/>
+        public event ModificarFotoDAOECompletedEventHandler ModificarFotoDAOECompleted;
+        
+        /// <remarks/>
+        public event EliminarFotoDAOECompletedEventHandler EliminarFotoDAOECompleted;
+        
+        /// <remarks/>
         public event DatosMembresiaDAOCompletedEventHandler DatosMembresiaDAOCompleted;
         
         /// <remarks/>
@@ -321,6 +361,21 @@ namespace ProyectoIntegrador.localhost {
         
         /// <remarks/>
         public event EliminarSitioDAOCompletedEventHandler EliminarSitioDAOCompleted;
+        
+        /// <remarks/>
+        public event DatosEventoDAOCompletedEventHandler DatosEventoDAOCompleted;
+        
+        /// <remarks/>
+        public event BuscarEventoDAOCompletedEventHandler BuscarEventoDAOCompleted;
+        
+        /// <remarks/>
+        public event agregarEventoDAOCompletedEventHandler agregarEventoDAOCompleted;
+        
+        /// <remarks/>
+        public event ModificarEventoDAOCompletedEventHandler ModificarEventoDAOCompleted;
+        
+        /// <remarks/>
+        public event EliminarEventoDAOCompletedEventHandler EliminarEventoDAOCompleted;
         
         /// <remarks/>
         public event DatosTarjetaCreditoDAOCompletedEventHandler DatosTarjetaCreditoDAOCompleted;
@@ -693,6 +748,34 @@ namespace ProyectoIntegrador.localhost {
             if ((this.UsuarioBOCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.UsuarioBOCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/EventoBO", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void EventoBO(EventoBO obj) {
+            this.Invoke("EventoBO", new object[] {
+                        obj});
+        }
+        
+        /// <remarks/>
+        public void EventoBOAsync(EventoBO obj) {
+            this.EventoBOAsync(obj, null);
+        }
+        
+        /// <remarks/>
+        public void EventoBOAsync(EventoBO obj, object userState) {
+            if ((this.EventoBOOperationCompleted == null)) {
+                this.EventoBOOperationCompleted = new System.Threading.SendOrPostCallback(this.OnEventoBOOperationCompleted);
+            }
+            this.InvokeAsync("EventoBO", new object[] {
+                        obj}, this.EventoBOOperationCompleted, userState);
+        }
+        
+        private void OnEventoBOOperationCompleted(object arg) {
+            if ((this.EventoBOCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.EventoBOCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -1160,6 +1243,151 @@ namespace ProyectoIntegrador.localhost {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/DatosFotoDAOE", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataTable DatosFotoDAOE(object obj) {
+            object[] results = this.Invoke("DatosFotoDAOE", new object[] {
+                        obj});
+            return ((System.Data.DataTable)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void DatosFotoDAOEAsync(object obj) {
+            this.DatosFotoDAOEAsync(obj, null);
+        }
+        
+        /// <remarks/>
+        public void DatosFotoDAOEAsync(object obj, object userState) {
+            if ((this.DatosFotoDAOEOperationCompleted == null)) {
+                this.DatosFotoDAOEOperationCompleted = new System.Threading.SendOrPostCallback(this.OnDatosFotoDAOEOperationCompleted);
+            }
+            this.InvokeAsync("DatosFotoDAOE", new object[] {
+                        obj}, this.DatosFotoDAOEOperationCompleted, userState);
+        }
+        
+        private void OnDatosFotoDAOEOperationCompleted(object arg) {
+            if ((this.DatosFotoDAOECompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.DatosFotoDAOECompleted(this, new DatosFotoDAOECompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/BuscarFotoDAOE", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataTable BuscarFotoDAOE(object obj) {
+            object[] results = this.Invoke("BuscarFotoDAOE", new object[] {
+                        obj});
+            return ((System.Data.DataTable)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void BuscarFotoDAOEAsync(object obj) {
+            this.BuscarFotoDAOEAsync(obj, null);
+        }
+        
+        /// <remarks/>
+        public void BuscarFotoDAOEAsync(object obj, object userState) {
+            if ((this.BuscarFotoDAOEOperationCompleted == null)) {
+                this.BuscarFotoDAOEOperationCompleted = new System.Threading.SendOrPostCallback(this.OnBuscarFotoDAOEOperationCompleted);
+            }
+            this.InvokeAsync("BuscarFotoDAOE", new object[] {
+                        obj}, this.BuscarFotoDAOEOperationCompleted, userState);
+        }
+        
+        private void OnBuscarFotoDAOEOperationCompleted(object arg) {
+            if ((this.BuscarFotoDAOECompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.BuscarFotoDAOECompleted(this, new BuscarFotoDAOECompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/agregarFotoDAOE", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public int agregarFotoDAOE(object obj) {
+            object[] results = this.Invoke("agregarFotoDAOE", new object[] {
+                        obj});
+            return ((int)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void agregarFotoDAOEAsync(object obj) {
+            this.agregarFotoDAOEAsync(obj, null);
+        }
+        
+        /// <remarks/>
+        public void agregarFotoDAOEAsync(object obj, object userState) {
+            if ((this.agregarFotoDAOEOperationCompleted == null)) {
+                this.agregarFotoDAOEOperationCompleted = new System.Threading.SendOrPostCallback(this.OnagregarFotoDAOEOperationCompleted);
+            }
+            this.InvokeAsync("agregarFotoDAOE", new object[] {
+                        obj}, this.agregarFotoDAOEOperationCompleted, userState);
+        }
+        
+        private void OnagregarFotoDAOEOperationCompleted(object arg) {
+            if ((this.agregarFotoDAOECompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.agregarFotoDAOECompleted(this, new agregarFotoDAOECompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ModificarFotoDAOE", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public int ModificarFotoDAOE(object obj) {
+            object[] results = this.Invoke("ModificarFotoDAOE", new object[] {
+                        obj});
+            return ((int)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ModificarFotoDAOEAsync(object obj) {
+            this.ModificarFotoDAOEAsync(obj, null);
+        }
+        
+        /// <remarks/>
+        public void ModificarFotoDAOEAsync(object obj, object userState) {
+            if ((this.ModificarFotoDAOEOperationCompleted == null)) {
+                this.ModificarFotoDAOEOperationCompleted = new System.Threading.SendOrPostCallback(this.OnModificarFotoDAOEOperationCompleted);
+            }
+            this.InvokeAsync("ModificarFotoDAOE", new object[] {
+                        obj}, this.ModificarFotoDAOEOperationCompleted, userState);
+        }
+        
+        private void OnModificarFotoDAOEOperationCompleted(object arg) {
+            if ((this.ModificarFotoDAOECompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ModificarFotoDAOECompleted(this, new ModificarFotoDAOECompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/EliminarFotoDAOE", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public int EliminarFotoDAOE(object obj) {
+            object[] results = this.Invoke("EliminarFotoDAOE", new object[] {
+                        obj});
+            return ((int)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void EliminarFotoDAOEAsync(object obj) {
+            this.EliminarFotoDAOEAsync(obj, null);
+        }
+        
+        /// <remarks/>
+        public void EliminarFotoDAOEAsync(object obj, object userState) {
+            if ((this.EliminarFotoDAOEOperationCompleted == null)) {
+                this.EliminarFotoDAOEOperationCompleted = new System.Threading.SendOrPostCallback(this.OnEliminarFotoDAOEOperationCompleted);
+            }
+            this.InvokeAsync("EliminarFotoDAOE", new object[] {
+                        obj}, this.EliminarFotoDAOEOperationCompleted, userState);
+        }
+        
+        private void OnEliminarFotoDAOEOperationCompleted(object arg) {
+            if ((this.EliminarFotoDAOECompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.EliminarFotoDAOECompleted(this, new EliminarFotoDAOECompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/DatosMembresiaDAO", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public System.Data.DataTable DatosMembresiaDAO(object obj) {
             object[] results = this.Invoke("DatosMembresiaDAO", new object[] {
@@ -1591,6 +1819,151 @@ namespace ProyectoIntegrador.localhost {
             if ((this.EliminarSitioDAOCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.EliminarSitioDAOCompleted(this, new EliminarSitioDAOCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/DatosEventoDAO", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataTable DatosEventoDAO(object obj) {
+            object[] results = this.Invoke("DatosEventoDAO", new object[] {
+                        obj});
+            return ((System.Data.DataTable)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void DatosEventoDAOAsync(object obj) {
+            this.DatosEventoDAOAsync(obj, null);
+        }
+        
+        /// <remarks/>
+        public void DatosEventoDAOAsync(object obj, object userState) {
+            if ((this.DatosEventoDAOOperationCompleted == null)) {
+                this.DatosEventoDAOOperationCompleted = new System.Threading.SendOrPostCallback(this.OnDatosEventoDAOOperationCompleted);
+            }
+            this.InvokeAsync("DatosEventoDAO", new object[] {
+                        obj}, this.DatosEventoDAOOperationCompleted, userState);
+        }
+        
+        private void OnDatosEventoDAOOperationCompleted(object arg) {
+            if ((this.DatosEventoDAOCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.DatosEventoDAOCompleted(this, new DatosEventoDAOCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/BuscarEventoDAO", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public System.Data.DataTable BuscarEventoDAO(object obj) {
+            object[] results = this.Invoke("BuscarEventoDAO", new object[] {
+                        obj});
+            return ((System.Data.DataTable)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void BuscarEventoDAOAsync(object obj) {
+            this.BuscarEventoDAOAsync(obj, null);
+        }
+        
+        /// <remarks/>
+        public void BuscarEventoDAOAsync(object obj, object userState) {
+            if ((this.BuscarEventoDAOOperationCompleted == null)) {
+                this.BuscarEventoDAOOperationCompleted = new System.Threading.SendOrPostCallback(this.OnBuscarEventoDAOOperationCompleted);
+            }
+            this.InvokeAsync("BuscarEventoDAO", new object[] {
+                        obj}, this.BuscarEventoDAOOperationCompleted, userState);
+        }
+        
+        private void OnBuscarEventoDAOOperationCompleted(object arg) {
+            if ((this.BuscarEventoDAOCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.BuscarEventoDAOCompleted(this, new BuscarEventoDAOCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/agregarEventoDAO", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public int agregarEventoDAO(object obj) {
+            object[] results = this.Invoke("agregarEventoDAO", new object[] {
+                        obj});
+            return ((int)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void agregarEventoDAOAsync(object obj) {
+            this.agregarEventoDAOAsync(obj, null);
+        }
+        
+        /// <remarks/>
+        public void agregarEventoDAOAsync(object obj, object userState) {
+            if ((this.agregarEventoDAOOperationCompleted == null)) {
+                this.agregarEventoDAOOperationCompleted = new System.Threading.SendOrPostCallback(this.OnagregarEventoDAOOperationCompleted);
+            }
+            this.InvokeAsync("agregarEventoDAO", new object[] {
+                        obj}, this.agregarEventoDAOOperationCompleted, userState);
+        }
+        
+        private void OnagregarEventoDAOOperationCompleted(object arg) {
+            if ((this.agregarEventoDAOCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.agregarEventoDAOCompleted(this, new agregarEventoDAOCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ModificarEventoDAO", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public int ModificarEventoDAO(object obj) {
+            object[] results = this.Invoke("ModificarEventoDAO", new object[] {
+                        obj});
+            return ((int)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void ModificarEventoDAOAsync(object obj) {
+            this.ModificarEventoDAOAsync(obj, null);
+        }
+        
+        /// <remarks/>
+        public void ModificarEventoDAOAsync(object obj, object userState) {
+            if ((this.ModificarEventoDAOOperationCompleted == null)) {
+                this.ModificarEventoDAOOperationCompleted = new System.Threading.SendOrPostCallback(this.OnModificarEventoDAOOperationCompleted);
+            }
+            this.InvokeAsync("ModificarEventoDAO", new object[] {
+                        obj}, this.ModificarEventoDAOOperationCompleted, userState);
+        }
+        
+        private void OnModificarEventoDAOOperationCompleted(object arg) {
+            if ((this.ModificarEventoDAOCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.ModificarEventoDAOCompleted(this, new ModificarEventoDAOCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/EliminarEventoDAO", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public int EliminarEventoDAO(object obj) {
+            object[] results = this.Invoke("EliminarEventoDAO", new object[] {
+                        obj});
+            return ((int)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void EliminarEventoDAOAsync(object obj) {
+            this.EliminarEventoDAOAsync(obj, null);
+        }
+        
+        /// <remarks/>
+        public void EliminarEventoDAOAsync(object obj, object userState) {
+            if ((this.EliminarEventoDAOOperationCompleted == null)) {
+                this.EliminarEventoDAOOperationCompleted = new System.Threading.SendOrPostCallback(this.OnEliminarEventoDAOOperationCompleted);
+            }
+            this.InvokeAsync("EliminarEventoDAO", new object[] {
+                        obj}, this.EliminarEventoDAOOperationCompleted, userState);
+        }
+        
+        private void OnEliminarEventoDAOOperationCompleted(object arg) {
+            if ((this.EliminarEventoDAOCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.EliminarEventoDAOCompleted(this, new EliminarEventoDAOCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -2453,6 +2826,123 @@ namespace ProyectoIntegrador.localhost {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
+    public partial class EventoBO {
+        
+        private int idEventosField;
+        
+        private string nombreField;
+        
+        private string descripcionField;
+        
+        private char concurrenteField;
+        
+        private string direccionField;
+        
+        private string latitudField;
+        
+        private string longitudField;
+        
+        private System.DateTime fechaInicioField;
+        
+        private System.DateTime fechaFinField;
+        
+        /// <remarks/>
+        public int IdEventos {
+            get {
+                return this.idEventosField;
+            }
+            set {
+                this.idEventosField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Nombre {
+            get {
+                return this.nombreField;
+            }
+            set {
+                this.nombreField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Descripcion {
+            get {
+                return this.descripcionField;
+            }
+            set {
+                this.descripcionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public char Concurrente {
+            get {
+                return this.concurrenteField;
+            }
+            set {
+                this.concurrenteField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Direccion {
+            get {
+                return this.direccionField;
+            }
+            set {
+                this.direccionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Latitud {
+            get {
+                return this.latitudField;
+            }
+            set {
+                this.latitudField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Longitud {
+            get {
+                return this.longitudField;
+            }
+            set {
+                this.longitudField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime FechaInicio {
+            get {
+                return this.fechaInicioField;
+            }
+            set {
+                this.fechaInicioField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime FechaFin {
+            get {
+                return this.fechaFinField;
+            }
+            set {
+                this.fechaFinField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
     public partial class UsuarioBO {
         
         private int idUsuarioField;
@@ -3183,6 +3673,10 @@ namespace ProyectoIntegrador.localhost {
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void EventoBOCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void VISTARECIBOBOCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
@@ -3577,6 +4071,136 @@ namespace ProyectoIntegrador.localhost {
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void DatosFotoDAOECompletedEventHandler(object sender, DatosFotoDAOECompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class DatosFotoDAOECompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal DatosFotoDAOECompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataTable Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataTable)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void BuscarFotoDAOECompletedEventHandler(object sender, BuscarFotoDAOECompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class BuscarFotoDAOECompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal BuscarFotoDAOECompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataTable Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataTable)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void agregarFotoDAOECompletedEventHandler(object sender, agregarFotoDAOECompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class agregarFotoDAOECompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal agregarFotoDAOECompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public int Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((int)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void ModificarFotoDAOECompletedEventHandler(object sender, ModificarFotoDAOECompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ModificarFotoDAOECompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ModificarFotoDAOECompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public int Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((int)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void EliminarFotoDAOECompletedEventHandler(object sender, EliminarFotoDAOECompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class EliminarFotoDAOECompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal EliminarFotoDAOECompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public int Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((int)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void DatosMembresiaDAOCompletedEventHandler(object sender, DatosMembresiaDAOCompletedEventArgs e);
     
     /// <remarks/>
@@ -3952,6 +4576,136 @@ namespace ProyectoIntegrador.localhost {
         private object[] results;
         
         internal EliminarSitioDAOCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public int Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((int)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void DatosEventoDAOCompletedEventHandler(object sender, DatosEventoDAOCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class DatosEventoDAOCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal DatosEventoDAOCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataTable Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataTable)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void BuscarEventoDAOCompletedEventHandler(object sender, BuscarEventoDAOCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class BuscarEventoDAOCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal BuscarEventoDAOCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public System.Data.DataTable Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((System.Data.DataTable)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void agregarEventoDAOCompletedEventHandler(object sender, agregarEventoDAOCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class agregarEventoDAOCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal agregarEventoDAOCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public int Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((int)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void ModificarEventoDAOCompletedEventHandler(object sender, ModificarEventoDAOCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class ModificarEventoDAOCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal ModificarEventoDAOCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public int Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((int)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    public delegate void EliminarEventoDAOCompletedEventHandler(object sender, EliminarEventoDAOCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class EliminarEventoDAOCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal EliminarEventoDAOCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
                 base(exception, cancelled, userState) {
             this.results = results;
         }
