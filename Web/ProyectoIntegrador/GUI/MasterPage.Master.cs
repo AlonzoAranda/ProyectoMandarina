@@ -50,8 +50,8 @@ namespace ProyectoIntegrador
                 {
                     us.DataSource = Session["Usuarios"];
                     us.DataBind();
-                    Image1.ImageUrl = "../ImagenesWeb/Usuarios/" + us.Rows[0].Cells[8].Text.ToString();
-                    Image2.ImageUrl = "../ImagenesWeb/Usuarios/" + us.Rows[0].Cells[8].Text.ToString();
+                    Image1.ImageUrl = "../ImagenesWeb/Usuarios/" + us.Rows[0].Cells[6].Text.ToString();
+                    Image2.ImageUrl = "../ImagenesWeb/Usuarios/" + us.Rows[0].Cells[6].Text.ToString();
                     if (us.Rows[0].Cells[8].Text.ToString() == "")
                     {
                         Image1.ImageUrl = "../ImagenesWeb/Usuarios/logoDM.png";

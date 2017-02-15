@@ -23,7 +23,7 @@ namespace WebService.DAO
         public int AgregarSitio(object obj)
         {
             SitioBO Sitio = (SitioBO)obj;
-            sql = "EXEC AgregarSITIOS   '" + Sitio.Descripcion + "','" + Sitio.Nombre + "' ," + Sitio.IdEstablecimiento + ", '"+ Sitio.Estatus + "'";
+            sql = "EXEC AgregarSITIOS   '" + Sitio.Descripcion + "','" + Sitio.Nombre + "' ," + Sitio.IdEstablecimiento + ", '"+ Sitio.Estatus + "', '" + Sitio.Direccion + "', '" + Sitio.Longitud + "', '" + Sitio.Latitud + "', " + Sitio.Idusuario + "";
             return BD.Ejecutar(sql);
         }
         public int EliminarSitio(object obj)
@@ -35,13 +35,13 @@ namespace WebService.DAO
         public int ModificarSitio(object obj)
         {
             SitioBO Sitio = (SitioBO)obj;
-            sql = "EXEC ModifcarSITIOS  " + Sitio.IdSitio + " ,'" + Sitio.Descripcion + "','" + Sitio.Nombre + "' ," + Sitio.IdEstablecimiento + ", '" + Sitio.Estatus + "'";
+            sql = "EXEC ModifcarSITIOS  " + Sitio.IdSitio + " ,'" + Sitio.Descripcion + "','" + Sitio.Nombre + "' ," + Sitio.IdEstablecimiento + ", '" + Sitio.Estatus + "', '" + Sitio.Direccion + "', '" + Sitio.Longitud + "', '" + Sitio.Latitud + "', " + Sitio.Idusuario + "";
             return BD.Ejecutar(sql);
         }
         public DataTable BuscarSitio(object obj)
         {
             SitioBO Sitio = (SitioBO)obj;
-            sql = "EXEC FiltrarSITIOS  " + Sitio.IdSitio + " ,'" + Sitio.Descripcion + "','" + Sitio.Nombre + "' ," + Sitio.IdEstablecimiento + ", '" + Sitio.Estatus + "'";
+            sql = "EXEC FiltrarSITIOS  " + Sitio.IdSitio + " , '" + Sitio.Descripcion + "','" + Sitio.Nombre + "' ," + Sitio.IdEstablecimiento + ", '" + Sitio.Direccion + "', '" + Sitio.Longitud + "', '" + Sitio.Latitud + "'";
             return BD.Tabla(sql);
         }
     }

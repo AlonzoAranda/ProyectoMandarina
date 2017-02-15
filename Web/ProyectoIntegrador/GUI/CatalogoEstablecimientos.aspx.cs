@@ -16,7 +16,7 @@ namespace ProyectoIntegrador.GUI
         localhost.WSDisfruta servicio = new localhost.WSDisfruta();
         localhost.EstablecimientoBO Establecimiento = new localhost.EstablecimientoBO();
         localhost.TipoEstablecimientoBO tipo = new localhost.TipoEstablecimientoBO();
-        localhost.VistaEstablecimientoBO Vista = new localhost.VistaEstablecimientoBO();
+        localhost.EstablecimientoBO Vista = new localhost.EstablecimientoBO();
         int indice;
         protected void Page_Load(object sender, EventArgs e)
         {

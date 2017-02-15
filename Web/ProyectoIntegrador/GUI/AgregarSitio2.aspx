@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GUI/MasterPage.Master" AutoEventWireup="true" CodeBehind="AgregarSitio2.aspx.cs" Inherits="ProyectoIntegrador.GUI.AgregarSitio2" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/GUI/MasterPage.Master" AutoEventWireup="true" CodeBehind="AgregarSitio2.aspx.cs" Inherits="ProyectoIntegrador.GUI.AgregarSitio2"  ValidateRequest="false"%>
 <%@ Register Assembly="DevExpress.Web.v16.1, Version=16.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -9,7 +9,7 @@
     Agregar sitio
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   <script src="../js/gmaps.js"></script>
+    <script src="../js/gmaps.js"></script>
     
     <div class="row">
 
@@ -168,6 +168,14 @@
                                                  </div>
                                           
                                               </div>
+                                                <div class="panel panel-default">
+                             <div class="col-md-9">
+
+                                            
+
+                        </div>
+                            </div>                        
+
                                                    
                                             </div>
                                                       
@@ -208,8 +216,12 @@
 	                                            var geocoder = new google.maps.Geocoder();
 	                                            geocoder.geocode({ 'address': address }, geocodeResult);
 	                                            document.getElementById('<%=txtDireccion.ClientID %>').value = (address);
-	                                               
+	                                            document.getElementById("#address").value = (document.getElementById('<%=txtDireccion.ClientID %>').value);
 	                                            //$("#dire").val(address);
+	                                        });
+                                             $('#address').live('click', function () {
+	                                             document.getElementById('#address').value = (document.getElementById('<%=txtDireccion.ClientID %>').value);
+	                                            
 	                                        });
                                            
 
@@ -236,10 +248,15 @@
                                             <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRxC6Y4f-j6nECyHWigtBATtJyXyha-XU&libraries=adsense&sensor=true&language=es"></script>
 
                                           </div>  
-                                            <asp:TextBox ID="latitude" runat="server"></asp:TextBox>
-                                            <asp:TextBox ID="txtDireccion" runat="server"  style="width:1px "></asp:TextBox>     
-                                            <asp:TextBox ID="longitude" runat="server"></asp:TextBox>
-                                        </div>
+                                                 <asp:UpdatePanel ID="UpdatePanel3" runat="server">
+                                                        <ContentTemplate>
+                                            <asp:TextBox ID="latitude" runat="server" Text=""></asp:TextBox>
+                                            <asp:TextBox ID="txtDireccion" runat="server" Text="" style="width:0px "></asp:TextBox>     
+                                            <asp:TextBox ID="longitude" runat="server" Text=""></asp:TextBox>
+                                            </ContentTemplate>
+                                                        </asp:UpdatePanel>
+                                                             
+                                                            </div>
                                                     
                                          </div>
                              </div>  

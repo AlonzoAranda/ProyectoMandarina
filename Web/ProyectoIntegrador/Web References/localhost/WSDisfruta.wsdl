@@ -91,7 +91,7 @@
       <s:element name="ReciboBOResponse">
         <s:complexType />
       </s:element>
-      <s:element name="SitioBO">
+      <s:element name="SitiosBO">
         <s:complexType>
           <s:sequence>
             <s:element minOccurs="0" maxOccurs="1" name="obj" type="tns:SitioBO" />
@@ -105,9 +105,13 @@
           <s:element minOccurs="0" maxOccurs="1" name="Descripcion" type="s:string" />
           <s:element minOccurs="1" maxOccurs="1" name="IdEstablecimiento" type="s:int" />
           <s:element minOccurs="0" maxOccurs="1" name="Estatus" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Idusuario" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Direccion" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Latitud" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Longitud" type="s:string" />
         </s:sequence>
       </s:complexType>
-      <s:element name="SitioBOResponse">
+      <s:element name="SitiosBOResponse">
         <s:complexType />
       </s:element>
       <s:element name="TarjetaCreditoBO">
@@ -203,46 +207,6 @@
         </s:sequence>
       </s:complexType>
       <s:element name="UsuarioBOResponse">
-        <s:complexType />
-      </s:element>
-      <s:element name="VISTADETALLESITIOBO">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="obj" type="tns:VISTADETALLESITIOBO" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:complexType name="VISTADETALLESITIOBO">
-        <s:complexContent mixed="false">
-          <s:extension base="tns:SitioBO">
-            <s:sequence>
-              <s:element minOccurs="0" maxOccurs="1" name="Latitud" type="s:string" />
-              <s:element minOccurs="0" maxOccurs="1" name="Longitud" type="s:string" />
-              <s:element minOccurs="0" maxOccurs="1" name="Direccion" type="s:string" />
-            </s:sequence>
-          </s:extension>
-        </s:complexContent>
-      </s:complexType>
-      <s:element name="VISTADETALLESITIOBOResponse">
-        <s:complexType />
-      </s:element>
-      <s:element name="VISTAESTABLECIMIENTOBO">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="obj" type="tns:VistaEstablecimientoBO" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:complexType name="VistaEstablecimientoBO">
-        <s:complexContent mixed="false">
-          <s:extension base="tns:EstablecimientoBO">
-            <s:sequence>
-              <s:element minOccurs="0" maxOccurs="1" name="NombreTipo" type="s:string" />
-            </s:sequence>
-          </s:extension>
-        </s:complexContent>
-      </s:complexType>
-      <s:element name="VISTAESTABLECIMIENTOBOResponse">
         <s:complexType />
       </s:element>
       <s:element name="VISTARECIBOBO">
@@ -1027,90 +991,6 @@
           </s:sequence>
         </s:complexType>
       </s:element>
-      <s:element name="DatosUbicacionesDAO">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="obj" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="DatosUbicacionesDAOResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="DatosUbicacionesDAOResult">
-              <s:complexType>
-                <s:sequence>
-                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
-                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="BuscarUbicacionesDAO">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="obj" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="BuscarUbicacionesDAOResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="BuscarUbicacionesDAOResult">
-              <s:complexType>
-                <s:sequence>
-                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
-                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="agregarUbicacionesDAO">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="obj" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="agregarUbicacionesDAOResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="agregarUbicacionesDAOResult" type="s:int" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="ModificarUbicacionesDAO">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="obj" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="ModificarUbicacionesDAOResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="ModificarUbicacionesDAOResult" type="s:int" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="EliminarUbicacionesDAO">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="obj" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="EliminarUbicacionesDAOResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="1" maxOccurs="1" name="EliminarUbicacionesDAOResult" type="s:int" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
       <s:element name="DatosUsuarioDAO">
         <s:complexType />
       </s:element>
@@ -1191,27 +1071,6 @@
           </s:sequence>
         </s:complexType>
       </s:element>
-      <s:element name="BuscarVISTADETALLESITIO">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="obj" />
-          </s:sequence>
-        </s:complexType>
-      </s:element>
-      <s:element name="BuscarVISTADETALLESITIOResponse">
-        <s:complexType>
-          <s:sequence>
-            <s:element minOccurs="0" maxOccurs="1" name="BuscarVISTADETALLESITIOResult">
-              <s:complexType>
-                <s:sequence>
-                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
-                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
-                </s:sequence>
-              </s:complexType>
-            </s:element>
-          </s:sequence>
-        </s:complexType>
-      </s:element>
       <s:element name="BuscarVISTARECIBODAO">
         <s:complexType>
           <s:sequence>
@@ -1286,11 +1145,11 @@
   <wsdl:message name="ReciboBOSoapOut">
     <wsdl:part name="parameters" element="tns:ReciboBOResponse" />
   </wsdl:message>
-  <wsdl:message name="SitioBOSoapIn">
-    <wsdl:part name="parameters" element="tns:SitioBO" />
+  <wsdl:message name="SitiosBOSoapIn">
+    <wsdl:part name="parameters" element="tns:SitiosBO" />
   </wsdl:message>
-  <wsdl:message name="SitioBOSoapOut">
-    <wsdl:part name="parameters" element="tns:SitioBOResponse" />
+  <wsdl:message name="SitiosBOSoapOut">
+    <wsdl:part name="parameters" element="tns:SitiosBOResponse" />
   </wsdl:message>
   <wsdl:message name="TarjetaCreditoBOSoapIn">
     <wsdl:part name="parameters" element="tns:TarjetaCreditoBO" />
@@ -1321,18 +1180,6 @@
   </wsdl:message>
   <wsdl:message name="UsuarioBOSoapOut">
     <wsdl:part name="parameters" element="tns:UsuarioBOResponse" />
-  </wsdl:message>
-  <wsdl:message name="VISTADETALLESITIOBOSoapIn">
-    <wsdl:part name="parameters" element="tns:VISTADETALLESITIOBO" />
-  </wsdl:message>
-  <wsdl:message name="VISTADETALLESITIOBOSoapOut">
-    <wsdl:part name="parameters" element="tns:VISTADETALLESITIOBOResponse" />
-  </wsdl:message>
-  <wsdl:message name="VISTAESTABLECIMIENTOBOSoapIn">
-    <wsdl:part name="parameters" element="tns:VISTAESTABLECIMIENTOBO" />
-  </wsdl:message>
-  <wsdl:message name="VISTAESTABLECIMIENTOBOSoapOut">
-    <wsdl:part name="parameters" element="tns:VISTAESTABLECIMIENTOBOResponse" />
   </wsdl:message>
   <wsdl:message name="VISTARECIBOBOSoapIn">
     <wsdl:part name="parameters" element="tns:VISTARECIBOBO" />
@@ -1610,36 +1457,6 @@
   <wsdl:message name="EliminarTipoPagoDAOSoapOut">
     <wsdl:part name="parameters" element="tns:EliminarTipoPagoDAOResponse" />
   </wsdl:message>
-  <wsdl:message name="DatosUbicacionesDAOSoapIn">
-    <wsdl:part name="parameters" element="tns:DatosUbicacionesDAO" />
-  </wsdl:message>
-  <wsdl:message name="DatosUbicacionesDAOSoapOut">
-    <wsdl:part name="parameters" element="tns:DatosUbicacionesDAOResponse" />
-  </wsdl:message>
-  <wsdl:message name="BuscarUbicacionesDAOSoapIn">
-    <wsdl:part name="parameters" element="tns:BuscarUbicacionesDAO" />
-  </wsdl:message>
-  <wsdl:message name="BuscarUbicacionesDAOSoapOut">
-    <wsdl:part name="parameters" element="tns:BuscarUbicacionesDAOResponse" />
-  </wsdl:message>
-  <wsdl:message name="agregarUbicacionesDAOSoapIn">
-    <wsdl:part name="parameters" element="tns:agregarUbicacionesDAO" />
-  </wsdl:message>
-  <wsdl:message name="agregarUbicacionesDAOSoapOut">
-    <wsdl:part name="parameters" element="tns:agregarUbicacionesDAOResponse" />
-  </wsdl:message>
-  <wsdl:message name="ModificarUbicacionesDAOSoapIn">
-    <wsdl:part name="parameters" element="tns:ModificarUbicacionesDAO" />
-  </wsdl:message>
-  <wsdl:message name="ModificarUbicacionesDAOSoapOut">
-    <wsdl:part name="parameters" element="tns:ModificarUbicacionesDAOResponse" />
-  </wsdl:message>
-  <wsdl:message name="EliminarUbicacionesDAOSoapIn">
-    <wsdl:part name="parameters" element="tns:EliminarUbicacionesDAO" />
-  </wsdl:message>
-  <wsdl:message name="EliminarUbicacionesDAOSoapOut">
-    <wsdl:part name="parameters" element="tns:EliminarUbicacionesDAOResponse" />
-  </wsdl:message>
   <wsdl:message name="DatosUsuarioDAOSoapIn">
     <wsdl:part name="parameters" element="tns:DatosUsuarioDAO" />
   </wsdl:message>
@@ -1669,12 +1486,6 @@
   </wsdl:message>
   <wsdl:message name="EliminarUsuarioDAOSoapOut">
     <wsdl:part name="parameters" element="tns:EliminarUsuarioDAOResponse" />
-  </wsdl:message>
-  <wsdl:message name="BuscarVISTADETALLESITIOSoapIn">
-    <wsdl:part name="parameters" element="tns:BuscarVISTADETALLESITIO" />
-  </wsdl:message>
-  <wsdl:message name="BuscarVISTADETALLESITIOSoapOut">
-    <wsdl:part name="parameters" element="tns:BuscarVISTADETALLESITIOResponse" />
   </wsdl:message>
   <wsdl:message name="BuscarVISTARECIBODAOSoapIn">
     <wsdl:part name="parameters" element="tns:BuscarVISTARECIBODAO" />
@@ -1709,9 +1520,9 @@
       <wsdl:input message="tns:ReciboBOSoapIn" />
       <wsdl:output message="tns:ReciboBOSoapOut" />
     </wsdl:operation>
-    <wsdl:operation name="SitioBO">
-      <wsdl:input message="tns:SitioBOSoapIn" />
-      <wsdl:output message="tns:SitioBOSoapOut" />
+    <wsdl:operation name="SitiosBO">
+      <wsdl:input message="tns:SitiosBOSoapIn" />
+      <wsdl:output message="tns:SitiosBOSoapOut" />
     </wsdl:operation>
     <wsdl:operation name="TarjetaCreditoBO">
       <wsdl:input message="tns:TarjetaCreditoBOSoapIn" />
@@ -1732,14 +1543,6 @@
     <wsdl:operation name="UsuarioBO">
       <wsdl:input message="tns:UsuarioBOSoapIn" />
       <wsdl:output message="tns:UsuarioBOSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="VISTADETALLESITIOBO">
-      <wsdl:input message="tns:VISTADETALLESITIOBOSoapIn" />
-      <wsdl:output message="tns:VISTADETALLESITIOBOSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="VISTAESTABLECIMIENTOBO">
-      <wsdl:input message="tns:VISTAESTABLECIMIENTOBOSoapIn" />
-      <wsdl:output message="tns:VISTAESTABLECIMIENTOBOSoapOut" />
     </wsdl:operation>
     <wsdl:operation name="VISTARECIBOBO">
       <wsdl:input message="tns:VISTARECIBOBOSoapIn" />
@@ -1925,26 +1728,6 @@
       <wsdl:input message="tns:EliminarTipoPagoDAOSoapIn" />
       <wsdl:output message="tns:EliminarTipoPagoDAOSoapOut" />
     </wsdl:operation>
-    <wsdl:operation name="DatosUbicacionesDAO">
-      <wsdl:input message="tns:DatosUbicacionesDAOSoapIn" />
-      <wsdl:output message="tns:DatosUbicacionesDAOSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="BuscarUbicacionesDAO">
-      <wsdl:input message="tns:BuscarUbicacionesDAOSoapIn" />
-      <wsdl:output message="tns:BuscarUbicacionesDAOSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="agregarUbicacionesDAO">
-      <wsdl:input message="tns:agregarUbicacionesDAOSoapIn" />
-      <wsdl:output message="tns:agregarUbicacionesDAOSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="ModificarUbicacionesDAO">
-      <wsdl:input message="tns:ModificarUbicacionesDAOSoapIn" />
-      <wsdl:output message="tns:ModificarUbicacionesDAOSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="EliminarUbicacionesDAO">
-      <wsdl:input message="tns:EliminarUbicacionesDAOSoapIn" />
-      <wsdl:output message="tns:EliminarUbicacionesDAOSoapOut" />
-    </wsdl:operation>
     <wsdl:operation name="DatosUsuarioDAO">
       <wsdl:input message="tns:DatosUsuarioDAOSoapIn" />
       <wsdl:output message="tns:DatosUsuarioDAOSoapOut" />
@@ -1964,10 +1747,6 @@
     <wsdl:operation name="EliminarUsuarioDAO">
       <wsdl:input message="tns:EliminarUsuarioDAOSoapIn" />
       <wsdl:output message="tns:EliminarUsuarioDAOSoapOut" />
-    </wsdl:operation>
-    <wsdl:operation name="BuscarVISTADETALLESITIO">
-      <wsdl:input message="tns:BuscarVISTADETALLESITIOSoapIn" />
-      <wsdl:output message="tns:BuscarVISTADETALLESITIOSoapOut" />
     </wsdl:operation>
     <wsdl:operation name="BuscarVISTARECIBODAO">
       <wsdl:input message="tns:BuscarVISTARECIBODAOSoapIn" />
@@ -2025,8 +1804,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="SitioBO">
-      <soap:operation soapAction="http://tempuri.org/SitioBO" style="document" />
+    <wsdl:operation name="SitiosBO">
+      <soap:operation soapAction="http://tempuri.org/SitiosBO" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -2072,24 +1851,6 @@
     </wsdl:operation>
     <wsdl:operation name="UsuarioBO">
       <soap:operation soapAction="http://tempuri.org/UsuarioBO" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="VISTADETALLESITIOBO">
-      <soap:operation soapAction="http://tempuri.org/VISTADETALLESITIOBO" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="VISTAESTABLECIMIENTOBO">
-      <soap:operation soapAction="http://tempuri.org/VISTAESTABLECIMIENTOBO" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -2511,51 +2272,6 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="DatosUbicacionesDAO">
-      <soap:operation soapAction="http://tempuri.org/DatosUbicacionesDAO" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="BuscarUbicacionesDAO">
-      <soap:operation soapAction="http://tempuri.org/BuscarUbicacionesDAO" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="agregarUbicacionesDAO">
-      <soap:operation soapAction="http://tempuri.org/agregarUbicacionesDAO" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="ModificarUbicacionesDAO">
-      <soap:operation soapAction="http://tempuri.org/ModificarUbicacionesDAO" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="EliminarUbicacionesDAO">
-      <soap:operation soapAction="http://tempuri.org/EliminarUbicacionesDAO" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="DatosUsuarioDAO">
       <soap:operation soapAction="http://tempuri.org/DatosUsuarioDAO" style="document" />
       <wsdl:input>
@@ -2594,15 +2310,6 @@
     </wsdl:operation>
     <wsdl:operation name="EliminarUsuarioDAO">
       <soap:operation soapAction="http://tempuri.org/EliminarUsuarioDAO" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="BuscarVISTADETALLESITIO">
-      <soap:operation soapAction="http://tempuri.org/BuscarVISTADETALLESITIO" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -2676,8 +2383,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="SitioBO">
-      <soap12:operation soapAction="http://tempuri.org/SitioBO" style="document" />
+    <wsdl:operation name="SitiosBO">
+      <soap12:operation soapAction="http://tempuri.org/SitiosBO" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -2723,24 +2430,6 @@
     </wsdl:operation>
     <wsdl:operation name="UsuarioBO">
       <soap12:operation soapAction="http://tempuri.org/UsuarioBO" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="VISTADETALLESITIOBO">
-      <soap12:operation soapAction="http://tempuri.org/VISTADETALLESITIOBO" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="VISTAESTABLECIMIENTOBO">
-      <soap12:operation soapAction="http://tempuri.org/VISTAESTABLECIMIENTOBO" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -3162,51 +2851,6 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="DatosUbicacionesDAO">
-      <soap12:operation soapAction="http://tempuri.org/DatosUbicacionesDAO" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="BuscarUbicacionesDAO">
-      <soap12:operation soapAction="http://tempuri.org/BuscarUbicacionesDAO" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="agregarUbicacionesDAO">
-      <soap12:operation soapAction="http://tempuri.org/agregarUbicacionesDAO" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="ModificarUbicacionesDAO">
-      <soap12:operation soapAction="http://tempuri.org/ModificarUbicacionesDAO" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="EliminarUbicacionesDAO">
-      <soap12:operation soapAction="http://tempuri.org/EliminarUbicacionesDAO" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="DatosUsuarioDAO">
       <soap12:operation soapAction="http://tempuri.org/DatosUsuarioDAO" style="document" />
       <wsdl:input>
@@ -3245,15 +2889,6 @@
     </wsdl:operation>
     <wsdl:operation name="EliminarUsuarioDAO">
       <soap12:operation soapAction="http://tempuri.org/EliminarUsuarioDAO" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
-    <wsdl:operation name="BuscarVISTADETALLESITIO">
-      <soap12:operation soapAction="http://tempuri.org/BuscarVISTADETALLESITIO" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

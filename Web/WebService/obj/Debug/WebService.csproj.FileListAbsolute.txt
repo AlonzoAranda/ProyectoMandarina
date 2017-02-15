@@ -94,3 +94,35 @@ C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\WebService\bin\System.Thread
 C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\WebService\obj\Debug\WebService.csprojResolveAssemblyReference.cache
 C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\WebService\obj\Debug\WebService.dll
 C:\Users\joseph\Desktop\ProyectoIntegrador 09-12-06\WebService\obj\Debug\WebService.pdb
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\obj\Debug\WebService.csprojResolveAssemblyReference.cache
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\obj\Debug\WebService.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\obj\Debug\WebService.pdb
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\WebService.dll.config
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\WebService.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\WebService.pdb
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\Microsoft.AI.Web.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\Microsoft.ApplicationInsights.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\Microsoft.Diagnostics.Tracing.EventSource.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\Microsoft.Threading.Tasks.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\Microsoft.Threading.Tasks.Extensions.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\System.IO.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\System.Runtime.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\System.Threading.Tasks.dll
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\Microsoft.AI.Web.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\Microsoft.ApplicationInsights.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\Microsoft.Diagnostics.Tracing.EventSource.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\Microsoft.Threading.Tasks.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\Microsoft.Threading.Tasks.Extensions.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\System.IO.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\System.Runtime.xml
+C:\Users\joseph\Documents\GitHub\ProyectoMandarina\Web\WebService\bin\System.Threading.Tasks.xml

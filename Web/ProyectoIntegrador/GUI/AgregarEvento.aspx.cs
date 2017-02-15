@@ -19,7 +19,6 @@ namespace ProyectoIntegrador.GUI
         localhost.FotoBO Foto = new localhost.FotoBO();
         localhost.TipoEstablecimientoBO Tipo = new localhost.TipoEstablecimientoBO();
         localhost.EstablecimientoBO Establecimiento = new localhost.EstablecimientoBO();
-        localhost.VISTADETALLESITIOBO VistaSitio = new localhost.VISTADETALLESITIOBO();
         localhost.MembresiaBO membresia = new localhost.MembresiaBO();
         localhost.AdministraBO administra = new localhost.AdministraBO();
         DataTable US = new DataTable();
@@ -35,7 +34,7 @@ namespace ProyectoIntegrador.GUI
             if (!IsPostBack)
             {
                 //btnEjemlop.Attributes.Add( "Class","<span class=\"fa fa-save\"></span>&nbsp;Agregar");
-                //llenarGrid(VistaSitio);
+                //llenarGrid(sitio);
                 //llenarddlTipos();
                 //llenarddlEstablecimiento();
                 validarNumeroSitios();
@@ -73,23 +72,23 @@ namespace ProyectoIntegrador.GUI
             return Dt;
         }
 
-        public void llenarGrid(object obj)
-        {
-            US = (DataTable)Session["Usuarios"];
-            if (Convert.ToInt32(US.Rows[0].ItemArray[9]) != 1)
-            {
-                //llenarGridUsuario();
-                grResultado.DataSource = servicio.BuscarVISTADETALLESITIO(obj);
-                grResultado.DataBind();
-                Session["ResultadoAlumno"] = servicio.BuscarVISTADETALLESITIO(obj);
-            }
-            else
-            {
-                grResultado.DataSource = servicio.BuscarVISTADETALLESITIO(obj);
-                grResultado.DataBind();
-                Session["ResultadoAlumno"] = servicio.BuscarVISTADETALLESITIO(obj);
-            }
-        }
+        //public void llenarGrid(object obj)
+        //{
+        //    US = (DataTable)Session["Usuarios"];
+        //    if (Convert.ToInt32(US.Rows[0].ItemArray[9]) != 1)
+        //    {
+        //        //llenarGridUsuario();
+        //        grResultado.DataSource = servicio.BuscarVISTADETALLESITIO(obj);
+        //        grResultado.DataBind();
+        //        Session["ResultadoAlumno"] = servicio.BuscarVISTADETALLESITIO(obj);
+        //    }
+        //    else
+        //    {
+        //        grResultado.DataSource = servicio.BuscarVISTADETALLESITIO(obj);
+        //        grResultado.DataBind();
+        //        Session["ResultadoAlumno"] = servicio.BuscarVISTADETALLESITIO(obj);
+        //    }
+        //}
 
         public void llenarGridUsuario()
         {
@@ -110,8 +109,8 @@ namespace ProyectoIntegrador.GUI
             {
                 try
                 {
-                    VistaSitio.IdSitio = Convert.ToInt32(Datos.Rows[i].ItemArray[2]);
-                    DatosGrid = servicio.BuscarVISTADETALLESITIO(VistaSitio);
+                    sitio.IdSitio = Convert.ToInt32(Datos.Rows[i].ItemArray[2]);
+                    DatosGrid = servicio.BuscarSitioDAO(sitio);
                     DataRow Fila = Dt2.NewRow();
                     Fila["IdSitio"] = DatosGrid.Rows[0].ItemArray[0];
                     Fila["Nombre"] = DatosGrid.Rows[0].ItemArray[1];
@@ -185,10 +184,10 @@ namespace ProyectoIntegrador.GUI
 
             if (mensaje.Trim().Length == 0)
             {
-                VistaSitio.Nombre = txtNombre.Text;
-                VistaSitio.Descripcion = txtDescripcion.Text;
-                //VistaSitio.Estatus = ddlEstatus.Text;
-                //VistaSitio.IdEstablecimiento = Convert.ToInt32(DdlEstablecimiento.SelectedValue);
+                sitio.Nombre = txtNombre.Text;
+                sitio.Descripcion = txtDescripcion.Text;
+                //sitio.Estatus = ddlEstatus.Text;
+                //sitio.IdEstablecimiento = Convert.ToInt32(DdlEstablecimiento.SelectedValue);
                 //Ubicacion.Longitud = longitude.Text;
                 //Ubicacion.Latitud = latitude.Text;
                 //Ubicacion.Direccion = txtDireccion.Text;
@@ -196,7 +195,7 @@ namespace ProyectoIntegrador.GUI
                 int i = 0;
                 try
                 {
-                    i = servicio.agregarSitioDAO(VistaSitio);
+                    i = servicio.agregarSitioDAO(sitio);
                 }
                 catch
                 {
@@ -204,18 +203,16 @@ namespace ProyectoIntegrador.GUI
                 }
                 if (i == 1)
                 {
-                    Foto.IdSitio = Convert.ToInt32(servicio.BuscarSitioDAO(VistaSitio).Rows[0].ItemArray[0].ToString());
+                    Foto.IdSitio = Convert.ToInt32(servicio.BuscarSitioDAO(sitio).Rows[0].ItemArray[0].ToString());
                     Ubicacion.IdSitio = Foto.IdSitio;
 
                     int j = servicio.agregarFotoDAO(Foto);
                     if (j == 1)
                     {
-
-                        int h = servicio.agregarUbicacionesDAO(Ubicacion);
-                        if (h == 1)
-                        {
+                        
+                        
                             Mensaje("Los datos se agregaron correctamente");
-                            llenarGrid(llenarVistaDetallesitio(VistaSitio, Foto, Ubicacion));
+                            //llenarGrid(llenarVistaDetallesitio(sitio, Foto, Ubicacion));
                             US = (DataTable)Session["Usuarios"];
                             if (Convert.ToInt32(US.Rows[0].ItemArray[9]) != 1)
                             {
@@ -233,10 +230,10 @@ namespace ProyectoIntegrador.GUI
                             else
                             {
 
-                                llenarGrid(VistaSitio);
+                                //llenarGrid(sitio);
                                 validarNumeroSitios();
 
-                            }
+                            
 
                             limpiar();
                         }
@@ -269,8 +266,8 @@ namespace ProyectoIntegrador.GUI
             FileUpload2 = null;
             //txtLatitude.Text = 20.96645955666419.ToString();
             //txtLongitud.Text = (-89.62270814819334).ToString();
-            VistaSitio = new localhost.VISTADETALLESITIOBO();
-            llenarGrid(VistaSitio);
+            sitio = new localhost.SitioBO();
+            //llenarGrid(sitio);
         }
 
         protected void btnModificar_Click(object sender, EventArgs e)
@@ -328,23 +325,10 @@ namespace ProyectoIntegrador.GUI
                         }
                     }
                     int j = servicio.ModificarFotoDAO(Foto);
-                    if (j != 1)
-                    {
-                        Ubicacion.IdSitio = (Int32)Session["Id"];
-
-                        Ubicacion.IdUbicacion = Convert.ToInt32(servicio.BuscarUbicacionesDAO(Ubicacion).Rows[0].ItemArray[0].ToString());
-
-                        //Ubicacion.Longitud = longitude.Text;
-                        //Ubicacion.Latitud = latitude.Text;
-                        //Ubicacion.Direccion = txtDireccion.Text;
-                        int h = servicio.ModificarUbicacionesDAO(Ubicacion);
-                        if (h != 1)
-                        {
-                            Mensaje("Los datos se agregaron correctamente");
-                            llenarGrid(llenarVistaDetallesitio(VistaSitio, Foto, Ubicacion));
+                         Mensaje("Los datos se agregaron correctamente");
+                            //llenarGrid(llenarVistaDetallesitio(sitio, Foto, Ubicacion));
                             limpiar();
-                        }
-                    }
+                     
 
                 }
                 else
@@ -372,7 +356,7 @@ namespace ProyectoIntegrador.GUI
                 //address.Text = grResultado.Rows[indice].Cells[3].Text;
                 //ddlEstatus.SelectedValue = grResultado.Rows[indice].Cells[4].Text;
                 Session["Id"] = Convert.ToInt32(grResultado.Rows[indice].Cells[0].Text);
-                Session["IdU"] = Convert.ToInt32(servicio.BuscarUbicacionesDAO(Ubicacion).Rows[0].ItemArray[0].ToString());
+                //Session["IdU"] = Convert.ToInt32(servicio.BuscarUbicacionesDAO(Ubicacion).Rows[0].ItemArray[0].ToString());
 
                 try
                 {
@@ -396,14 +380,7 @@ namespace ProyectoIntegrador.GUI
                     servicio.EliminarFotoDAO(Foto);
                 }
                 catch { }
-                try
-                {
-                    Ubicacion.IdUbicacion = Convert.ToInt32(servicio.BuscarUbicacionesDAO(Ubicacion).Rows[0].ItemArray[0].ToString());
-                    servicio.EliminarUbicacionesDAO(Ubicacion);
-
-                }
-                catch
-                { }
+              
                 US = (DataTable)Session["Usuarios"];
                 if (Convert.ToInt32(US.Rows[0].ItemArray[9]) != 1)
                 {
@@ -439,7 +416,7 @@ namespace ProyectoIntegrador.GUI
                     try
                     {
                         servicio.EliminarSitioDAO(sitio);
-                        llenarGrid(VistaSitio);
+                        //llenarGrid(sitio);
                     }
                     catch { }
                 }
@@ -457,45 +434,45 @@ namespace ProyectoIntegrador.GUI
         }
         public object llenarVistaDetallesitio(localhost.SitioBO sitio, localhost.FotoBO foto, localhost.UbicacionBO ubicacion)
         {
-            //VistaSitio.IdSitio = sitio.IdSitio;
-            //VistaSitio.Descripcion = sitio.Descripcion;
-            //VistaSitio.Estatus = sitio.Estatus;
-            //VistaSitio.Nombre = sitio.Nombre;
-            //VistaSitio.Foto = foto.Foto;
-            //VistaSitio.Latitud = ubicacion.Latitud;
-            //VistaSitio.Longitud = ubicacion.Longitud;
-            //VistaSitio.Direccion = ubicacion.Direccion;
-            VistaSitio.IdEstablecimiento = sitio.IdEstablecimiento;
-            return VistaSitio;
+            //sitio.IdSitio = sitio.IdSitio;
+            //sitio.Descripcion = sitio.Descripcion;
+            //sitio.Estatus = sitio.Estatus;
+            //sitio.Nombre = sitio.Nombre;
+            //sitio.Foto = foto.Foto;
+            //sitio.Latitud = ubicacion.Latitud;
+            //sitio.Longitud = ubicacion.Longitud;
+            //sitio.Direccion = ubicacion.Direccion;
+            sitio.IdEstablecimiento = sitio.IdEstablecimiento;
+            return sitio;
         }
 
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
 
-            //VistaSitio.IdSitio = sitio.IdSitio;
+            //sitio.IdSitio = sitio.IdSitio;
             if (txtDescripcion.Text.Trim().Length != 0)
             {
-                VistaSitio.Descripcion = txtDescripcion.Text;
+                sitio.Descripcion = txtDescripcion.Text;
             }
             //if (ddlEstatus.SelectedItem.Text.Trim().Length != 0)
             //{
-            //    VistaSitio.Estatus = ddlEstatus.SelectedItem.Text;
+            //    sitio.Estatus = ddlEstatus.SelectedItem.Text;
             //}
             if (txtNombre.Text.Trim().Length != 0)
             {
-                VistaSitio.Nombre = txtNombre.Text;
+                sitio.Nombre = txtNombre.Text;
             }
-            //VistaSitio.Latitud = Ubicacion.Latitud;
-            //VistaSitio.Longitud = Ubicacion.Longitud;
+            //sitio.Latitud = Ubicacion.Latitud;
+            //sitio.Longitud = Ubicacion.Longitud;
             //if (txtUbicacion.Text.Trim().Length != 0)
             //{
-            //    VistaSitio.Direccion = txtUbicacion.Text;
+            //    sitio.Direccion = txtUbicacion.Text;
             //}
             //if (Convert.ToInt32(Convert.ToInt32(DdlEstablecimiento.SelectedValue)) != 0)
             //{
-            //    VistaSitio.IdEstablecimiento = Convert.ToInt32(Convert.ToInt32(DdlEstablecimiento.SelectedValue));
+            //    sitio.IdEstablecimiento = Convert.ToInt32(Convert.ToInt32(DdlEstablecimiento.SelectedValue));
             //}
-            llenarGrid(VistaSitio);
+            //llenarGrid(sitio);
         }
 
         protected void grResultado_RowDeleting(object sender, GridViewDeleteEventArgs e)

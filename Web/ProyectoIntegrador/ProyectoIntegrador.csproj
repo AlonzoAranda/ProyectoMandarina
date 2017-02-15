@@ -285,8 +285,8 @@
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\Pe-icon-7-stroke.svg" />
     <Content Include="GUI\AgregarEvento.aspx" />
-    <Content Include="GUI\AgregarSitio.aspx" />
     <Content Include="GUI\AgregarSitio2.aspx" />
+    <Content Include="GUI\autoCompletar.aspx" />
     <Content Include="GUI\CatalogoEstablecimientos.aspx" />
     <Content Include="GUI\CatalogoMembresias.aspx" />
     <Content Include="GUI\CatalogoTipoEstablecimiento.aspx" />
@@ -455,6 +455,7 @@
     <Content Include="js\plugins\bootstrap\bootstrap-timepicker.min.js" />
     <Content Include="js\plugins\bootstrap\bootstrap.min.js" />
     <Content Include="js\plugins\bootstrap\npm.js" />
+    <Content Include="js\plugins\dropzone.min.js" />
     <Content Include="js\plugins\jquery\jquery-migrate.min.js" />
     <Content Include="js\plugins\jquery\jquery-ui.min.js" />
     <Content Include="js\plugins\jquery\jquery.min.js" />
@@ -692,12 +693,12 @@
     <Compile Include="GUI\AgregarEvento.aspx.designer.cs">
       <DependentUpon>AgregarEvento.aspx</DependentUpon>
     </Compile>
-    <Compile Include="GUI\AgregarSitio.aspx.cs">
-      <DependentUpon>AgregarSitio.aspx</DependentUpon>
+    <Compile Include="GUI\autoCompletar.aspx.cs">
+      <DependentUpon>autoCompletar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="GUI\AgregarSitio.aspx.designer.cs">
-      <DependentUpon>AgregarSitio.aspx</DependentUpon>
+    <Compile Include="GUI\autoCompletar.aspx.designer.cs">
+      <DependentUpon>autoCompletar.aspx</DependentUpon>
     </Compile>
     <Compile Include="GUI\CatalogoEstablecimientos.aspx.cs">
       <DependentUpon>CatalogoEstablecimientos.aspx</DependentUpon>
@@ -940,6 +941,13 @@
     <WebReferences Include="Web References\" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
     <WebReferenceUrl Include="http://localhost:53950/Services/WSDisfruta.asmx">
       <UrlBehavior>Dynamic</UrlBehavior>
       <RelPath>Web References\localhost\</RelPath>
@@ -951,10 +959,6 @@
       <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
       <CachedSettingsPropName>ProyectoIntegrador_localhost_WSDisfruta</CachedSettingsPropName>
     </WebReferenceUrl>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
-    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

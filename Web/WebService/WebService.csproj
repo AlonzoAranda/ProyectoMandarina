@@ -132,8 +132,6 @@
     <Compile Include="BO\TipoPagoBO.cs" />
     <Compile Include="BO\UbicacionBO.cs" />
     <Compile Include="BO\UsuarioBO.cs" />
-    <Compile Include="BO\VISTADETALLESITIOBO.cs" />
-    <Compile Include="BO\VistaEstablecimientoBO.cs" />
     <Compile Include="BO\VISTARECIBOBO.cs" />
     <Compile Include="DAO\AdministraDAO.cs" />
     <Compile Include="DAO\ConexionDAO.cs" />
@@ -145,7 +143,6 @@
     <Compile Include="DAO\TarjetaCreditoDAO.cs" />
     <Compile Include="DAO\TipoEstablecimientoDAO.cs" />
     <Compile Include="DAO\TipoPagoDAO.cs" />
-    <Compile Include="DAO\UbicacionesDAO.cs" />
     <Compile Include="DAO\UsuarioDAO.cs" />
     <Compile Include="DAO\VISTADETALLESITIODAO.cs" />
     <Compile Include="DAO\VistaEstablecimientoDAO.cs" />

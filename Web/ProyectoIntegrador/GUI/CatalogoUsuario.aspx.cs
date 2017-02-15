@@ -63,20 +63,7 @@ namespace ProyectoIntegrador.GUI
         {
 
         }
-
-        // public byte[] ConvertirImagenString(System.Drawing.Image image,
-        //System.Drawing.Imaging.ImageFormat format)
-        // {
-        //     using (MemoryStream ms = new MemoryStream())
-        //     {
-        //         // Convert Image to byte[]
-        //         image.Save(ms, format);
-        //         byte[] imageBytes = ms.ToArray();
-        //         return imageBytes;
-        //     }
-        // }
-
-
+        
         public void AgregarImagen()
         {
 
@@ -131,7 +118,8 @@ namespace ProyectoIntegrador.GUI
                 Usuario.ApMat = txtApeMat.Text;
                 Usuario.Usuario = txtUsuario.Text;
                 Usuario.Contrasena = txtContrasena.Text;
-                Usuario.IdMembresia = Convert.ToInt32( us.Rows[0].ItemArray[6]);
+                //NO HAY MEMBRESIAS POR ESO LE PASO EL NUMERO 1
+                Usuario.IdMembresia = 1;
                 Usuario.IdTipoPago = Convert.ToInt32(us.Rows[0].ItemArray[7]);
 
                 if (FileUpload1.HasFile)

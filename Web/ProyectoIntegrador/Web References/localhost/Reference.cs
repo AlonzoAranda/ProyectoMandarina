@@ -40,7 +40,7 @@ namespace ProyectoIntegrador.localhost {
         
         private System.Threading.SendOrPostCallback ReciboBOOperationCompleted;
         
-        private System.Threading.SendOrPostCallback SitioBOOperationCompleted;
+        private System.Threading.SendOrPostCallback SitiosBOOperationCompleted;
         
         private System.Threading.SendOrPostCallback TarjetaCreditoBOOperationCompleted;
         
@@ -51,10 +51,6 @@ namespace ProyectoIntegrador.localhost {
         private System.Threading.SendOrPostCallback UbicacionBOOperationCompleted;
         
         private System.Threading.SendOrPostCallback UsuarioBOOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback VISTADETALLESITIOBOOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback VISTAESTABLECIMIENTOBOOperationCompleted;
         
         private System.Threading.SendOrPostCallback VISTARECIBOBOOperationCompleted;
         
@@ -148,16 +144,6 @@ namespace ProyectoIntegrador.localhost {
         
         private System.Threading.SendOrPostCallback EliminarTipoPagoDAOOperationCompleted;
         
-        private System.Threading.SendOrPostCallback DatosUbicacionesDAOOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback BuscarUbicacionesDAOOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback agregarUbicacionesDAOOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback ModificarUbicacionesDAOOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback EliminarUbicacionesDAOOperationCompleted;
-        
         private System.Threading.SendOrPostCallback DatosUsuarioDAOOperationCompleted;
         
         private System.Threading.SendOrPostCallback BuscarUsuarioDAOOperationCompleted;
@@ -167,8 +153,6 @@ namespace ProyectoIntegrador.localhost {
         private System.Threading.SendOrPostCallback ModificarUsuarioDAOOperationCompleted;
         
         private System.Threading.SendOrPostCallback EliminarUsuarioDAOOperationCompleted;
-        
-        private System.Threading.SendOrPostCallback BuscarVISTADETALLESITIOOperationCompleted;
         
         private System.Threading.SendOrPostCallback BuscarVISTARECIBODAOOperationCompleted;
         
@@ -228,7 +212,7 @@ namespace ProyectoIntegrador.localhost {
         public event ReciboBOCompletedEventHandler ReciboBOCompleted;
         
         /// <remarks/>
-        public event SitioBOCompletedEventHandler SitioBOCompleted;
+        public event SitiosBOCompletedEventHandler SitiosBOCompleted;
         
         /// <remarks/>
         public event TarjetaCreditoBOCompletedEventHandler TarjetaCreditoBOCompleted;
@@ -244,12 +228,6 @@ namespace ProyectoIntegrador.localhost {
         
         /// <remarks/>
         public event UsuarioBOCompletedEventHandler UsuarioBOCompleted;
-        
-        /// <remarks/>
-        public event VISTADETALLESITIOBOCompletedEventHandler VISTADETALLESITIOBOCompleted;
-        
-        /// <remarks/>
-        public event VISTAESTABLECIMIENTOBOCompletedEventHandler VISTAESTABLECIMIENTOBOCompleted;
         
         /// <remarks/>
         public event VISTARECIBOBOCompletedEventHandler VISTARECIBOBOCompleted;
@@ -390,21 +368,6 @@ namespace ProyectoIntegrador.localhost {
         public event EliminarTipoPagoDAOCompletedEventHandler EliminarTipoPagoDAOCompleted;
         
         /// <remarks/>
-        public event DatosUbicacionesDAOCompletedEventHandler DatosUbicacionesDAOCompleted;
-        
-        /// <remarks/>
-        public event BuscarUbicacionesDAOCompletedEventHandler BuscarUbicacionesDAOCompleted;
-        
-        /// <remarks/>
-        public event agregarUbicacionesDAOCompletedEventHandler agregarUbicacionesDAOCompleted;
-        
-        /// <remarks/>
-        public event ModificarUbicacionesDAOCompletedEventHandler ModificarUbicacionesDAOCompleted;
-        
-        /// <remarks/>
-        public event EliminarUbicacionesDAOCompletedEventHandler EliminarUbicacionesDAOCompleted;
-        
-        /// <remarks/>
         public event DatosUsuarioDAOCompletedEventHandler DatosUsuarioDAOCompleted;
         
         /// <remarks/>
@@ -418,9 +381,6 @@ namespace ProyectoIntegrador.localhost {
         
         /// <remarks/>
         public event EliminarUsuarioDAOCompletedEventHandler EliminarUsuarioDAOCompleted;
-        
-        /// <remarks/>
-        public event BuscarVISTADETALLESITIOCompletedEventHandler BuscarVISTADETALLESITIOCompleted;
         
         /// <remarks/>
         public event BuscarVISTARECIBODAOCompletedEventHandler BuscarVISTARECIBODAOCompleted;
@@ -569,30 +529,30 @@ namespace ProyectoIntegrador.localhost {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/SitioBO", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void SitioBO(SitioBO obj) {
-            this.Invoke("SitioBO", new object[] {
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/SitiosBO", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void SitiosBO(SitioBO obj) {
+            this.Invoke("SitiosBO", new object[] {
                         obj});
         }
         
         /// <remarks/>
-        public void SitioBOAsync(SitioBO obj) {
-            this.SitioBOAsync(obj, null);
+        public void SitiosBOAsync(SitioBO obj) {
+            this.SitiosBOAsync(obj, null);
         }
         
         /// <remarks/>
-        public void SitioBOAsync(SitioBO obj, object userState) {
-            if ((this.SitioBOOperationCompleted == null)) {
-                this.SitioBOOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSitioBOOperationCompleted);
+        public void SitiosBOAsync(SitioBO obj, object userState) {
+            if ((this.SitiosBOOperationCompleted == null)) {
+                this.SitiosBOOperationCompleted = new System.Threading.SendOrPostCallback(this.OnSitiosBOOperationCompleted);
             }
-            this.InvokeAsync("SitioBO", new object[] {
-                        obj}, this.SitioBOOperationCompleted, userState);
+            this.InvokeAsync("SitiosBO", new object[] {
+                        obj}, this.SitiosBOOperationCompleted, userState);
         }
         
-        private void OnSitioBOOperationCompleted(object arg) {
-            if ((this.SitioBOCompleted != null)) {
+        private void OnSitiosBOOperationCompleted(object arg) {
+            if ((this.SitiosBOCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.SitioBOCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+                this.SitiosBOCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -733,62 +693,6 @@ namespace ProyectoIntegrador.localhost {
             if ((this.UsuarioBOCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.UsuarioBOCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/VISTADETALLESITIOBO", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void VISTADETALLESITIOBO(VISTADETALLESITIOBO obj) {
-            this.Invoke("VISTADETALLESITIOBO", new object[] {
-                        obj});
-        }
-        
-        /// <remarks/>
-        public void VISTADETALLESITIOBOAsync(VISTADETALLESITIOBO obj) {
-            this.VISTADETALLESITIOBOAsync(obj, null);
-        }
-        
-        /// <remarks/>
-        public void VISTADETALLESITIOBOAsync(VISTADETALLESITIOBO obj, object userState) {
-            if ((this.VISTADETALLESITIOBOOperationCompleted == null)) {
-                this.VISTADETALLESITIOBOOperationCompleted = new System.Threading.SendOrPostCallback(this.OnVISTADETALLESITIOBOOperationCompleted);
-            }
-            this.InvokeAsync("VISTADETALLESITIOBO", new object[] {
-                        obj}, this.VISTADETALLESITIOBOOperationCompleted, userState);
-        }
-        
-        private void OnVISTADETALLESITIOBOOperationCompleted(object arg) {
-            if ((this.VISTADETALLESITIOBOCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.VISTADETALLESITIOBOCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/VISTAESTABLECIMIENTOBO", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void VISTAESTABLECIMIENTOBO(VistaEstablecimientoBO obj) {
-            this.Invoke("VISTAESTABLECIMIENTOBO", new object[] {
-                        obj});
-        }
-        
-        /// <remarks/>
-        public void VISTAESTABLECIMIENTOBOAsync(VistaEstablecimientoBO obj) {
-            this.VISTAESTABLECIMIENTOBOAsync(obj, null);
-        }
-        
-        /// <remarks/>
-        public void VISTAESTABLECIMIENTOBOAsync(VistaEstablecimientoBO obj, object userState) {
-            if ((this.VISTAESTABLECIMIENTOBOOperationCompleted == null)) {
-                this.VISTAESTABLECIMIENTOBOOperationCompleted = new System.Threading.SendOrPostCallback(this.OnVISTAESTABLECIMIENTOBOOperationCompleted);
-            }
-            this.InvokeAsync("VISTAESTABLECIMIENTOBO", new object[] {
-                        obj}, this.VISTAESTABLECIMIENTOBOOperationCompleted, userState);
-        }
-        
-        private void OnVISTAESTABLECIMIENTOBOOperationCompleted(object arg) {
-            if ((this.VISTAESTABLECIMIENTOBOCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.VISTAESTABLECIMIENTOBOCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -2126,151 +2030,6 @@ namespace ProyectoIntegrador.localhost {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/DatosUbicacionesDAO", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataTable DatosUbicacionesDAO(object obj) {
-            object[] results = this.Invoke("DatosUbicacionesDAO", new object[] {
-                        obj});
-            return ((System.Data.DataTable)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void DatosUbicacionesDAOAsync(object obj) {
-            this.DatosUbicacionesDAOAsync(obj, null);
-        }
-        
-        /// <remarks/>
-        public void DatosUbicacionesDAOAsync(object obj, object userState) {
-            if ((this.DatosUbicacionesDAOOperationCompleted == null)) {
-                this.DatosUbicacionesDAOOperationCompleted = new System.Threading.SendOrPostCallback(this.OnDatosUbicacionesDAOOperationCompleted);
-            }
-            this.InvokeAsync("DatosUbicacionesDAO", new object[] {
-                        obj}, this.DatosUbicacionesDAOOperationCompleted, userState);
-        }
-        
-        private void OnDatosUbicacionesDAOOperationCompleted(object arg) {
-            if ((this.DatosUbicacionesDAOCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.DatosUbicacionesDAOCompleted(this, new DatosUbicacionesDAOCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/BuscarUbicacionesDAO", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataTable BuscarUbicacionesDAO(object obj) {
-            object[] results = this.Invoke("BuscarUbicacionesDAO", new object[] {
-                        obj});
-            return ((System.Data.DataTable)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void BuscarUbicacionesDAOAsync(object obj) {
-            this.BuscarUbicacionesDAOAsync(obj, null);
-        }
-        
-        /// <remarks/>
-        public void BuscarUbicacionesDAOAsync(object obj, object userState) {
-            if ((this.BuscarUbicacionesDAOOperationCompleted == null)) {
-                this.BuscarUbicacionesDAOOperationCompleted = new System.Threading.SendOrPostCallback(this.OnBuscarUbicacionesDAOOperationCompleted);
-            }
-            this.InvokeAsync("BuscarUbicacionesDAO", new object[] {
-                        obj}, this.BuscarUbicacionesDAOOperationCompleted, userState);
-        }
-        
-        private void OnBuscarUbicacionesDAOOperationCompleted(object arg) {
-            if ((this.BuscarUbicacionesDAOCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.BuscarUbicacionesDAOCompleted(this, new BuscarUbicacionesDAOCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/agregarUbicacionesDAO", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public int agregarUbicacionesDAO(object obj) {
-            object[] results = this.Invoke("agregarUbicacionesDAO", new object[] {
-                        obj});
-            return ((int)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void agregarUbicacionesDAOAsync(object obj) {
-            this.agregarUbicacionesDAOAsync(obj, null);
-        }
-        
-        /// <remarks/>
-        public void agregarUbicacionesDAOAsync(object obj, object userState) {
-            if ((this.agregarUbicacionesDAOOperationCompleted == null)) {
-                this.agregarUbicacionesDAOOperationCompleted = new System.Threading.SendOrPostCallback(this.OnagregarUbicacionesDAOOperationCompleted);
-            }
-            this.InvokeAsync("agregarUbicacionesDAO", new object[] {
-                        obj}, this.agregarUbicacionesDAOOperationCompleted, userState);
-        }
-        
-        private void OnagregarUbicacionesDAOOperationCompleted(object arg) {
-            if ((this.agregarUbicacionesDAOCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.agregarUbicacionesDAOCompleted(this, new agregarUbicacionesDAOCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/ModificarUbicacionesDAO", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public int ModificarUbicacionesDAO(object obj) {
-            object[] results = this.Invoke("ModificarUbicacionesDAO", new object[] {
-                        obj});
-            return ((int)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void ModificarUbicacionesDAOAsync(object obj) {
-            this.ModificarUbicacionesDAOAsync(obj, null);
-        }
-        
-        /// <remarks/>
-        public void ModificarUbicacionesDAOAsync(object obj, object userState) {
-            if ((this.ModificarUbicacionesDAOOperationCompleted == null)) {
-                this.ModificarUbicacionesDAOOperationCompleted = new System.Threading.SendOrPostCallback(this.OnModificarUbicacionesDAOOperationCompleted);
-            }
-            this.InvokeAsync("ModificarUbicacionesDAO", new object[] {
-                        obj}, this.ModificarUbicacionesDAOOperationCompleted, userState);
-        }
-        
-        private void OnModificarUbicacionesDAOOperationCompleted(object arg) {
-            if ((this.ModificarUbicacionesDAOCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.ModificarUbicacionesDAOCompleted(this, new ModificarUbicacionesDAOCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/EliminarUbicacionesDAO", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public int EliminarUbicacionesDAO(object obj) {
-            object[] results = this.Invoke("EliminarUbicacionesDAO", new object[] {
-                        obj});
-            return ((int)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void EliminarUbicacionesDAOAsync(object obj) {
-            this.EliminarUbicacionesDAOAsync(obj, null);
-        }
-        
-        /// <remarks/>
-        public void EliminarUbicacionesDAOAsync(object obj, object userState) {
-            if ((this.EliminarUbicacionesDAOOperationCompleted == null)) {
-                this.EliminarUbicacionesDAOOperationCompleted = new System.Threading.SendOrPostCallback(this.OnEliminarUbicacionesDAOOperationCompleted);
-            }
-            this.InvokeAsync("EliminarUbicacionesDAO", new object[] {
-                        obj}, this.EliminarUbicacionesDAOOperationCompleted, userState);
-        }
-        
-        private void OnEliminarUbicacionesDAOOperationCompleted(object arg) {
-            if ((this.EliminarUbicacionesDAOCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.EliminarUbicacionesDAOCompleted(this, new EliminarUbicacionesDAOCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/DatosUsuarioDAO", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
         public System.Data.DataTable DatosUsuarioDAO() {
             object[] results = this.Invoke("DatosUsuarioDAO", new object[0]);
@@ -2410,35 +2169,6 @@ namespace ProyectoIntegrador.localhost {
             if ((this.EliminarUsuarioDAOCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
                 this.EliminarUsuarioDAOCompleted(this, new EliminarUsuarioDAOCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
-            }
-        }
-        
-        /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/BuscarVISTADETALLESITIO", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataTable BuscarVISTADETALLESITIO(object obj) {
-            object[] results = this.Invoke("BuscarVISTADETALLESITIO", new object[] {
-                        obj});
-            return ((System.Data.DataTable)(results[0]));
-        }
-        
-        /// <remarks/>
-        public void BuscarVISTADETALLESITIOAsync(object obj) {
-            this.BuscarVISTADETALLESITIOAsync(obj, null);
-        }
-        
-        /// <remarks/>
-        public void BuscarVISTADETALLESITIOAsync(object obj, object userState) {
-            if ((this.BuscarVISTADETALLESITIOOperationCompleted == null)) {
-                this.BuscarVISTADETALLESITIOOperationCompleted = new System.Threading.SendOrPostCallback(this.OnBuscarVISTADETALLESITIOOperationCompleted);
-            }
-            this.InvokeAsync("BuscarVISTADETALLESITIO", new object[] {
-                        obj}, this.BuscarVISTADETALLESITIOOperationCompleted, userState);
-        }
-        
-        private void OnBuscarVISTADETALLESITIOOperationCompleted(object arg) {
-            if ((this.BuscarVISTADETALLESITIOCompleted != null)) {
-                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.BuscarVISTADETALLESITIOCompleted(this, new BuscarVISTADETALLESITIOCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -3063,7 +2793,6 @@ namespace ProyectoIntegrador.localhost {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(VISTADETALLESITIOBO))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -3080,6 +2809,14 @@ namespace ProyectoIntegrador.localhost {
         private int idEstablecimientoField;
         
         private string estatusField;
+        
+        private int idusuarioField;
+        
+        private string direccionField;
+        
+        private string latitudField;
+        
+        private string longitudField;
         
         /// <remarks/>
         public int IdSitio {
@@ -3130,21 +2867,26 @@ namespace ProyectoIntegrador.localhost {
                 this.estatusField = value;
             }
         }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class VISTADETALLESITIOBO : SitioBO {
         
-        private string latitudField;
+        /// <remarks/>
+        public int Idusuario {
+            get {
+                return this.idusuarioField;
+            }
+            set {
+                this.idusuarioField = value;
+            }
+        }
         
-        private string longitudField;
-        
-        private string direccionField;
+        /// <remarks/>
+        public string Direccion {
+            get {
+                return this.direccionField;
+            }
+            set {
+                this.direccionField = value;
+            }
+        }
         
         /// <remarks/>
         public string Latitud {
@@ -3163,16 +2905,6 @@ namespace ProyectoIntegrador.localhost {
             }
             set {
                 this.longitudField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Direccion {
-            get {
-                return this.direccionField;
-            }
-            set {
-                this.direccionField = value;
             }
         }
     }
@@ -3361,7 +3093,6 @@ namespace ProyectoIntegrador.localhost {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(VistaEstablecimientoBO))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -3407,27 +3138,6 @@ namespace ProyectoIntegrador.localhost {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.6.1586.0")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://tempuri.org/")]
-    public partial class VistaEstablecimientoBO : EstablecimientoBO {
-        
-        private string nombreTipoField;
-        
-        /// <remarks/>
-        public string NombreTipo {
-            get {
-                return this.nombreTipoField;
-            }
-            set {
-                this.nombreTipoField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void AdministraBOCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
@@ -3449,7 +3159,7 @@ namespace ProyectoIntegrador.localhost {
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
-    public delegate void SitioBOCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    public delegate void SitiosBOCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
@@ -3470,14 +3180,6 @@ namespace ProyectoIntegrador.localhost {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void UsuarioBOCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
-    public delegate void VISTADETALLESITIOBOCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
-    public delegate void VISTAESTABLECIMIENTOBOCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
@@ -4655,136 +4357,6 @@ namespace ProyectoIntegrador.localhost {
     
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
-    public delegate void DatosUbicacionesDAOCompletedEventHandler(object sender, DatosUbicacionesDAOCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class DatosUbicacionesDAOCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal DatosUbicacionesDAOCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataTable Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataTable)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
-    public delegate void BuscarUbicacionesDAOCompletedEventHandler(object sender, BuscarUbicacionesDAOCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class BuscarUbicacionesDAOCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal BuscarUbicacionesDAOCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataTable Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataTable)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
-    public delegate void agregarUbicacionesDAOCompletedEventHandler(object sender, agregarUbicacionesDAOCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class agregarUbicacionesDAOCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal agregarUbicacionesDAOCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public int Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((int)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
-    public delegate void ModificarUbicacionesDAOCompletedEventHandler(object sender, ModificarUbicacionesDAOCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class ModificarUbicacionesDAOCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal ModificarUbicacionesDAOCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public int Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((int)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
-    public delegate void EliminarUbicacionesDAOCompletedEventHandler(object sender, EliminarUbicacionesDAOCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class EliminarUbicacionesDAOCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal EliminarUbicacionesDAOCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public int Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((int)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
     public delegate void DatosUsuarioDAOCompletedEventHandler(object sender, DatosUsuarioDAOCompletedEventArgs e);
     
     /// <remarks/>
@@ -4909,32 +4481,6 @@ namespace ProyectoIntegrador.localhost {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((int)(this.results[0]));
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
-    public delegate void BuscarVISTADETALLESITIOCompletedEventHandler(object sender, BuscarVISTADETALLESITIOCompletedEventArgs e);
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.6.1586.0")]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    public partial class BuscarVISTADETALLESITIOCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        internal BuscarVISTADETALLESITIOCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        /// <remarks/>
-        public System.Data.DataTable Result {
-            get {
-                this.RaiseExceptionIfNecessary();
-                return ((System.Data.DataTable)(this.results[0]));
             }
         }
     }

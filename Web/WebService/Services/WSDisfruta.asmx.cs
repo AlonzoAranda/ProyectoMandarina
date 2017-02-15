@@ -27,7 +27,6 @@ namespace WebService
         TarjetaCreditoDAO TarjetaCreditoDAO = new TarjetaCreditoDAO();
         TipoEstablecimientoDAO TipoEstablecimientoDAO = new TipoEstablecimientoDAO();
         TipoPagoDAO TipoPagoDAO = new TipoPagoDAO();
-        UbicacionesDAO UbicacionesDAO = new UbicacionesDAO();
         UsuarioDAO UsuarioDAO = new UsuarioDAO();
         VISTARECIBODAO VISTARECIBODAO = new VISTARECIBODAO();
         VISTADETALLESITIODAO VISTADETALLESITIO = new VISTADETALLESITIODAO();
@@ -54,7 +53,7 @@ namespace WebService
         public void ReciboBO(ReciboBO obj)
         { }
         [WebMethod]
-        public void SitioBO(SitioBO obj)
+        public void SitiosBO(SitioBO obj)
         { }
         [WebMethod]
         public void TarjetaCreditoBO(TarjetaCreditoBO obj)
@@ -72,12 +71,12 @@ namespace WebService
         public void UsuarioBO(UsuarioBO obj)
         { }
        
-        [WebMethod]
-        public void VISTADETALLESITIOBO(VISTADETALLESITIOBO obj)
-        { }
-        [WebMethod]
-        public void VISTAESTABLECIMIENTOBO(VistaEstablecimientoBO obj)
-        { }
+        //[WebMethod]
+        //public void VISTADETALLESITIOBO(VISTADETALLESITIOBO obj)
+        //{ }
+        //[WebMethod]
+        //public void VISTAESTABLECIMIENTOBO(VistaEstablecimientoBO obj)
+        //{ }
         [WebMethod]
         public void VISTARECIBOBO(VISTARECIBOBO obj)
         { }
@@ -358,34 +357,7 @@ namespace WebService
 
 
 
-        [WebMethod]
-        public DataTable DatosUbicacionesDAO(object obj)
-        {
-            return UbicacionesDAO.Recuperar(obj);
-        }
-        [WebMethod]
-        public DataTable BuscarUbicacionesDAO(object obj)
-        {
-            return UbicacionesDAO.BuscarUbicacion(obj);
-        }
-        [WebMethod]
-        public int agregarUbicacionesDAO(object obj)
-        {
-            return UbicacionesDAO.AgregarUbicacion(obj);
-        }
-        [WebMethod]
-        public int ModificarUbicacionesDAO(object obj)
-        {
-            return UbicacionesDAO.ModificarUbicacion(obj);
-        }
-        [WebMethod]
-        public int EliminarUbicacionesDAO(object obj)
-        {
-            return UbicacionesDAO.EliminarUbicacion(obj);
-        }
-
-
-
+       
 
 
 
@@ -414,11 +386,11 @@ namespace WebService
         {
             return UsuarioDAO.EliminarUsuario(obj);
         }
-        [WebMethod]
-        public DataTable BuscarVISTADETALLESITIO(object obj)
-        {
-            return VISTADETALLESITIO.BuscarDetallesitio(obj);
-        }
+        //[WebMethod]
+        //public DataTable BuscarVISTADETALLESITIO(object obj)
+        //{
+        //    return VISTADETALLESITIO.BuscarDetallesitio(obj);
+        //}
 
         [WebMethod]
         public DataTable BuscarVISTARECIBODAO(object obj)

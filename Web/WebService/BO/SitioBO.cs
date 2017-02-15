@@ -12,6 +12,10 @@ namespace WebService.BO
         String descripcion;
         int idEstablecimiento;
         string estatus;
+        string direccion;
+        string latitud;
+        string longitud;
+        int idusuario;
         public int IdSitio
         {
             get
@@ -74,6 +78,60 @@ namespace WebService.BO
             set
             {
                 estatus = value;
+            }
+        }
+
+
+
+        public int Idusuario
+        {
+            get
+            {
+                return idusuario;
+            }
+
+            set
+            {
+                idusuario = value;
+            }
+        }
+
+        public string Direccion
+        {
+            get
+            {
+                return direccion;
+            }
+
+            set
+            {
+                direccion = value;
+            }
+        }
+
+        public string Latitud
+        {
+            get
+            {
+                return latitud;
+            }
+
+            set
+            {
+                latitud = value;
+            }
+        }
+
+        public string Longitud
+        {
+            get
+            {
+                return longitud;
+            }
+
+            set
+            {
+                longitud = value;
             }
         }
     }

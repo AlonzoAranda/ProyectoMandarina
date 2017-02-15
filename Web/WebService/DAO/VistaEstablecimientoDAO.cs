@@ -14,8 +14,8 @@ namespace WebService.DAO
 
         public DataTable BuscarEstablecimiento(object obj)
         {
-            VistaEstablecimientoBO Establecimiento = (VistaEstablecimientoBO)obj;
-            sql = "EXEC FiltrarVistaESTABLECIMIENTOS  " + Establecimiento.IdEstablecimiento + " ,'" + Establecimiento.Nombre + "','" + Establecimiento.NombreTipo + "'";
+            EstablecimientoBO Establecimiento = (EstablecimientoBO)obj;
+            sql = "EXEC FiltrarVistaESTABLECIMIENTOS  " + Establecimiento.IdEstablecimiento + " ,'" + Establecimiento.Nombre + "'";
             return BD.Tabla(sql);
         }
     }

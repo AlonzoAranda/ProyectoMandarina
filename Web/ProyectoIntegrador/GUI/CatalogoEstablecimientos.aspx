@@ -62,7 +62,7 @@
                                                         <ContentTemplate>
                                             <div class="form-group">
                                          
-                                                <label class="col-md-3 control-label">Nombre del tipo de pago</label>
+                                                <label class="col-md-3 control-label">Nombre del establecimiento</label>
                                             
                                                 <div class="col-md-9">   
                                                     

@@ -82,8 +82,8 @@ namespace ProyectoIntegrador.GUI
                 usuario.ApPat = txtApPAt.Text;
                 usuario.ApMat = txtAPMAt.Text;
                 usuario.Usuario = txtUsuario.Text;
-                usuario.IdMembresia = Convert.ToInt32(us.Rows[0].Cells[6].Text);
-                usuario.IdTipoPago = Convert.ToInt32(us.Rows[0].Cells[7].Text);
+                usuario.IdMembresia = Convert.ToInt32(us.Rows[0].Cells[7].Text);
+                usuario.IdTipoPago = Convert.ToInt32(us.Rows[0].Cells[8].Text);
                 usuario.Contrasena = us.Rows[0].Cells[4].Text;
                 usuario.TipoUS = Convert.ToInt32(us.Rows[0].Cells[9].Text);
 
