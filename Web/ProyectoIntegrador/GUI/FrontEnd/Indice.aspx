@@ -104,7 +104,7 @@
       <span class="overlay" style="opacity: .78;"></span>
       <div class="container padding-top-3x padding-bottom-3x">
         <!-- Remove ".light-skin" class to alter appearance. -->
-        <a href="https://www.youtube.com/watch?v=j_5s7vFBBfY" class="video-popup-btn light-skin space-top-3x space-bottom">
+        <a href="http://wideo.co/es/view/19048401487664921565-videopromocional" class="video-popup-btn light-skin space-top-3x space-bottom">
           <i class="pe-7s-film"></i>
         </a>
         <p class="text-lg text-light space-bottom-2x">Ver video de introducción a la aplicación</p>
@@ -338,6 +338,7 @@
                   <i class="pe-7s-map-marker"></i>
                   <h4>Dirección</h4>
                   <p>Calle 115 #404 x 50 Col. Santa Rosa</p>
+                    <br />
                 </div>
               </div><!-- .tile.tile-with-icon -->
             </div><!-- .col-sm-4 -->

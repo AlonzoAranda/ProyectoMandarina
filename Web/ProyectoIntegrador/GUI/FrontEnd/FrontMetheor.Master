@@ -67,7 +67,7 @@
             
           <!-- Site Logo -->
           <a href="index.html" class="site-logo">
-            <img src="../../img/logo.gif" alt="Metheor"/>
+            <img src="../../img/home/intro/logoXimbal2.png" alt="Metheor"/>
           </a><!-- .site-logo -->
 
           <!-- Mobile Dropdown -->
@@ -121,7 +121,7 @@
               </ul>
             </div>
             <a href="#markets" class="btn btn-sm btn-primary btn-icon-left scroll-to" data-offset-top="115">
-              <i class="pe-7s-download"></i>Get App
+              <i class="pe-7s-download"></i>Obtener Aplicación
             </a>
             <!-- Mobile Menu Toggle -->
             <div class="nav-toggle"><span></span></div>
@@ -166,17 +166,17 @@
           <div class="inner">
             <div class="column">
               <a href="index.html" class="site-logo">
-                <img src="../img/footer-logo-def.svg" alt="Metheor">
+                <img src="../img/home/intro/logoXimbal2.png" alt="Metheor">
               </a>
-              <span class="copy-text">&copy; 2016. All rights reserved</span>
+              <span class="copy-text">&copy; 2016. Derechos reservados</span>
             </div><!-- .column -->
             <div class="column">
               <nav class="footer-nav">
                 <ul>
-                  <li><a href="#">Terms of service</a></li>
-                  <li><a href="#">Privacy policy</a></li>
-                  <li><a href="contacts.html">Contacts</a></li>
-                  <li><a href="help-center.html">Support</a></li>
+                  <li><a href="#">Terminos de servicio</a></li>
+                  <li><a href="#">Política de privacidad</a></li>
+                  <li><a href="contacts.html">Contacto</a></li>
+                  <li><a href="help-center.html">Soporte</a></li>
                 </ul>
               </nav><!-- .footer-nav -->
             </div><!-- .column -->

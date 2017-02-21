@@ -369,9 +369,12 @@
     <Content Include="img\home\gallery\01.jpg" />
     <Content Include="img\home\gallery\02.jpg" />
     <Content Include="img\home\gallery\03.jpg" />
+    <Content Include="img\home\intro\bakku01.jpg" />
     <Content Include="img\home\intro\intro-bg01.jpg" />
     <Content Include="img\home\intro\intro-bg02.jpg" />
     <Content Include="img\home\intro\logo.png" />
+    <Content Include="img\home\intro\logoXimbal.png" />
+    <Content Include="img\home\intro\logoXimbal2.png" />
     <Content Include="img\home\intro\phone.png" />
     <Content Include="img\home\intro\screen01.jpg" />
     <Content Include="img\home\intro\screen02.jpg" />
