@@ -1824,24 +1824,22 @@ namespace ProyectoIntegrador.localhost {
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/DatosEventoDAO", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public System.Data.DataTable DatosEventoDAO(object obj) {
-            object[] results = this.Invoke("DatosEventoDAO", new object[] {
-                        obj});
+        public System.Data.DataTable DatosEventoDAO() {
+            object[] results = this.Invoke("DatosEventoDAO", new object[0]);
             return ((System.Data.DataTable)(results[0]));
         }
         
         /// <remarks/>
-        public void DatosEventoDAOAsync(object obj) {
-            this.DatosEventoDAOAsync(obj, null);
+        public void DatosEventoDAOAsync() {
+            this.DatosEventoDAOAsync(null);
         }
         
         /// <remarks/>
-        public void DatosEventoDAOAsync(object obj, object userState) {
+        public void DatosEventoDAOAsync(object userState) {
             if ((this.DatosEventoDAOOperationCompleted == null)) {
                 this.DatosEventoDAOOperationCompleted = new System.Threading.SendOrPostCallback(this.OnDatosEventoDAOOperationCompleted);
             }
-            this.InvokeAsync("DatosEventoDAO", new object[] {
-                        obj}, this.DatosEventoDAOOperationCompleted, userState);
+            this.InvokeAsync("DatosEventoDAO", new object[0], this.DatosEventoDAOOperationCompleted, userState);
         }
         
         private void OnDatosEventoDAOOperationCompleted(object arg) {
@@ -2846,6 +2844,8 @@ namespace ProyectoIntegrador.localhost {
         
         private System.DateTime fechaFinField;
         
+        private int idUsuarioField;
+        
         /// <remarks/>
         public int IdEventos {
             get {
@@ -2933,6 +2933,16 @@ namespace ProyectoIntegrador.localhost {
             }
             set {
                 this.fechaFinField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int IdUsuario {
+            get {
+                return this.idUsuarioField;
+            }
+            set {
+                this.idUsuarioField = value;
             }
         }
     }

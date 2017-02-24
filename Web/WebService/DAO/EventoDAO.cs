@@ -15,7 +15,7 @@ namespace WebService.DAO
         string sql;
 
 
-        public DataTable Recuperar(object obj)
+        public DataTable Recuperar()
         {
             sql = "EXEC DevolverTablaEventos";
             return BD.Tabla(sql);
@@ -41,7 +41,7 @@ namespace WebService.DAO
         public DataTable BuscarEvento(object obj)
         {
             EventoBO Evento = (EventoBO)obj;
-            sql = "EXEC FiltrarEventoS  " + Evento.IdEventos + " ,  '" + Evento.Descripcion + "','" + Evento.Nombre + "' ," + Evento.Concurrente + ", '" + Evento.Direccion + "', '" + Evento.Longitud + "', '" + Evento.Latitud + "', " + Evento.FechaInicio + ", " + Evento.FechaFin + "";
+            sql = "EXEC FiltrarEventoS  " + Evento.IdEventos + " ,  '" + Evento.Descripcion + "','" + Evento.Nombre + "' ," + Evento.Concurrente + ", '" + Evento.Direccion + "', '" + Evento.Longitud + "', '" + Evento.Latitud + "', " + Evento.FechaInicio.ToShortDateString() + ", " + Evento.FechaFin.ToShortDateString() + "";
             return BD.Tabla(sql);
         }
     }

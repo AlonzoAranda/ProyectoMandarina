@@ -267,8 +267,9 @@
    
         document.getElementById("dialog").className == 'modal visible';
 
-    </script> 
 
+    </script> 
+    
         <!-- END TEMPLATE -->
     <!-- END SCRIPTS -->                   
 

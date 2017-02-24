@@ -52,7 +52,7 @@ namespace ProyectoIntegrador
                     us.DataBind();
                     Image1.ImageUrl = "../ImagenesWeb/Usuarios/" + us.Rows[0].Cells[6].Text.ToString();
                     Image2.ImageUrl = "../ImagenesWeb/Usuarios/" + us.Rows[0].Cells[6].Text.ToString();
-                    if (us.Rows[0].Cells[8].Text.ToString() == "")
+                    if (us.Rows[0].Cells[6].Text.ToString() == "")
                     {
                         Image1.ImageUrl = "../ImagenesWeb/Usuarios/logoDM.png";
                         Image2.ImageUrl = "../ImagenesWeb/Usuarios/logoDM.png";
@@ -74,30 +74,30 @@ namespace ProyectoIntegrador
                     us.DataSource = servicio.BuscarUsuarioDAO(usuario);
                     us.DataBind();
 
-                    Image1.ImageUrl = "../ImagenesWeb/Usuarios/" + us.Rows[0].Cells[8].Text.ToString();
-                    Image2.ImageUrl = "../ImagenesWeb/Usuarios/" + us.Rows[0].Cells[8].Text.ToString();
+                    Image1.ImageUrl = "../ImagenesWeb/Usuarios/" + us.Rows[0].Cells[6].Text.ToString();
+                    Image2.ImageUrl = "../ImagenesWeb/Usuarios/" + us.Rows[0].Cells[6].Text.ToString();
 
                
             }
         }
 
 
-        public string ConvertirImagenStringWebUrl(Byte[] arreglo,
-     string extension)
-        {
-            string url = Convert.ToBase64String(arreglo, 0, arreglo.Length);
-            url = "data:image/" + extension + "jpeg;base64," + url;
-            return url;
-        }
+     //   public string ConvertirImagenStringWebUrl(Byte[] arreglo,
+     //string extension)
+     //   {
+     //       string url = Convert.ToBase64String(arreglo, 0, arreglo.Length);
+     //       url = "data:image/" + extension + "jpeg;base64," + url;
+     //       return url;
+     //   }
 
-        public string RecuperarImagenWebUrl(string Imagen)
-        {
-            // Convert Base64 String to byte[]
-            byte[] imageBytes = Convert.FromBase64String(Imagen);
-            string image = Convert.ToBase64String(imageBytes, 0, imageBytes.Length);
-            image = "data:image/.jpeg" + "jpeg;base64," + image;
-            return image;
-        }
+     //   public string RecuperarImagenWebUrl(string Imagen)
+     //   {
+     //       // Convert Base64 String to byte[]
+     //       byte[] imageBytes = Convert.FromBase64String(Imagen);
+     //       string image = Convert.ToBase64String(imageBytes, 0, imageBytes.Length);
+     //       image = "data:image/.jpeg" + "jpeg;base64," + image;
+     //       return image;
+     //   }
 
 
 

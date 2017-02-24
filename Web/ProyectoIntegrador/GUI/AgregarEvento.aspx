@@ -93,35 +93,9 @@
 
                                            
                                                         
-                                            <div runat="server" id="ddl" class="form-group">
-                                                <label class="col-md-3 control-label">Tipo de establecimiento</label>
-                                                <div class="col-md-9">  
-                                           
-                                                        <asp:DropDownList ID="ddlTipo" class="form-control"  runat="server" OnSelectedIndexChanged="ddlTipo_SelectedIndexChanged" OnTextChanged="ddlTipo_TextChanged"   AutoPostBack ="true" >
-                                                            <asp:ListItem>...</asp:ListItem>
-                                                         
-                                                          
-                                                        </asp:DropDownList>   
-                                                           
-                                                
-                                                                    
-                                                   
-                                                </div>
-                                            </div>
-                                                                              
-                                            <div class="form-group"> 
-                                             
-                                                <label class="col-md-3 control-label">Establecimiento</label>
-                                                <div class="col-md-9">  
                                             
-                                                        <asp:DropDownList ID="DdlEstablecimiento" class="form-control "  runat="server" OnSelectedIndexChanged="DdlEstablecimiento_SelectedIndexChanged" AutoPostBack="True">
-                                                            <asp:ListItem>...</asp:ListItem>
-                                     
-                                                        </asp:DropDownList> 
-                                                                 
-                                              
-                                                </div>
-                                             </div>
+                                                                              
+                                            
                                                         
                                             <div class="form-group">
                                                 <label class="col-md-3 control-label">Descripción</label>
@@ -135,21 +109,48 @@
                                                     <span class="help-block">  </span>
                                                 </div>
                                             </div>
-
-                                            
-                                        </div>
+                                           </div>
                                                                    
                                             <div class="form-group"> 
                                              
-                                                <label class="col-md-3 control-label">Estatus</label>
+                                                <label class="col-md-3 control-label">Concurrente</label>
                                                 <div class="col-md-9">  
                                                          <asp:DropDownList ID="ddlEstatus"  class="form-control"  runat="server" AutoPostBack="True">
-                                                    <asp:ListItem>Activo</asp:ListItem>
-                                                    <asp:ListItem>Desactivado</asp:ListItem>
+                                                    <asp:ListItem>NO</asp:ListItem>
+                                                    <asp:ListItem>SI</asp:ListItem>
 
                                                 </asp:DropDownList>
                                                 </div>
                                              </div>
+
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Fecha de inicio del evento</label>
+                                                <div class="col-md-9">     
+                                                    
+                                                    <div class="input-group">
+                                                    <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
+
+                                                     <asp:TextBox ID="TextBox1" runat="server" class="form-control" Type="Date" value="" onfocus="this.Text = '';" onblur="if (this.Text == '') {this.Text = 'txtDescripcion';}" required="" AutoPostBack="False"></asp:TextBox>                                      
+                                                   
+                                                    <span class="help-block">  </span>
+                                                </div>
+                                            </div>
+                                           </div>
+
+                                            <div class="form-group">
+                                                <label class="col-md-3 control-label">Fecha del final del evento</label>
+                                                <div class="col-md-9">     
+                                                    
+                                                    <div class="input-group">
+                                                    <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
+
+                                                     <asp:TextBox ID="TextBox2" runat="server"  Type="Date"  class="form-control" value="" onfocus="this.Text = '';" onblur="if (this.Text == '') {this.Text = 'txtDescripcion';}" required="" AutoPostBack="False"></asp:TextBox>                                      
+                                                   
+                                                    <span class="help-block">  </span>
+                                                </div>
+                                            </div>
+                                           </div>
                                                              </ContentTemplate>
                                                         </asp:UpdatePanel>
                                                              
@@ -168,9 +169,7 @@
                                               </div>
                                                 <div class="panel panel-default">
                              <div class="col-md-9">
-
-                                            
-
+                              
                         </div>
                             </div>                        
 
@@ -279,8 +278,11 @@
                                              <asp:BoundField DataField="Nombre" HeaderText="NOMBRE" SortExpression="Nombre" />
                                              <asp:BoundField DataField="Descripcion" HeaderText="DESCRIPCIÓN" SortExpression="Descripcion" />
                                              <asp:BoundField DataField="direccion" HeaderText="DIRECCIÓN" SortExpression="direccion" />
-                                             <asp:BoundField DataField="Estatus" HeaderText="ESTATUS" SortExpression="Estatus" />
-                                             <asp:ButtonField ButtonType="Button" CommandName="SELECT" HeaderText="SELECCIONAR" ControlStyle-CssClass="btn btn-primary" ShowHeader="True" Text="SELECCIONAR" />
+                                            
+                                             <asp:BoundField DataField="Concurrente" HeaderText="CONCURRENTE" SortExpression="Concurrente" />
+                                             <asp:ButtonField ButtonType="Button" CommandName="SELECT" HeaderText="SELECCIONAR" ControlStyle-CssClass="btn btn-primary" ShowHeader="True" Text="SELECCIONAR" >
+                                             <ControlStyle CssClass="btn btn-primary" />
+                                             </asp:ButtonField>
                                              <asp:ButtonField ButtonType="Button" CommandName="Delete" HeaderText="ELIMINAR" ShowHeader="True" Text="ELIMINAR"  />
                                             
                                          </Columns>

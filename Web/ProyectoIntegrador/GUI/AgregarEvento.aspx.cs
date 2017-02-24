@@ -34,7 +34,7 @@ namespace ProyectoIntegrador.GUI
                 US = (DataTable)Session["Usuarios"];
                 if (Convert.ToInt32(US.Rows[0].ItemArray[9]) != 1)
                 {
-                    ddl.Visible = false;
+                    
                 }
 
             }
@@ -47,7 +47,14 @@ namespace ProyectoIntegrador.GUI
         //LLenarDataGrid
         public void llenarDataGrid(object obj)
         {
-            grResultado.DataSource = servicio.BuscarEventoDAO(obj);
+            try
+            {
+                grResultado.DataSource = servicio.BuscarEventoDAO(obj);
+            }
+            catch
+            {
+                grResultado.DataSource = servicio.DatosEventoDAO();
+            }
             grResultado.DataBind();
         }
 
