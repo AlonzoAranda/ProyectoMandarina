@@ -12,7 +12,10 @@ namespace WebService.DAO
         string sql;
         public SqlConnection ConexionBD()
         {
-            sql = "Data source = LENOVO-PC\\SQLEXPRESS; Initial Catalog=ProyectoBA; Integrated Security=True";
+            //sql = "Data source = LENOVO-PC\\SQLEXPRESS; Initial Catalog=ProyectoBA; Integrated Security=True
+            sql = "workstation id=ximbalProyect.mssql.somee.com;packet size=4096;user id=Joseph123456789_SQLLogin_1;pwd=6cmf2fjxap;data source=ximbalProyect.mssql.somee.com;persist security info=False;initial catalog=ximbalProyect";
+
+
             conn = new SqlConnection(sql);
             return conn;
         }
