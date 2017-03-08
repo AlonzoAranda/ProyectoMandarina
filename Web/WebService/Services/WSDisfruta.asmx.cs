@@ -566,39 +566,81 @@ namespace WebService
         }
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public void buscarSitioMovil(object sitio)
+        public void buscarSitioMovil(string nombre, string longitud, string latitud, string direccion, string estatus, int idEstablecimiento, int  idSitio)
         {
-            SalidaJSON(SitioDAO.BuscarSitio(sitio));
+            SitioBO lugar = new SitioBO();
+            lugar.Nombre = nombre;
+            lugar.Longitud = longitud;
+            lugar.Latitud = latitud;
+            lugar.Direccion = direccion;
+            lugar.Estatus = estatus;
+            lugar.IdEstablecimiento = idEstablecimiento;
+            lugar.IdSitio = idSitio;
+            SalidaJSON(SitioDAO.BuscarSitio(lugar));
         }
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public void buscarEstablecimientoMovil(object establecimiento)
+        public void ObtenerSitioMovil(string nombre, string longitud, string latitud, string direccion, string estatus, int idEstablecimiento, int idSitio)
         {
+            SitioBO lugar = new SitioBO();
+            lugar.Nombre = nombre;
+            lugar.Longitud = longitud;
+            lugar.Latitud = latitud;
+            lugar.Direccion = direccion;
+            lugar.Estatus = estatus;
+            lugar.IdEstablecimiento = idEstablecimiento;
+            lugar.IdSitio = idSitio;
+            SalidaJSON(SitioDAO.BuscarSitio(lugar));
+        }
+        [WebMethod]
+        [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
+        public void buscarEstablecimientoMovil(int idTipoEstablecimiento, string nombre, int id )
+        {
+            EstablecimientoBO establecimiento = new EstablecimientoBO();
+            establecimiento.IdEstablecimiento = idTipoEstablecimiento;
+            establecimiento.Nombre = nombre;
+            establecimiento.IdEstablecimiento = id;
             SalidaJSON(EstablecimientoDAO.BuscarEstablecimiento(establecimiento));
         }
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public void buscarTipoEstablecimientoMovil(object tipoEstablecimiento)
+        public void buscarTipoEstablecimientoMovil(int idtipoEstablecimiento, string  nombre)
         {
+            TipoEstablecimientoBO tipoEstablecimiento = new TipoEstablecimientoBO();
+            tipoEstablecimiento.IdTipoEstablecimiento = idtipoEstablecimiento;
+            tipoEstablecimiento.Nombre = nombre;
             SalidaJSON(TipoEstablecimientoDAO.BuscarTipoEstablecimiento(tipoEstablecimiento));
         }
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public void buscarFotoMovil(object foto)
+        public void buscarFotoMovil(string ruta, int idSitio)
         {
+            FotoBO foto = new FotoBO();
+            foto.Foto = ruta;
+            foto.IdSitio = idSitio;
             SalidaJSON(FotoDAO.BuscarFoto(foto));
         }
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public void buscarFotoEventoMovil(object foto)
+        public void buscarFotoEventoMovil(string ruta, int idSitio)
         {
+            FotoBO foto = new FotoBO();
+            foto.Foto = ruta;
+            foto.IdSitio = idSitio;
             SalidaJSON(FotoDAOE.BuscarFoto(foto));
         }
         [WebMethod]
         [ScriptMethod(ResponseFormat = ResponseFormat.Json)]
-        public void buscarEventos(object evento)
+        public void buscarEventos(string nombre, string longitud, string latitud, string direccion, DateTime fechaInicio, DateTime fechafin)
         {
-            SalidaJSON(EventoDAO.BuscarEvento(evento));
+            EventoBO lugar = new EventoBO();
+            lugar.Nombre = nombre;
+            lugar.Longitud = longitud;
+            lugar.Latitud = latitud;
+            lugar.Direccion = direccion;
+            lugar.FechaInicio = fechaInicio;
+            lugar.FechaFin = fechafin;
+            SalidaJSON(EventoDAO.BuscarEvento(lugar));
         }
 
     }
